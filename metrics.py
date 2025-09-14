@@ -9,9 +9,10 @@ import pandas as pd
 # -------------------------------------------------------------------
 # In-memory stores for demo session
 # -------------------------------------------------------------------
-_file_metrics: List[Dict]     = []
-_text_metrics: List[Dict]     = []
-_accuracy_results: List[Dict] = []
+_file_metrics: List[Dict]         = []
+_text_metrics: List[Dict]         = []
+_accuracy_results: List[Dict]     = []
+_ground_truth_reports: Dict[str, str] = {}
 
 # -------------------------------------------------------------------
 # Recording functions
@@ -28,7 +29,7 @@ def record_file_metrics(
 ) -> None:
     """
     Capture metrics for a multi-record file and, if it’s ground_truth,
-    also compute precision/recall/F1.
+    also compute precision/recall/F1 and generate a ground-truth report CSV.
     """
     latency = end_ts - start_ts
     audit_latency = (audit_gen_ts - start_ts) if audit_gen_ts else None
@@ -47,6 +48,8 @@ def record_file_metrics(
     # if this is a ground_truth file, trigger accuracy computation
     if file_name.startswith("ground_truth") and raw_file_bytes and audit_csv:
         _compute_accuracy(file_name, raw_file_bytes, audit_csv)
+        report_csv = _generate_ground_truth_report(raw_file_bytes, audit_csv)
+        _ground_truth_reports[file_name] = report_csv
 
 def record_text_metrics(
     start_ts: float,
@@ -83,7 +86,7 @@ def _compute_accuracy(
     for rec in data:
         vid = rec["verbatim_id"]
         # build ground truth set of (type, value)
-        gt = set((e["type"], e["value"]) for e in rec["ground_truth"])
+        gt = set((e["type"].upper(), e["value"]) for e in rec["ground_truth"])
         # build predicted set of (pii_type, original)
         preds = df_audit[df_audit["verbatim_id"] == vid]
         pr = set(zip(preds["pii_type"].str.upper(), preds["original"]))
@@ -108,6 +111,40 @@ def _compute_accuracy(
     })
 
 # -------------------------------------------------------------------
+# Ground-truth report generation
+# -------------------------------------------------------------------
+def _generate_ground_truth_report(
+    raw_json_bytes: bytes,
+    audit_csv: str
+) -> str:
+    """
+    Produces a CSV detailing for each ground-truth span whether it was
+    correctly masked or missed by the redactor.
+    """
+    data = json.loads(raw_json_bytes.decode("utf-8"))
+    df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
+
+    rows = []
+    for rec in data:
+        vid = rec["verbatim_id"]
+        preds = df_audit[df_audit["verbatim_id"] == vid]
+        pred_set = set(zip(preds["pii_type"].str.upper(), preds["original"]))
+
+        for ent in rec["ground_truth"]:
+            ent_type  = ent["type"].upper()
+            ent_value = ent["value"]
+            status    = "correct" if (ent_type, ent_value) in pred_set else "missed"
+            rows.append({
+                "verbatim_id":         vid,
+                "ground_truth_type":   ent_type,
+                "ground_truth_value":  ent_value,
+                "status":              status,
+            })
+
+    df_report = pd.DataFrame(rows)
+    return df_report.to_csv(index=False)
+
+# -------------------------------------------------------------------
 # Retrieval functions
 # -------------------------------------------------------------------
 def get_file_metrics_df() -> pd.DataFrame:
@@ -118,6 +155,12 @@ def get_text_metrics_df() -> pd.DataFrame:
 
 def get_accuracy_df() -> pd.DataFrame:
     return pd.DataFrame(_accuracy_results)
+
+def get_ground_truth_report(file_name: str) -> Optional[str]:
+    """
+    Returns the ground-truth report CSV (correct vs missed) for a given file.
+    """
+    return _ground_truth_reports.get(file_name)
 
 # -------------------------------------------------------------------
 # Summary functions
