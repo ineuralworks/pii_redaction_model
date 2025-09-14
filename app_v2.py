@@ -151,6 +151,7 @@ def render_audit(audit_csv: str, show_preview: bool):
         mime="text/csv",
     )
 
+
 # -------------------------------------------------------------------
 # Mode: Upload File
 # -------------------------------------------------------------------
@@ -262,6 +263,108 @@ if mode == "Upload File":
             if summary:
                 st.markdown(summary)
 
+# # -------------------------------------------------------------------
+# # Mode: Upload File
+# # -------------------------------------------------------------------
+# if mode == "Upload File":
+#     show_preview = st.checkbox("Show audit log preview", value=False)
+#     uploaded_file = st.file_uploader(
+#         "Upload a .json or .txt file", type=["json", "txt"]
+#     )
+
+#     if uploaded_file:
+#         size_mb = uploaded_file.size / (1024 * 1024)
+#         if size_mb > MAX_FILE_MB:
+#             st.error(f"File size {size_mb:.2f} MB exceeds {MAX_FILE_MB} MB limit.")
+#         else:
+#             # Read raw bytes (for GitHub commit and metrics)
+#             raw_bytes = uploaded_file.read()
+#             ts        = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+#             date      = datetime.utcnow().strftime("%m%d%Y")
+#             input_path = f"inputs/{date}/{ts}_{uploaded_file.name}"
+#             commit_async(input_path, raw_bytes, f"Input upload @ {ts}")
+
+#             # Rewind and run redaction
+#             uploaded_file.seek(0)
+#             start_ts = time.time()
+#             with st.spinner(f"Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
+#                 redacted_json, audit_csv = process_file(
+#                     uploaded_file, MIN_CONFIDENCE
+#                 )
+#             end_ts = time.time()
+
+#             # Commit redacted output asynchronously
+#             base, ext   = os.path.splitext(uploaded_file.name)
+#             out_name    = f"{base}_redacted{ext}"
+#             output_path = f"outputs/{date}/{ts}_{out_name}"
+#             commit_async(
+#                 output_path,
+#                 redacted_json.encode("utf-8"),
+#                 f"Redacted output @ {ts}",
+#             )
+
+#             # Parse audit and record metrics
+#             df_audit     = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
+#             record_count = len(json.loads(redacted_json))
+#             record_file_metrics(
+#                 file_name       = uploaded_file.name,
+#                 start_ts        = start_ts,
+#                 end_ts          = end_ts,
+#                 pii_count       = len(df_audit),
+#                 record_count    = record_count,
+#                 audit_gen_ts    = end_ts,
+#                 raw_file_bytes  = raw_bytes,
+#                 audit_csv       = audit_csv,
+#             )
+
+#             # Render redacted JSON
+#             # st.subheader("🔒 Redacted JSON Output")
+#             # st.code(redacted_json, language="json")
+#             # ── Redacted JSON Preview & Full Output ──
+#             # after your download button, build a text/plain data-URI
+#             quoted = quote(redacted_json)
+#             data_url = f"data:text/plain;charset=utf-8,{quoted}"
+#             # 1) embed via iframe (in-page “new window”)
+#             st.markdown(
+#                 f'''
+#                 <iframe
+#                   src="{data_url}"
+#                   style="width:100%; height:600px; border:1px solid #ddd;"
+#                 ></iframe>
+#                 ''',
+#                 unsafe_allow_html=True
+#             )
+            
+#             # 2) Download full JSON
+#             out_name = f"{os.path.splitext(uploaded_file.name)[0]}_redacted{os.path.splitext(uploaded_file.name)[1]}"
+#             st.download_button(
+#                 label="⬇️ Download Full JSON",
+#                 data=redacted_json.encode("utf-8"),
+#                 file_name=out_name,
+#                 mime="application/json",
+#             )
+            
+            
+
+#             # Render audit and download buttons
+#             render_audit(audit_csv, show_preview)
+
+#             # Download ground-truth report, if available
+#             gt_csv = get_ground_truth_report(uploaded_file.name)
+#             if gt_csv:
+#                 st.subheader("📥 Ground-Truth Report")
+#                 st.download_button(
+#                     label="Download Ground-Truth CSV",
+#                     data=gt_csv,
+#                     file_name=f"ground_truth_report_{uploaded_file.name}.csv",
+#                     mime="text/csv",
+#                 )
+#             # Only now do we generate the summary
+#             summary = generate_business_summary(uploaded_file.name)
+#             if summary:
+#                 st.markdown(summary)
+
+
 # -------------------------------------------------------------------
 # Mode: Single Sentence
 # -------------------------------------------------------------------
@@ -339,4 +442,3 @@ if accuracy_summary:
     st.json(accuracy_summary)
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
-
