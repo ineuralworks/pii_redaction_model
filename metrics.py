@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 from io import StringIO
 from typing import List, Dict, Optional
-
+import re
 import pandas as pd
 
 # -------------------------------------------------------------------
@@ -89,6 +89,16 @@ def record_text_metrics(
 # -------------------------------------------------------------------
 # Accuracy computation for ground_truth
 # -------------------------------------------------------------------
+
+# strip and normalize honorifics & whitespace for names
+ HONORIFIC_RE = re.compile(r'\b(?:mr|mrs|ms|dr)\.\s*', re.IGNORECASE)
+ WS_RE        = re.compile(r'\s+')
+
+def _normalize_name(s: str) -> str:
+    """Strip titles, lowercase & collapse whitespace."""
+    s2 = HONORIFIC_RE.sub("", s).strip().lower()
+    return WS_RE.sub(" ", s2)
+
 def _compute_accuracy(
     file_name: str,
     raw_json_bytes: bytes,
@@ -101,44 +111,33 @@ def _compute_accuracy(
     data = json.loads(raw_json_bytes.decode("utf-8"))
     df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
 
-    TP = FP = FN = 0
-
+    TP = FP = FN = 0        
     for rec in data:
-        vid   = rec["verbatim_id"]
-        # build lists of (type, value)
-        gt_list = [
-            (_canonical(e["type"]), e["value"])
-            for e in rec["ground_truth"]
-        ]
+        vid = rec["verbatim_id"]
+
+        # 1) Build ground-truth set, normalizing NAMEs
+        gt = set()
+        for e in rec["ground_truth"]:
+            t = _canonical(e["type"])
+            v = e["value"]
+            if t == "NAME":
+                v = _normalize_name(v)
+            gt.add((t, v))
+
+        # 2) Build prediction set, normalizing NAMEs
         preds = df_audit[df_audit["verbatim_id"] == vid]
-        pr_list = [
-            (_canonical(p["pii_type"]), p["original"])
-            for _, p in preds.iterrows()
-        ]
+        pr = set()
+        for _, p in preds.iterrows():
+            t = _canonical(p["pii_type"])
+            v = p["original"]
+            if t == "NAME":
+                v = _normalize_name(v)
+            pr.add((t, v))
 
-        matched_gt = set()
-        matched_pr = set()
-
-        # match ground-truth ↔ predictions
-        for i, (gtype, gval) in enumerate(gt_list):
-            for j, (ptype, pval) in enumerate(pr_list):
-                if ptype != gtype:
-                    continue
-                if ptype == "NAME":
-                    # containment check instead of exact
-                    if gval in pval or pval in gval:
-                        matched_gt.add(i)
-                        matched_pr.add(j)
-                        break
-                else:
-                    if pval == gval:
-                        matched_gt.add(i)
-                        matched_pr.add(j)
-                        break
-
-        TP += len(matched_gt)
-        FP += len(pr_list) - len(matched_pr)
-        FN += len(gt_list) - len(matched_gt)
+        # 3) Strict intersection for TP/FP/FN
+        TP += len(gt & pr)
+        FP += len(pr - gt)
+        FN += len(gt - pr)
     # for rec in data:
     #     vid = rec["verbatim_id"]
 
