@@ -209,14 +209,16 @@ if mode == "Upload File":
             # st.subheader("🔒 Redacted JSON Output")
             # st.code(redacted_json, language="json")
             # ── Redacted JSON Preview & Full Output ──
-            # 1) Truncated preview in an expander
-            st.subheader("🔒 Redacted JSON Output Preview")
-            with st.expander("Show preview", expanded=False):
-                lines   = redacted_json.splitlines()
-                preview = "\n".join(lines[:20])
-                if len(lines) > 20:
-                    preview += "\n… (truncated)"
-                st.code(preview, language="json")
+            # 1) embed via iframe (in-page “new window”)
+            st.markdown(
+                f'''
+                <iframe
+                  src="{data_url}"
+                  style="width:100%; height:600px; border:1px solid #ddd;"
+                ></iframe>
+                ''',
+                unsafe_allow_html=True
+            )
             
             # 2) Download full JSON
             out_name = f"{os.path.splitext(uploaded_file.name)[0]}_redacted{os.path.splitext(uploaded_file.name)[1]}"
@@ -227,13 +229,7 @@ if mode == "Upload File":
                 mime="application/json",
             )
             
-            # 3) Open full JSON in new tab (data URI)
-            b64 = base64.b64encode(redacted_json.encode("utf-8")).decode("utf-8")
-            href = (
-                f'<a href="data:application/json;base64,{b64}" '
-                f'target="_blank">🗔 Open full JSON in new tab</a>'
-            )
-            st.markdown(href, unsafe_allow_html=True)
+            
 
             # Render audit and download buttons
             render_audit(audit_csv, show_preview)
