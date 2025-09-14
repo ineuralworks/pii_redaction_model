@@ -209,6 +209,10 @@ if mode == "Upload File":
                     file_name=f"ground_truth_report_{uploaded_file.name}.csv",
                     mime="text/csv",
                 )
+            # Only now do we generate the summary
+            summary = generate_business_summary(uploaded_file.name)
+            if summary:
+                st.markdown(summary)
 
 
 # -------------------------------------------------------------------
@@ -289,6 +293,3 @@ if accuracy_summary:
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
 
-summary = generate_business_summary(uploaded_file.name)
-if summary:
-    st.markdown(summary)
