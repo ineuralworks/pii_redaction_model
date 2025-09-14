@@ -250,7 +250,6 @@ def generate_business_summary(file_name: str) -> Optional[str]:
     rec_pct   = latest_acc["recall"]    * 100
     f1_pct    = latest_acc["f1_score"]  * 100
 
-    # Build the narrative sections
     lines = [
         "# 📝 Automatic Redaction Summary",
         "## 1. Speed & Volume",
@@ -262,11 +261,10 @@ def generate_business_summary(file_name: str) -> Optional[str]:
         "## 3. Business Implications"
     ]
 
-    # Tailor the closing line based on real performance
     if prec_pct >= 98 and rec_pct >= 98:
         impact = (
             "Exceptional results: both missed data and false alarms "
-            "are almost zero, so we can deploy fully the automated redaction model with confidence."
+            "are almost zero, so we can deploy the automated redactor with confidence."
         )
     elif rec_pct >= 98:
         impact = (
@@ -279,12 +277,11 @@ def generate_business_summary(file_name: str) -> Optional[str]:
             "We miss a few items; we will consider refining patterns to raise catch rates further."
         )
     else:
-    impact = (
-        "Automated redaction results varied on this run. "
-        "We recommend a manual review of the output to ensure all sensitive data is correctly masked "
-        "and no non-sensitive content has been over-masked."
-    )
+        impact = (
+            "Automated redaction results varied on this run. "
+            "We recommend a manual review of the output to ensure all sensitive data is correctly masked "
+            "and no non-sensitive content has been over-masked."
+        )
 
     lines.append(impact)
     return "\n\n".join(lines)
-
