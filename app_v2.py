@@ -165,50 +165,49 @@ if mode == "Upload File":
         if size_mb > MAX_FILE_MB:
             st.error(f"File size {size_mb:.2f} MB exceeds {MAX_FILE_MB} MB limit.")
         else:
-            # read raw bytes once
+            # 1) Read raw bytes and prepare timestamps
             raw_bytes = uploaded_file.read()
             ts        = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
             date      = datetime.utcnow().strftime("%m%d%Y")
-            
-            # unique key per file to cache redaction+audit
+
+            # 2) Cache key per filename
             cache_key = f"cache_{uploaded_file.name}"
-            
             if cache_key not in st.session_state:
-                # 1) Commit input
+                # a) Commit original input
                 input_path = f"inputs/{date}/{ts}_{uploaded_file.name}"
                 commit_async(input_path, raw_bytes, f"Input upload @ {ts}")
-                
-                # 2) Run PII redaction once
+
+                # b) Run redaction once
                 uploaded_file.seek(0)
                 start_ts = time.time()
                 with st.spinner(f"Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
                     redacted_json, audit_csv = process_file(uploaded_file, MIN_CONFIDENCE)
                 end_ts = time.time()
-                
-                # 3) Commit redacted output
-                base, ext    = os.path.splitext(uploaded_file.name)
-                out_name     = f"{base}_redacted{ext}"
-                output_path  = f"outputs/{date}/{ts}_{out_name}"
+
+                # c) Commit redacted output
+                base, ext   = os.path.splitext(uploaded_file.name)
+                out_name    = f"{base}_redacted{ext}"
+                output_path = f"outputs/{date}/{ts}_{out_name}"
                 commit_async(output_path, redacted_json.encode("utf-8"), f"Redacted output @ {ts}")
-                
-                # 4) Cache everything for this session
+
+                # d) Store in session_state
                 st.session_state[cache_key] = {
-                    "raw_bytes":    raw_bytes,
-                    "start_ts":     start_ts,
-                    "end_ts":       end_ts,
+                    "raw_bytes":     raw_bytes,
+                    "start_ts":      start_ts,
+                    "end_ts":        end_ts,
                     "redacted_json": redacted_json,
-                    "audit_csv":    audit_csv,
+                    "audit_csv":     audit_csv,
                 }
-            
-            # pull from cache
-            cache = st.session_state[cache_key]
+
+            # 3) Retrieve from cache
+            cache         = st.session_state[cache_key]
             raw_bytes     = cache["raw_bytes"]
             start_ts      = cache["start_ts"]
             end_ts        = cache["end_ts"]
             redacted_json = cache["redacted_json"]
             audit_csv     = cache["audit_csv"]
 
-            # 5) Record metrics (this runs every rerun, but redaction is cached)
+            # 4) Record file metrics (runs every rerun, redaction is cached)
             df_audit     = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
             record_count = len(json.loads(redacted_json))
             record_file_metrics(
@@ -222,7 +221,7 @@ if mode == "Upload File":
                 audit_csv       = audit_csv,
             )
 
-            # 6) Embed full JSON in an iframe (no scrolling, no re-run)
+            # 5) Embed full JSON via iframe
             quoted   = quote(redacted_json)
             data_url = f"data:text/plain;charset=utf-8,{quoted}"
             st.markdown(
@@ -235,7 +234,7 @@ if mode == "Upload File":
                 unsafe_allow_html=True
             )
 
-            # 7) Download button
+            # 6) Download full JSON
             out_name = f"{os.path.splitext(uploaded_file.name)[0]}_redacted{os.path.splitext(uploaded_file.name)[1]}"
             st.download_button(
                 label="⬇️ Download Full JSON",
@@ -244,10 +243,10 @@ if mode == "Upload File":
                 mime="application/json",
             )
 
-            # 8) Render audit and optional preview
+            # 7) Render audit DataFrame (with optional preview)
             render_audit(audit_csv, show_preview)
 
-            # 9) Ground‐truth report download (if exists)
+            # 8) Ground-Truth report download (if present)
             gt_csv = get_ground_truth_report(uploaded_file.name)
             if gt_csv:
                 st.subheader("📥 Ground-Truth Report")
@@ -258,7 +257,7 @@ if mode == "Upload File":
                     mime="text/csv",
                 )
 
-            # 10) Business summary (guarded to only run for GT files)
+            # 9) Business summary (safely returns None for non-GT files)
             summary = generate_business_summary(uploaded_file.name)
             if summary:
                 st.markdown(summary)
