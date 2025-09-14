@@ -30,7 +30,20 @@ from metrics import (
 # Config
 # -------------------------------------------------------------------
 st.set_page_config(page_title="📁 PII Redaction By Sam Okoye", layout="wide")
-MIN_CONFIDENCE = 0.6
+#MIN_CONFIDENCE = 0.6
+# -------------------------------------------------------------------
+# Settings Sidebar: Confidence Threshold
+# -------------------------------------------------------------------
+st.sidebar.markdown("## ⚙️ Settings")
+MIN_CONFIDENCE = st.sidebar.slider(
+    "Set minimum confidence to redact PII",
+    min_value=0.0,
+    max_value=1.0,
+    value=0.5,
+    step=0.01,
+)
+st.sidebar.write(f"Current confidence threshold: **{MIN_CONFIDENCE:.2f}**")
+
 MAX_FILE_MB    = 5
 
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
@@ -162,7 +175,7 @@ if mode == "Upload File":
             # Rewind and run redaction
             uploaded_file.seek(0)
             start_ts = time.time()
-            with st.spinner("Redacting PII..."):
+            with st.spinner("Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
                 redacted_json, audit_csv = process_file(
                     uploaded_file, MIN_CONFIDENCE
                 )
@@ -237,7 +250,7 @@ else:
             )
 
             start_ts = time.time()
-            with st.spinner("Detecting & masking PII..."):
+            with st.spinner("Detecting & masking PII at {MIN_CONFIDENCE:.2f} confidence…"):
                 masked_sentence, audit_csv = process_text(
                     sentence, MIN_CONFIDENCE
                 )
