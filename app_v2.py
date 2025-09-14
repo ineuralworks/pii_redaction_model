@@ -34,7 +34,7 @@ MAX_FILE_MB    = 5
 
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 REPO_OWNER   = "samokoye"
-REPO_NAME    = "streamlit_app"
+REPO_NAME    = "pii_redaction_model"
 BRANCH        = "main"
 LOG_FILE      = "error_logs.logs"
 
