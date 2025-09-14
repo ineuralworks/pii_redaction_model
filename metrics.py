@@ -295,6 +295,10 @@ def generate_business_summary(file_name: str) -> Optional[str]:
     df_file = get_file_metrics_df()
     df_acc  = get_accuracy_df()
 
+    # if this isn't a ground-truth run (no accuracy results), skip
+    if df_file.empty or df_acc.empty or "file_name" not in df_acc.columns:
+        return None
+
     fm = df_file[df_file["file_name"] == file_name]
     am = df_acc[df_acc["file_name"] == file_name]
     if fm.empty or am.empty:
