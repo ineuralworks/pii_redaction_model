@@ -230,10 +230,9 @@ def summarize_accuracy() -> Dict:
 # -------------------------------------------------------------------
 def generate_business_summary(file_name: str) -> Optional[str]:
     """
-    Combines file-level and accuracy metrics, then returns a
-    non-technical narrative summary for this file.
+    Combines file‐ and accuracy‐metrics, then returns a
+    non-technical, conversational summary for this file.
     """
-    # grab the last metrics for this file
     df_file = get_file_metrics_df()
     df_acc  = get_accuracy_df()
 
@@ -251,37 +250,41 @@ def generate_business_summary(file_name: str) -> Optional[str]:
     rec_pct   = latest_acc["recall"]    * 100
     f1_pct    = latest_acc["f1_score"]  * 100
 
-    # build the narrative
+    # Build the narrative sections
     lines = [
         "# 📝 Automatic Redaction Summary",
         "## 1. Speed & Volume",
-        f"We processed **{file_name}** in **{latency:.1f}s**, redacting on average **{density:.1f}** PII items per record.",
-        "## 2. Accuracy Highlights",
-        f"- **Precision ~ {prec_pct:.1f}%** – Of every 100 items flagged, **{prec_pct:.0f}** were true positives, **{100-prec_pct:.0f}** false alarms.",
-        f"- **Recall ~ {rec_pct:.1f}%** – Caught **{rec_pct:.0f}** of every 100 actual sensitive items.",
-        f"- **F1 Score ~ {f1_pct:.1f}%** – Balances precision and recall to gauge overall reliability.",
-        "## 3. Business Impact"
+        f"We processed **{file_name}** in **{latency:.1f}s**, masking on average **{density:.1f}** sensitive items per record.",
+        "## 2. Performance at a Glance",
+        f"- When the system redacted data, it was correct **{prec_pct:.1f}%** of the time (only {100-prec_pct:.1f}% were unnecessary masks).",
+        f"- It identified **{rec_pct:.1f}%** of all sensitive items (just {100-rec_pct:.1f}% went unnoticed).",
+        f"- Overall effectiveness sits at **{f1_pct:.1f}%**.",
+        "## 3. Business Implications"
     ]
 
-    # adaptive impact messaging
+    # Tailor the closing line based on real performance
     if prec_pct >= 98 and rec_pct >= 98:
         impact = (
-            "Redaction is exceptionally reliable; we can automate with minimal oversight."
+            "Exceptional results: both missed data and false alarms "
+            "are almost zero, so we can deploy fully the automated redaction model with confidence."
         )
     elif rec_pct >= 98:
         impact = (
-            "Nearly all real PII is caught, keeping compliance risk very low; "
-            "a few over-flags may require quick checks."
+            "We’re catching nearly everything that needs redaction—compliance risk is very low. "
+            "A small fraction of over-masking remains and could be reviewed on demand."
         )
     elif prec_pct >= 95:
         impact = (
-            "Few over-flags preserve document usability; consider slight tuning to catch every item."
+            "False alarms are rare, preserving readability. "
+            "We miss a few items; we will consider refining patterns to raise catch rates further."
         )
     else:
-        impact = (
-            "Performance is strong overall, but occasional misses or false alarms occur. "
-            "Review edge cases or adjust thresholds as needed."
-        )
+    impact = (
+        "Automated redaction results varied on this run. "
+        "We recommend a manual review of the output to ensure all sensitive data is correctly masked "
+        "and no non-sensitive content has been over-masked."
+    )
 
     lines.append(impact)
     return "\n\n".join(lines)
+
