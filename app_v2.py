@@ -9,6 +9,7 @@ from io import StringIO
 import requests
 import pandas as pd
 import streamlit as st
+from urllib.parse import quote
 
 from redactor import process_file, process_text
 
@@ -209,6 +210,9 @@ if mode == "Upload File":
             # st.subheader("🔒 Redacted JSON Output")
             # st.code(redacted_json, language="json")
             # ── Redacted JSON Preview & Full Output ──
+            # after your download button, build a text/plain data-URI
+            quoted = quote(redacted_json)
+            data_url = f"data:text/plain;charset=utf-8,{quoted}"
             # 1) embed via iframe (in-page “new window”)
             st.markdown(
                 f'''
