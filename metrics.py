@@ -224,3 +224,67 @@ def summarize_accuracy() -> Dict:
         "recall":    latest["recall"],
         "f1_score":  latest["f1"]
     }
+
+# -------------------------------------------------------------------
+# New: Business‐Friendly Summary under metrics
+# -------------------------------------------------------------------
+def generate_business_summary(file_name: str) -> Optional[str]:
+    """
+    Combines file‐ and accuracy‐metrics, then returns a
+    non-technical, conversational summary for this file.
+    """
+    df_file = get_file_metrics_df()
+    df_acc  = get_accuracy_df()
+
+    fm = df_file[df_file["file_name"] == file_name]
+    am = df_acc[df_acc["file_name"] == file_name]
+    if fm.empty or am.empty:
+        return None
+
+    latest_file = fm.sort_values("timestamp").iloc[-1]
+    latest_acc  = am.sort_values("timestamp").iloc[-1]
+
+    latency   = latest_file["latency_sec"]
+    density   = latest_file["pii_density"]
+    prec_pct  = latest_acc["precision"] * 100
+    rec_pct   = latest_acc["recall"]    * 100
+    f1_pct    = latest_acc["f1_score"]  * 100
+
+    # Build the narrative sections
+    lines = [
+        "# 📝 Automatic Redaction Summary",
+        "## 1. Speed & Volume",
+        f"We processed **{file_name}** in **{latency:.1f}s**, masking on average **{density:.1f}** sensitive items per record.",
+        "## 2. Performance at a Glance",
+        f"- When the system redacted data, it was correct **{prec_pct:.1f}%** of the time (only {100-prec_pct:.1f}% were unnecessary masks).",
+        f"- It identified **{rec_pct:.1f}%** of all sensitive items (just {100-rec_pct:.1f}% went unnoticed).",
+        f"- Overall effectiveness sits at **{f1_pct:.1f}%**.",
+        "## 3. Business Implications"
+    ]
+
+    # Tailor the closing line based on real performance
+    if prec_pct >= 98 and rec_pct >= 98:
+        impact = (
+            "Exceptional results: both missed data and false alarms "
+            "are almost zero, so we can deploy fully the automated redaction model with confidence."
+        )
+    elif rec_pct >= 98:
+        impact = (
+            "We’re catching nearly everything that needs redaction—compliance risk is very low. "
+            "A small fraction of over-masking remains and could be reviewed on demand."
+        )
+    elif prec_pct >= 95:
+        impact = (
+            "False alarms are rare, preserving readability. "
+            "We miss a few items; we will consider refining patterns to raise catch rates further."
+        )
+    else:
+    impact = (
+        "Automated redaction results varied on this run. "
+        "We recommend a manual review of the output to ensure all sensitive data is correctly masked "
+        "and no non-sensitive content has been over-masked."
+    )
+
+    lines.append(impact)
+    return "\n\n".join(lines)
+
