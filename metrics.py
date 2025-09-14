@@ -118,15 +118,9 @@ def _compute_accuracy(
                 v = HONORIFIC_RE.sub('', v).strip()
             gt.add((t, v))
 
-        # 2) Build prediction set, normalizing NAMEs
+        # 2) canonicalize prediction types
         preds = df_audit[df_audit["verbatim_id"] == vid]
-        pr = set()
-        for _, p in preds.iterrows():
-            t = _canonical(p["pii_type"])
-            v = p["original"]
-            if t == "NAME":
-                v = _normalize_name(v)
-            pr.add((t, v))
+        pr = set(zip(preds["pii_type"].apply(_canonical),preds["original"]))
 
         # 3) Strict intersection for TP/FP/FN
         TP += len(gt & pr)
