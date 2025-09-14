@@ -127,7 +127,7 @@ def extract_regex_entities(text: str) -> list:
 # -------------------------------------------------------------------
 # 6. Core Masking Logic with Fallbacks
 # -------------------------------------------------------------------
-def mask_pii_with_comprehend(records: list, min_confidence: float = 0.6):
+def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
     audit_log = []
     for rec in records:
         sent = rec.get("sentence", "")
