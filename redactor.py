@@ -26,6 +26,8 @@ MASK_CHAR = "*"
 # 3. Regex Patterns
 # -------------------------------------------------------------------
 FILLER_PATTERN = re.compile(r"\b(?:um+|hmm+|uh+|ah+|erm+)\b", re.IGNORECASE)
+# Honorific‐name fallback (Mr./Mrs./Ms./Dr. + First [Last])
+HONORIFIC_NAME_PATTERN = re.compile(r"\b(?:Mr|Mrs|Ms|Dr)\.\s*[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b")
 
 # Date‐of‐birth patterns
 PII_PATTERNS = {
@@ -85,6 +87,23 @@ ADDRESS_PATTERNS = [
 # -------------------------------------------------------------------
 # 5. Helper Functions
 # -------------------------------------------------------------------
+
+def detect_honorific_names(sentence: str, confidence: float) -> list:
+    """
+    Finds honorific names like "Mr. David Green" when no NAME was detected.
+    """
+    results = []
+    for m in HONORIFIC_NAME_PATTERN.finditer(sentence):
+        results.append({
+            "Type":        "NAME",
+            "Text":        sentence[m.start():m.end()],
+            "Confidence":  confidence * 0.9,         # slightly lower than your threshold
+            "BeginOffset": m.start(),
+            "EndOffset":   m.end(),
+            "Source":      "regex_honorific_fallback",
+        })
+    return results
+
 def normalize_type(ent_type: str) -> str:
     return TYPE_MAP.get(ent_type, ent_type)
 
@@ -190,8 +209,12 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
 
         # 6c. Fallback email, phone, SSN, address
         entities.extend(extract_regex_entities(clean_txt))
+        
+        # 6d. Fallback honorific names if no NAME found
+        if not any(e["Type"] == "NAME" for e in entities):
+            entities.extend(detect_honorific_names(clean_txt, min_confidence))
 
-        # 6d. Apply masks in reverse order
+        # 6e. Apply masks in reverse order
         for e in sorted(entities, key=lambda x: x["BeginOffset"], reverse=True):
             m = format_preserving_mask(e["Text"])
             sent = sent[:e["BeginOffset"]] + m + sent[e["EndOffset"]:]
