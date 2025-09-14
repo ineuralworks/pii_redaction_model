@@ -168,12 +168,12 @@ def _generate_ground_truth_report(
     raw_json_bytes: bytes,
     audit_csv: str
 ) -> str:
-    data = json.loads(raw_json_bytes.decode("utf-8"))
+    data     = json.loads(raw_json_bytes.decode("utf-8"))
     df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
 
     rows = []
     for rec in data:
-        vid = rec["verbatim_id"]
+        vid   = rec["verbatim_id"]
         preds = df_audit[df_audit["verbatim_id"] == vid]
         pred_set = set(zip(
             preds["pii_type"].apply(_canonical),
@@ -182,17 +182,52 @@ def _generate_ground_truth_report(
 
         for ent in rec["ground_truth"]:
             gt_type  = _canonical(ent["type"])
-            gt_value = ent["value"]
-            status   = "correct" if (gt_type, gt_value) in pred_set else "missed"
+            raw_val  = ent["value"]
+            # strip honorifics from GT NAME only
+            if gt_type == "NAME":
+                cmp_val = HONORIFIC_RE.sub("", raw_val).strip()
+            else:
+                cmp_val = raw_val
+
+            status = "correct" if (gt_type, cmp_val) in pred_set else "missed"
             rows.append({
                 "verbatim_id":         vid,
                 "ground_truth_type":   gt_type,
-                "ground_truth_value":  gt_value,
+                "ground_truth_value":  raw_val,
                 "status":              status,
             })
 
     df_report = pd.DataFrame(rows)
     return df_report.to_csv(index=False)
+# def _generate_ground_truth_report(
+#     raw_json_bytes: bytes,
+#     audit_csv: str
+# ) -> str:
+#     data = json.loads(raw_json_bytes.decode("utf-8"))
+#     df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
+
+#     rows = []
+#     for rec in data:
+#         vid = rec["verbatim_id"]
+#         preds = df_audit[df_audit["verbatim_id"] == vid]
+#         pred_set = set(zip(
+#             preds["pii_type"].apply(_canonical),
+#             preds["original"]
+#         ))
+
+#         for ent in rec["ground_truth"]:
+#             gt_type  = _canonical(ent["type"])
+#             gt_value = ent["value"]
+#             status   = "correct" if (gt_type, gt_value) in pred_set else "missed"
+#             rows.append({
+#                 "verbatim_id":         vid,
+#                 "ground_truth_type":   gt_type,
+#                 "ground_truth_value":  gt_value,
+#                 "status":              status,
+#             })
+
+#     df_report = pd.DataFrame(rows)
+#     return df_report.to_csv(index=False)
 
 # -------------------------------------------------------------------
 # Retrieval functions
