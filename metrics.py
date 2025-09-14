@@ -87,16 +87,8 @@ def record_text_metrics(
     })
 
 
-# -------------------------------------------------------------------
-# Name-normalization helpers for metrics matching
-# -------------------------------------------------------------------
-HONORIFIC_RE = re.compile(r'\b(?:mr|mrs|ms|dr)\.\s*', re.IGNORECASE)
-WS_RE        = re.compile(r'\s+')
-
-def _normalize_name(s: str) -> str:
-    """Strip honorifics, lowercase & collapse whitespace."""
-    s2 = HONORIFIC_RE.sub("", s).strip().lower()
-    return WS_RE.sub(" ", s2)
+# regex to remove honorifics from GT names only
+HONORIFIC_RE = re.compile(r'\b(?:Mr|Mrs|Ms|Dr)\.\s*', re.IGNORECASE)
 # -------------------------------------------------------------------
 # Accuracy computation for ground_truth
 # -------------------------------------------------------------------
@@ -122,7 +114,8 @@ def _compute_accuracy(
             t = _canonical(e["type"])
             v = e["value"]
             if t == "NAME":
-                v = _normalize_name(v)
+                # drop Mr./Mrs./Ms./Dr. before compare
+                v = HONORIFIC_RE.sub('', v).strip()
             gt.add((t, v))
 
         # 2) Build prediction set, normalizing NAMEs
