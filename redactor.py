@@ -6,7 +6,7 @@ import csv
 import re
 import boto3
 from datetime import datetime
-from presidio_analyzer import AnalyzerEngine, RecognizerResult
+from presidio_analyzer import AnalyzerEngine
 
 # -------------------------------------------------------------------
 # 1. AWS Comprehend client (credentials via env vars or IAM role)
