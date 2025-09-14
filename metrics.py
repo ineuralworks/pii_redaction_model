@@ -224,3 +224,64 @@ def summarize_accuracy() -> Dict:
         "recall":    latest["recall"],
         "f1_score":  latest["f1"]
     }
+
+# -------------------------------------------------------------------
+# New: Business‐Friendly Summary under metrics
+# -------------------------------------------------------------------
+def generate_business_summary(file_name: str) -> Optional[str]:
+    """
+    Combines file-level and accuracy metrics, then returns a
+    non-technical narrative summary for this file.
+    """
+    # grab the last metrics for this file
+    df_file = get_file_metrics_df()
+    df_acc  = get_accuracy_df()
+
+    fm = df_file[df_file["file_name"] == file_name]
+    am = df_acc[df_acc["file_name"] == file_name]
+    if fm.empty or am.empty:
+        return None
+
+    latest_file = fm.sort_values("timestamp").iloc[-1]
+    latest_acc  = am.sort_values("timestamp").iloc[-1]
+
+    latency   = latest_file["latency_sec"]
+    density   = latest_file["pii_density"]
+    prec_pct  = latest_acc["precision"] * 100
+    rec_pct   = latest_acc["recall"]    * 100
+    f1_pct    = latest_acc["f1_score"]  * 100
+
+    # build the narrative
+    lines = [
+        "# 📝 Automatic Redaction Summary",
+        "## 1. Speed & Volume",
+        f"We processed **{file_name}** in **{latency:.1f}s**, redacting on average **{density:.1f}** PII items per record.",
+        "## 2. Accuracy Highlights",
+        f"- **Precision ~ {prec_pct:.1f}%** – Of every 100 items flagged, **{prec_pct:.0f}** were true positives, **{100-prec_pct:.0f}** false alarms.",
+        f"- **Recall ~ {rec_pct:.1f}%** – Caught **{rec_pct:.0f}** of every 100 actual sensitive items.",
+        f"- **F1 Score ~ {f1_pct:.1f}%** – Balances precision and recall to gauge overall reliability.",
+        "## 3. Business Impact"
+    ]
+
+    # adaptive impact messaging
+    if prec_pct >= 98 and rec_pct >= 98:
+        impact = (
+            "Redaction is exceptionally reliable; we can automate with minimal oversight."
+        )
+    elif rec_pct >= 98:
+        impact = (
+            "Nearly all real PII is caught, keeping compliance risk very low; "
+            "a few over-flags may require quick checks."
+        )
+    elif prec_pct >= 95:
+        impact = (
+            "Few over-flags preserve document usability; consider slight tuning to catch every item."
+        )
+    else:
+        impact = (
+            "Performance is strong overall, but occasional misses or false alarms occur. "
+            "Review edge cases or adjust thresholds as needed."
+        )
+
+    lines.append(impact)
+    return "\n\n".join(lines)
