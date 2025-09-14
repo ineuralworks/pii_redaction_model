@@ -86,19 +86,20 @@ def record_text_metrics(
         "audit_time_sec": audit_latency
     })
 
+
+# -------------------------------------------------------------------
+# Name-normalization helpers for metrics matching
+# -------------------------------------------------------------------
+HONORIFIC_RE = re.compile(r'\b(?:mr|mrs|ms|dr)\.\s*', re.IGNORECASE)
+WS_RE        = re.compile(r'\s+')
+
+def _normalize_name(s: str) -> str:
+    """Strip honorifics, lowercase & collapse whitespace."""
+    s2 = HONORIFIC_RE.sub("", s).strip().lower()
+    return WS_RE.sub(" ", s2)
 # -------------------------------------------------------------------
 # Accuracy computation for ground_truth
 # -------------------------------------------------------------------
-
-# strip and normalize honorifics & whitespace for names
- HONORIFIC_RE = re.compile(r'\b(?:mr|mrs|ms|dr)\.\s*', re.IGNORECASE)
- WS_RE        = re.compile(r'\s+')
-
-def _normalize_name(s: str) -> str:
-    """Strip titles, lowercase & collapse whitespace."""
-    s2 = HONORIFIC_RE.sub("", s).strip().lower()
-    return WS_RE.sub(" ", s2)
-
 def _compute_accuracy(
     file_name: str,
     raw_json_bytes: bytes,
