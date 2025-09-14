@@ -23,6 +23,7 @@ from metrics import (
     get_accuracy_df,
     summarize_accuracy,
     get_ground_truth_report,
+    generate_business_summary,
 )
 
 # -------------------------------------------------------------------
@@ -287,3 +288,7 @@ if accuracy_summary:
     st.json(accuracy_summary)
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
+
+summary = generate_business_summary(uploaded_file.name)
+if summary:
+    st.markdown(summary)
