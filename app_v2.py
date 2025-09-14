@@ -175,7 +175,7 @@ if mode == "Upload File":
             # Rewind and run redaction
             uploaded_file.seek(0)
             start_ts = time.time()
-            with st.spinner("Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
+            with st.spinner(f"Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
                 redacted_json, audit_csv = process_file(
                     uploaded_file, MIN_CONFIDENCE
                 )
