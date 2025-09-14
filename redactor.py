@@ -6,7 +6,6 @@ import csv
 import re
 import boto3
 from datetime import datetime
-#from presidio_analyzer import AnalyzerEngine
 
 # -------------------------------------------------------------------
 # 1. AWS Comprehend client (credentials via env vars or IAM role)
@@ -17,23 +16,18 @@ comprehend = boto3.client(
 )
 
 # -------------------------------------------------------------------
-# 2. Presidio Analyzer for fallback on NER (especially NAME & ADDRESS)
-# -------------------------------------------------------------------
-#analyzer = AnalyzerEngine()
-
-# -------------------------------------------------------------------
-# 3. PII Configuration
+# 2. PII Configuration
 # -------------------------------------------------------------------
 TARGET_PII_TYPES = {"NAME", "ADDRESS", "PHONE", "EMAIL", "DATE_OF_BIRTH", "SSN"}
 TYPE_MAP = {"EMAIL_ADDRESS": "EMAIL", "PHONE_NUMBER": "PHONE"}
 MASK_CHAR = "*"
 
 # -------------------------------------------------------------------
-# 4. Regex Patterns
+# 3. Regex Patterns
 # -------------------------------------------------------------------
 FILLER_PATTERN = re.compile(r"\b(?:um+|hmm+|uh+|ah+|erm+)\b", re.IGNORECASE)
 
-# Date‐of‐birth patterns (reuse existing)
+# Date‐of‐birth patterns
 PII_PATTERNS = {
     "DATE_OF_BIRTH": [
         re.compile(r"\b(19|20)\d{2}-\d{2}-\d{2}\b"),
@@ -47,7 +41,7 @@ PII_PATTERNS = {
     ]
 }
 
-# Regex for EMAIL, PHONE, SSN
+# EMAIL, PHONE, SSN patterns
 EMAIL_PATTERN = re.compile(r"\b[\w\.-]+@[\w\.-]+\.\w+\b")
 PHONE_PATTERN = re.compile(
     r"""\b
@@ -60,10 +54,33 @@ PHONE_PATTERN = re.compile(
        (?:\s*(?:x|ext\.?)\s*\d{1,5})?   # optional extension
        \b
     """, re.VERBOSE)
+SSN_PATTERN = re.compile(r"\b\d{3}-\d{2}-\d{4}\b")
 
-SSN_PATTERN   = re.compile(r"\b\d{3}-\d{2}-\d{4}\b")
-
+# Anchors for DOB
 DOB_ANCHORS = [r"\bDOB\b", r"\bDate of birth\b", r"\bborn on\b"]
+
+# -------------------------------------------------------------------
+# 4. Address Regex Patterns
+# -------------------------------------------------------------------
+ADDRESS_PATTERNS = [
+    # 1a. Core street address like "123 Main St" or "456 Elm Road"
+    re.compile(
+        r"\b\d{1,6}\s+"                                 # house number
+        r"(?:[A-Za-z0-9'\.]+\s){1,6}"                   # street name (1–6 words)
+        r"(?:Street|St|Road|Rd|Avenue|Ave|Boulevard|Blvd|"
+        r"Lane|Ln|Drive|Dr|Court|Ct|Place|Pl|Terrace|Ter|"
+        r"Way|Highway|Hwy)\b",                          # suffix
+        re.IGNORECASE,
+    ),
+    # 1b. With directional prefix/suffix like "123 N Main St" or "123 Main St NW"
+    re.compile(
+        r"\b\d{1,6}\s+"
+        r"(?:North|N|South|S|East|E|West|W|NE|NW|SE|SW)\s+"
+        r"[A-Za-z0-9'\.]+\s+"
+        r"(?:St|Street|Rd|Road|Ave|Avenue|Blvd|Boulevard|Ln|Lane)\b",
+        re.IGNORECASE,
+    ),
+]
 
 # -------------------------------------------------------------------
 # 5. Helper Functions
@@ -108,11 +125,16 @@ def detect_dob_entities(sentence: str, confidence: float) -> list:
 
 def extract_regex_entities(text: str) -> list:
     ents = []
-    for pattern, ptype in [
+    # Base patterns
+    base = [
         (EMAIL_PATTERN, "EMAIL"),
         (PHONE_PATTERN, "PHONE"),
         (SSN_PATTERN,   "SSN"),
-    ]:
+    ]
+    # Append each ADDRESS pattern
+    address = [(pat, "ADDRESS") for pat in ADDRESS_PATTERNS]
+
+    for pattern, ptype in base + address:
         for m in pattern.finditer(text):
             ents.append({
                 "Type":         ptype,
@@ -137,7 +159,7 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
 
         clean_txt = remove_fillers(sent)
 
-        # 6a. Try AWS Comprehend
+        # 6a. AWS Comprehend
         try:
             resp = comprehend.detect_pii_entities(
                 Text=clean_txt, LanguageCode="en"
@@ -147,7 +169,6 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
             aws_entities = []
 
         entities = []
-        # Collect high‐confidence AWS spans
         for e in aws_entities:
             ent_type = normalize_type(e["Type"])
             score    = round(e.get("Score", 0), 3)
@@ -160,45 +181,20 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
                     "Confidence":   score,
                     "BeginOffset":  b,
                     "EndOffset":    a,
-                    "Source":       "comprehend"
+                    "Source":       "comprehend",
                 })
 
-        # # 6b. Fallback Name & Address via Presidio (no confidence cutoff)
-        # pres_results = analyzer.analyze(
-        #     text=clean_txt,
-        #     entities=["PERSON","GPE","LOC","ORG"],
-        #     language="en"
-        # )
-        # for r in pres_results:
-        #     ptype = r.entity_type
-        #     # Map PRESIDIO labels to our PII types
-        #     if ptype in ("PERSON",):
-        #         t = "NAME"
-        #     elif ptype in ("GPE","LOC","ORG"):
-        #         t = "ADDRESS"
-        #     else:
-        #         continue
-        #     raw = sent[r.start : r.end]
-        #     entities.append({
-        #         "Type":         t,
-        #         "Text":         raw,
-        #         "Confidence":   round(r.score, 3),
-        #         "BeginOffset":  r.start,
-        #         "EndOffset":    r.end,
-        #         "Source":       "presidio"
-        #     })
-
-        # 6c. Fallback DOB if missing
+        # 6b. Fallback DOB if missing
         if not any(e["Type"] == "DATE_OF_BIRTH" for e in entities):
             entities.extend(detect_dob_entities(clean_txt, min_confidence))
 
-        # 6d. Fallback email, phone, SSN
+        # 6c. Fallback email, phone, SSN, address
         entities.extend(extract_regex_entities(clean_txt))
 
-        # 6e. Apply masks in reverse order
+        # 6d. Apply masks in reverse order
         for e in sorted(entities, key=lambda x: x["BeginOffset"], reverse=True):
             m = format_preserving_mask(e["Text"])
-            sent = sent[: e["BeginOffset"]] + m + sent[e["EndOffset"] :]
+            sent = sent[:e["BeginOffset"]] + m + sent[e["EndOffset"]:]
             audit_log.append({
                 "verbatim_id": vid,
                 "pii_type":    e["Type"],
