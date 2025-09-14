@@ -1,0 +1,2602 @@
+[
+  {
+    "verbatim_id": 390669855,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is K***********t and I live at 5********************************************7.",
+    "call_id": 22762074811,
+    "call_date": "2025-09-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "99739ec4-c628-4c81-8ae7-3e388d40401f",
+      "employee_id": "77210",
+      "state": "sc"
+    }
+  },
+  {
+    "verbatim_id": 886632031,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: A*********a</div><div>Phone:+*************8</div><div>Email:j******************g</div>",
+    "call_id": 29468644618,
+    "call_date": "2025-08-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "9399c30c-3a46-4dc2-8994-a06e5e31a381",
+      "employee_id": "98172",
+      "state": "ut"
+    }
+  },
+  {
+    "verbatim_id": 847743200,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********0 and SSN 0*********1 must be on file for J**********y.",
+    "call_id": 97644986084,
+    "call_date": "2024-11-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "48db85f9-ba15-402a-a4f7-4b5e1d2e0248",
+      "employee_id": "64612",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 297362740,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n5**************************************************4\nDOB: 1********2\nSSN: 2*********2\nContact: 0*******************5",
+    "call_id": 75184352493,
+    "call_date": "2025-05-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "8c730bbe-d45b-45fb-83d2-865a7618837e",
+      "employee_id": "65130",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 652724443,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. J*********r (s******B) moved from \"7************************************************6\"—DOB=1********1, SSN=0*********4.",
+    "call_id": 52383554156,
+    "call_date": "2024-11-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "bfa4b008-4527-4265-b970-a8d1cd03ff8c",
+      "employee_id": "93570",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 729854308,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to V*************w via v********************g or +*******************9 ASAP!",
+    "call_id": 78931953523,
+    "call_date": "2024-12-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "3209bb01-952f-4a3f-90bb-6d8dab65528a",
+      "employee_id": "94313",
+      "state": "hi"
+    }
+  },
+  {
+    "verbatim_id": 561189048,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********2 and SSN 1*********4 must be on file for R********o.",
+    "call_id": 79922638309,
+    "call_date": "2025-06-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "bd3266ca-f47f-400a-b417-0928ea1eedfc",
+      "employee_id": "14361",
+      "state": "as"
+    }
+  },
+  {
+    "verbatim_id": 426612398,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... j*****************t... but maybe wrong... [noise]... try again?",
+    "call_id": 36294300872,
+    "call_date": "2025-06-25T21:56:10.000Z",
+    "attributes": {
+      "userid": "7d86809d-8419-433d-9742-31abbe875343",
+      "employee_id": "44323",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 709983375,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to B************r on 1********8, I emailed e****************t and noted SSN 6*********2.",
+    "call_id": 63485207064,
+    "call_date": "2024-11-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "bed18fd0-ec7a-4759-955e-d74538228922",
+      "employee_id": "38376",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 343439093,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s T*******g, I think I live at 0********************************************************0.",
+    "call_id": 86893629798,
+    "call_date": "2025-07-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "b2def840-0f8d-4eb1-9bfb-6dcd2df7c750",
+      "employee_id": "74398",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 798845550,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is M**********s and I live at 9********************************************0.",
+    "call_id": 98649471064,
+    "call_date": "2025-06-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "fb0b3dfa-c15e-4a25-9030-6c7791bb8512",
+      "employee_id": "54168",
+      "state": "nm"
+    }
+  },
+  {
+    "verbatim_id": 877996851,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: D***************., ord. D**********e; Email List: [p*****************************m, alt:p*********************************m].",
+    "call_id": 32704756019,
+    "call_date": "2024-10-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "4d3b6d5d-06da-4d84-a511-eb1e7d287a12",
+      "employee_id": "27263",
+      "state": "tn"
+    }
+  },
+  {
+    "verbatim_id": 840077312,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n5**********************************************4\nDOB: 1********4\nSSN: 4*********8\nContact: 7****************3",
+    "call_id": 88477179298,
+    "call_date": "2025-08-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "36a8b6fc-edff-49ca-9ae2-c7a3d1d4714d",
+      "employee_id": "37001",
+      "state": "dc"
+    }
+  },
+  {
+    "verbatim_id": 204091192,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... g****************t... but maybe wrong... [noise]... try again?",
+    "call_id": 11788782059,
+    "call_date": "2025-06-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "086e5119-3215-4436-80c2-4dfa2b726136",
+      "employee_id": "33902",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 363982555,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s D**********s, I think I live at 8******************************************0.",
+    "call_id": 94911539521,
+    "call_date": "2025-07-31T21:56:10.000Z",
+    "attributes": {
+      "userid": "bf84541e-5fbc-4c69-bb98-d5c9a7ae0b6c",
+      "employee_id": "45078",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 176010482,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: E*****************., ord. E************g; Email List: [j******************m, alt:j**********************m].",
+    "call_id": 64728506281,
+    "call_date": "2024-12-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "7110fa33-fd70-436c-bfb8-fe4b3f463a2c",
+      "employee_id": "26796",
+      "state": "nh"
+    }
+  },
+  {
+    "verbatim_id": 139445195,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, M**********a, was born on 2********7 and resides at P******************************0.",
+    "call_id": 45210824340,
+    "call_date": "2024-10-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "17192710-a352-4046-a3b2-c19d19e8c307",
+      "employee_id": "49590",
+      "state": "mp"
+    }
+  },
+  {
+    "verbatim_id": 690103005,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 6********************************************8; Owner: T*************o; DOB: 1********1; SSN: 6*********0; Email: m*******************g.",
+    "call_id": 71534932494,
+    "call_date": "2025-01-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "d8d9b6a9-9972-4352-b0d5-73e33e068eb4",
+      "employee_id": "38672",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 163101970,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n0***************************************1\nDOB: 1********5\nSSN: 5*********2\nContact: 8****************1",
+    "call_id": 86139499955,
+    "call_date": "2024-12-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "353158ba-8386-4cd1-8ab7-091775316d5b",
+      "employee_id": "21854",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 424100236,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 8*********2, Name: J**********r, DOB: 1********9",
+    "call_id": 72485860956,
+    "call_date": "2025-04-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "1a87bdb8-c840-4948-8133-5a8bedc402b9",
+      "employee_id": "14624",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 218119754,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is B*********g and I live at 5***********************************************7.",
+    "call_id": 88727197610,
+    "call_date": "2025-06-08T21:56:10.000Z",
+    "attributes": {
+      "userid": "2d11a04e-6515-4f57-9386-3150c9768512",
+      "employee_id": "74823",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 690345344,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, C***********n, was born on 1********3 and resides at 1**********************************************8.",
+    "call_id": 34167869957,
+    "call_date": "2025-08-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "801ba52c-b987-4a97-a95c-cca2ba7d335a",
+      "employee_id": "77140",
+      "state": "as"
+    }
+  },
+  {
+    "verbatim_id": 747889939,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: G*************., ord. G********s; Email List: [d*****************t, alt:d*********************t].",
+    "call_id": 34587608646,
+    "call_date": "2025-05-31T21:56:10.000Z",
+    "attributes": {
+      "userid": "2208d7fc-689f-46d3-8b64-233a7621d7c8",
+      "employee_id": "54873",
+      "state": "mp"
+    }
+  },
+  {
+    "verbatim_id": 459906620,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. J***********l (s******B) moved from \"3************************************5\"—DOB=1********1, SSN=8*********6.",
+    "call_id": 38274196096,
+    "call_date": "2024-11-01T21:56:10.000Z",
+    "attributes": {
+      "userid": "0466efb2-9e6f-427c-acd0-0052329fa748",
+      "employee_id": "70996",
+      "state": "dc"
+    }
+  },
+  {
+    "verbatim_id": 150200097,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... c********************t... but maybe wrong... [noise]... try again?",
+    "call_id": 74522153243,
+    "call_date": "2025-03-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "12e7811a-a683-4a1b-999f-570d715d5402",
+      "employee_id": "55574",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 549138509,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is x****************m, but you can also call 3********4 if M***********a isn't online.",
+    "call_id": 85880023061,
+    "call_date": "2024-12-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "d3c4589c-2568-4504-b83b-694693b02622",
+      "employee_id": "65185",
+      "state": "wv"
+    }
+  },
+  {
+    "verbatim_id": 933097621,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. T**********h (s******B) moved from \"2****************y***************************9\"—DOB=2********9, SSN=4*********5.",
+    "call_id": 55389192755,
+    "call_date": "2024-10-02T21:56:10.000Z",
+    "attributes": {
+      "userid": "c44afeb3-958b-4e53-888e-d063dd0a2cea",
+      "employee_id": "68437",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 619284388,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to J************n via b********************g or +*****************6 ASAP!",
+    "call_id": 72292892901,
+    "call_date": "2025-03-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "92c2fdc3-c5a8-4057-b6c4-da9355cfb656",
+      "employee_id": "89342",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 503583543,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n5**********************************************2\nDOB: 1********4\nSSN: 8*********0\nContact: 0******************8",
+    "call_id": 41615194983,
+    "call_date": "2025-09-05T21:56:10.000Z",
+    "attributes": {
+      "userid": "e603babf-6b66-4393-b6ad-af8561c66473",
+      "employee_id": "69793",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 527938131,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... c*********************m... but maybe wrong... [noise]... try again?",
+    "call_id": 99510959395,
+    "call_date": "2025-06-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "33e9fda9-15c5-4b83-bf82-2c64107087c2",
+      "employee_id": "10647",
+      "state": "ma"
+    }
+  },
+  {
+    "verbatim_id": 982595620,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********0 and SSN 2*********4 must be on file for B************y.",
+    "call_id": 25851910591,
+    "call_date": "2024-11-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "7e191ba4-4a86-4bc3-8876-e0789185e37d",
+      "employee_id": "21979",
+      "state": "ok"
+    }
+  },
+  {
+    "verbatim_id": 900439178,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: R****************., ord. R***********h; Email List: [b*****************g, alt:b*********************g].",
+    "call_id": 14802335429,
+    "call_date": "2024-12-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "6eed30c5-9194-4ad6-bf39-395f1d496f83",
+      "employee_id": "90532",
+      "state": "hi"
+    }
+  },
+  {
+    "verbatim_id": 445504028,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s S**********s, I think I live at 8***************************************************2.",
+    "call_id": 92429211874,
+    "call_date": "2025-03-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "3c569bfc-3442-4e93-97fb-4bf417970aa1",
+      "employee_id": "97569",
+      "state": "or"
+    }
+  },
+  {
+    "verbatim_id": 155712943,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 7****************7 or email me at m*************************m.",
+    "call_id": 37709575467,
+    "call_date": "2025-06-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "1ad30527-ddeb-4754-bff5-010a967d3f54",
+      "employee_id": "18747",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 132233790,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********1 and SSN 0*********8 must be on file for J**********s.",
+    "call_id": 32305990634,
+    "call_date": "2025-05-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "9271ee50-7ad1-4633-bec5-0bde6b53d72a",
+      "employee_id": "90406",
+      "state": "md"
+    }
+  },
+  {
+    "verbatim_id": 915512176,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: A**************., ord. A*********d; Email List: [c***********************g, alt:c***************************g].",
+    "call_id": 92569530041,
+    "call_date": "2025-01-30T21:56:10.000Z",
+    "attributes": {
+      "userid": "63a43412-40a9-4cd2-bd6b-b5b861caa535",
+      "employee_id": "68866",
+      "state": "wy"
+    }
+  },
+  {
+    "verbatim_id": 727118018,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: B*************., ord. B********z; Email List: [k**********************t, alt:k**************************t].",
+    "call_id": 25885549490,
+    "call_date": "2025-08-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "0d480400-b755-4599-b67c-6972531b6432",
+      "employee_id": "87528",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 448519006,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] M**********y... SSN... 2*********1... can't hear?",
+    "call_id": 25124195536,
+    "call_date": "2025-07-02T21:56:10.000Z",
+    "attributes": {
+      "userid": "b9f15c98-10ff-4883-89a2-6e6e31e71f9f",
+      "employee_id": "62884",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 230656448,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is s***********************m, but you can also call 0******************7 if M***********s isn't online.",
+    "call_id": 66517340427,
+    "call_date": "2024-11-28T21:56:10.000Z",
+    "attributes": {
+      "userid": "a72d710d-ee0f-4a94-b7b7-a348275e7848",
+      "employee_id": "80265",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 926957564,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to K**************y via b********************g or +*******************9 ASAP!",
+    "call_id": 54263008339,
+    "call_date": "2025-05-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "f2deab86-4f6b-4dbf-ae8d-581cb6fdc8b4",
+      "employee_id": "33372",
+      "state": "sc"
+    }
+  },
+  {
+    "verbatim_id": 713681811,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 4********************************************3; Owner: Z***********z; DOB: 1********4; SSN: 5*********3; Email: r*******************t.",
+    "call_id": 44704117606,
+    "call_date": "2025-06-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "e9916108-716d-4d96-bbfa-cb2734e22d2b",
+      "employee_id": "46978",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 700797068,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 6**************5 or email me at m******************t.",
+    "call_id": 43609388724,
+    "call_date": "2025-07-25T21:56:10.000Z",
+    "attributes": {
+      "userid": "06197de5-bab3-411f-8bcf-0e286981773d",
+      "employee_id": "72528",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 195556108,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 5****************2 or email me at d*********************t.",
+    "call_id": 54259498018,
+    "call_date": "2025-08-08T21:56:10.000Z",
+    "attributes": {
+      "userid": "edc586d8-1c1d-4ee7-b602-fcd2d23e9269",
+      "employee_id": "24643",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 502678057,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... s******************t... but maybe wrong... [noise]... try again?",
+    "call_id": 45204096507,
+    "call_date": "2025-06-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "702ee85f-7efa-4812-b415-1e8d59290487",
+      "employee_id": "45343",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 701226654,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is w********************g, but you can also call 6**********4 if K***********z isn't online.",
+    "call_id": 59352290018,
+    "call_date": "2025-07-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "60eb76db-1d7a-4149-842a-36283f1f7f5e",
+      "employee_id": "42206",
+      "state": "pr"
+    }
+  },
+  {
+    "verbatim_id": 244233293,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********1 and SSN 2*********9 must be on file for L**********n.",
+    "call_id": 63167699275,
+    "call_date": "2024-11-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "ee52263f-b2d2-4eb2-86e9-398cb6cd0121",
+      "employee_id": "41279",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 462286177,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is L*********h and I live at 3*******************y**********************9.",
+    "call_id": 15191666700,
+    "call_date": "2025-04-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "594db4ce-15e9-41d2-b8b0-dd8975e780d5",
+      "employee_id": "70183",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 787268213,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n4*******************************************0\nDOB: 1********2\nSSN: 3*********4\nContact: 4***************9",
+    "call_id": 55479980251,
+    "call_date": "2025-06-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "1ca75311-61b9-444c-bdbd-bb9852144d3b",
+      "employee_id": "84063",
+      "state": "wi"
+    }
+  },
+  {
+    "verbatim_id": 569087311,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... g*******************m... but maybe wrong... [noise]... try again?",
+    "call_id": 41033830636,
+    "call_date": "2024-09-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "a7f73bdf-0ae6-48b7-9e8f-81925a2ab6d5",
+      "employee_id": "42841",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 129360622,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is a*******************g, but you can also call +******************9 if T***********n isn't online.",
+    "call_id": 45287543260,
+    "call_date": "2025-04-28T21:56:10.000Z",
+    "attributes": {
+      "userid": "391c6327-f0ae-44fc-bf7b-344fed03085f",
+      "employee_id": "72520",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 739425536,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (*****************0 or email me at b***************************t.",
+    "call_id": 87631193892,
+    "call_date": "2025-06-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "357920f7-a0ce-4ce3-a105-853d022ac912",
+      "employee_id": "76290",
+      "state": "mt"
+    }
+  },
+  {
+    "verbatim_id": 339530015,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 9**********************************************5 or dial 6**********6, attention K************n, please.",
+    "call_id": 87941648571,
+    "call_date": "2025-07-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "bca644e7-4ee5-4715-99b3-b0656f6274ef",
+      "employee_id": "77924",
+      "state": "ky"
+    }
+  },
+  {
+    "verbatim_id": 707508286,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... j***********************m... but maybe wrong... [noise]... try again?",
+    "call_id": 44945417268,
+    "call_date": "2024-11-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "91be41c3-9737-4419-9e3b-a696d8d2496f",
+      "employee_id": "70288",
+      "state": "de"
+    }
+  },
+  {
+    "verbatim_id": 754157325,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to S***********s via s*************************g or +******************3 ASAP!",
+    "call_id": 88263854013,
+    "call_date": "2024-11-18T21:56:10.000Z",
+    "attributes": {
+      "userid": "b572f1a9-a2e4-4d3e-ad5f-990589580f08",
+      "employee_id": "34180",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 436575856,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: S******************., ord. S*************s; Email List: [s*******************g, alt:s***********************g].",
+    "call_id": 63965276675,
+    "call_date": "2025-07-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "51c6a895-0bc8-4474-a74f-5092aa050347",
+      "employee_id": "49584",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 521765912,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is g*********************g, but you can also call 7****************5 if N************s isn't online.",
+    "call_id": 66936162726,
+    "call_date": "2025-01-16T21:56:10.000Z",
+    "attributes": {
+      "userid": "83fee244-5966-4c00-8bd8-99492e2d2f45",
+      "employee_id": "83165",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 154561583,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 8*****************************************7; Owner: M**********t; DOB: 1********6; SSN: 1*********6; Email: s********************g.",
+    "call_id": 30493513635,
+    "call_date": "2025-01-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "a86c724d-1412-49e3-a275-c7a4d1fcf4fb",
+      "employee_id": "96017",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 606236797,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is W************s and I live at 3***************************************************0.",
+    "call_id": 43102489585,
+    "call_date": "2025-07-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "3230a18c-4542-4735-ade2-d2393ebf55f6",
+      "employee_id": "76107",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 642053555,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, J************d, was born on 1********2 and resides at 6*******************************************7.",
+    "call_id": 99223325759,
+    "call_date": "2025-04-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "af7cfbdd-68a1-493b-986e-488ded1f5670",
+      "employee_id": "90629",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 789334690,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********7 and SSN 8*********3 must be on file for E********e.",
+    "call_id": 66455845472,
+    "call_date": "2024-11-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "a7b93149-2cc9-4dd8-a087-d816a017e66f",
+      "employee_id": "51871",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 260184017,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, D************s, was born on 1********1 and resides at 5*******************************************************0.",
+    "call_id": 76951478384,
+    "call_date": "2025-02-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "8db2f54d-c2a7-47ef-b9a4-4cfbcfa7fc61",
+      "employee_id": "98423",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 676978693,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 7***********************************************4; Owner: A************n; DOB: 1********2; SSN: 4*********4; Email: e****************g.",
+    "call_id": 86309682772,
+    "call_date": "2025-01-31T21:56:10.000Z",
+    "attributes": {
+      "userid": "0e0d743c-522e-4450-9d3a-3d6a1b46123c",
+      "employee_id": "92894",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 125573852,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: M**************., ord. M*********e; Email List: [j*****************g, alt:j*********************g].",
+    "call_id": 57258402523,
+    "call_date": "2025-02-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "837f01e4-1f6d-4e97-ba4e-1f282b8d77bc",
+      "employee_id": "35888",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 176537056,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 5**********6, or maybe try my email — e********************t.",
+    "call_id": 21739977721,
+    "call_date": "2025-08-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "30101ff7-555b-4022-802d-86e9ea87239e",
+      "employee_id": "76448",
+      "state": "la"
+    }
+  },
+  {
+    "verbatim_id": 528477186,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... k*******************t... but maybe wrong... [noise]... try again?",
+    "call_id": 50694280838,
+    "call_date": "2025-01-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "03c4bf9a-434c-4e96-abd3-04c7f64e2dae",
+      "employee_id": "85388",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 152890181,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: A********z</div><div>Phone:+*************3</div><div>Email:x***************t</div>",
+    "call_id": 88235554814,
+    "call_date": "2025-02-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "d9cda3a3-54af-48a1-afce-5b9cd96b3c48",
+      "employee_id": "45829",
+      "state": "va"
+    }
+  },
+  {
+    "verbatim_id": 407707946,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********9 and SSN 4*********7 must be on file for C*************t.",
+    "call_id": 45945780125,
+    "call_date": "2025-03-31T21:56:10.000Z",
+    "attributes": {
+      "userid": "4ed713d8-8a35-4eee-a0e8-31b1c580fa2d",
+      "employee_id": "39888",
+      "state": "tn"
+    }
+  },
+  {
+    "verbatim_id": 610325877,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n7****************************************8\nDOB: 1********4\nSSN: 8*********7\nContact: 4**********8",
+    "call_id": 17238002339,
+    "call_date": "2025-06-07T21:56:10.000Z",
+    "attributes": {
+      "userid": "9f6ac8f9-f175-412b-8925-5e9a9791a108",
+      "employee_id": "25684",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 499224522,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at P******************************6 or dial 7**********4, attention L***********y, please.",
+    "call_id": 39147604689,
+    "call_date": "2025-03-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "46f9ecde-3711-48d0-bd5c-d2236537ba8f",
+      "employee_id": "74356",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 718225405,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to D************a on 1********6, I emailed g********************t and noted SSN 3*********4.",
+    "call_id": 51475383167,
+    "call_date": "2024-09-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "2f7a6b48-6583-4a7e-97e2-7801f47acf85",
+      "employee_id": "54975",
+      "state": "nh"
+    }
+  },
+  {
+    "verbatim_id": 943579411,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is P**********g and I live at 6***********************************************2.",
+    "call_id": 91103164914,
+    "call_date": "2024-10-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "ea9da40d-1e65-41ea-834d-8805a20b795f",
+      "employee_id": "89424",
+      "state": "ga"
+    }
+  },
+  {
+    "verbatim_id": 719240787,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: E*********r</div><div>Phone:+**************9</div><div>Email:s*******************g</div>",
+    "call_id": 29607253088,
+    "call_date": "2024-12-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "ef61594d-aafa-4a9e-a1e3-637e6701d188",
+      "employee_id": "42930",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 207448554,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] S*********n... SSN... 7*********6... can't hear?",
+    "call_id": 24659019733,
+    "call_date": "2025-08-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "4aa1ba27-3c13-4c3c-9a30-9261beef5e05",
+      "employee_id": "15446",
+      "state": "or"
+    }
+  },
+  {
+    "verbatim_id": 493350320,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to B********e via c*************************m or +*********************4 ASAP!",
+    "call_id": 92328797350,
+    "call_date": "2025-08-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "fe7aa350-3e6a-4f07-84fd-5e3b8737a113",
+      "employee_id": "98401",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 652569526,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to P************h on 2********1, I emailed m********************m and noted SSN 8*********2.",
+    "call_id": 73439694072,
+    "call_date": "2025-08-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "1745c226-f39d-485d-80e2-8dad82c15302",
+      "employee_id": "85745",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 666562696,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: A********y</div><div>Phone:+**********************0</div><div>Email:v**************************t</div>",
+    "call_id": 14843457125,
+    "call_date": "2024-12-29T21:56:10.000Z",
+    "attributes": {
+      "userid": "e8208001-96d0-49f0-a9e0-e00e2733f293",
+      "employee_id": "53541",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 688207078,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. M********s (s******B) moved from \"1*****************************************************8\"—DOB=1********2, SSN=5*********4.",
+    "call_id": 17621847266,
+    "call_date": "2025-03-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "5d84bb4c-ecdc-4726-90da-9b0dcdc76c70",
+      "employee_id": "65710",
+      "state": "va"
+    }
+  },
+  {
+    "verbatim_id": 211204039,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is n******************g, but you can also call (***********6 if L**********s isn't online.",
+    "call_id": 99936708250,
+    "call_date": "2024-12-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "0c25af3b-0f45-484a-b18a-3c54355c0fe0",
+      "employee_id": "87315",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 426077902,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] D************z... SSN... 1*********8... can't hear?",
+    "call_id": 60149118062,
+    "call_date": "2024-09-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "4b50deb4-2729-4a14-bd2a-0a10f6913e92",
+      "employee_id": "92321",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 300953845,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (*****************7 or email me at b********************m.",
+    "call_id": 91821306237,
+    "call_date": "2025-02-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "aea7402e-cefe-4cc4-a653-4f453234e7f5",
+      "employee_id": "31077",
+      "state": "mp"
+    }
+  },
+  {
+    "verbatim_id": 687482447,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... c**********************m... but maybe wrong... [noise]... try again?",
+    "call_id": 71740218254,
+    "call_date": "2025-01-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "3262ebf4-1c6a-4b44-bab6-51774eab271b",
+      "employee_id": "12112",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 262931918,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to J************n via c**************************g or +***********************4 ASAP!",
+    "call_id": 14836750194,
+    "call_date": "2025-04-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "efc971b3-0627-467f-a17e-40252f4a4d05",
+      "employee_id": "50287",
+      "state": "sc"
+    }
+  },
+  {
+    "verbatim_id": 978187748,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 0**************0, or maybe try my email — p***********************m.",
+    "call_id": 85111568111,
+    "call_date": "2024-12-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "08ef9f7b-5289-4461-b0d3-27fd834c4641",
+      "employee_id": "89472",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 873552498,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: T*********s</div><div>Phone:+***********8</div><div>Email:m***************t</div>",
+    "call_id": 96624751568,
+    "call_date": "2024-11-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "c1d0afed-0f18-4c76-808c-6f6d0dbad0ab",
+      "employee_id": "80408",
+      "state": "nv"
+    }
+  },
+  {
+    "verbatim_id": 174602409,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n7***********************************************5\nDOB: 1********3\nSSN: 5*********6\nContact: 0******************5",
+    "call_id": 76059122719,
+    "call_date": "2024-10-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "02bc56bc-0d08-4b57-99c4-44a57132b9b6",
+      "employee_id": "74536",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 239527391,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 0********************************************************4; Owner: D************d; DOB: 1********2; SSN: 8*********2; Email: b******************g.",
+    "call_id": 63221202260,
+    "call_date": "2024-10-05T21:56:10.000Z",
+    "attributes": {
+      "userid": "35e6fb6e-e50e-44ed-9835-19a70cf19e11",
+      "employee_id": "10411",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 648273245,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n3****************************************************1\nDOB: 1********3\nSSN: 1*********2\nContact: 5**********1",
+    "call_id": 18783631341,
+    "call_date": "2024-12-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "f6f5bbac-83cc-4035-a2da-5cfadacb55b4",
+      "employee_id": "14079",
+      "state": "sd"
+    }
+  },
+  {
+    "verbatim_id": 661983011,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to M***************n via m**********************m or +********************2 ASAP!",
+    "call_id": 20582514306,
+    "call_date": "2024-12-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "a4da9fa3-71f8-4cc3-b010-dcd6ed3f95d0",
+      "employee_id": "79781",
+      "state": "sc"
+    }
+  },
+  {
+    "verbatim_id": 885155507,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: M**************., ord. M*********e; Email List: [b*******************t, alt:b***********************t].",
+    "call_id": 13895618471,
+    "call_date": "2025-07-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "a9f43b99-6eb9-4e77-8505-f1921f44a901",
+      "employee_id": "66429",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 620202283,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 2********2 and SSN 1*********1 must be on file for W*********n.",
+    "call_id": 64242620044,
+    "call_date": "2025-08-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "65165b8d-55de-4fe1-ac19-98234e59a8cf",
+      "employee_id": "63334",
+      "state": "ky"
+    }
+  },
+  {
+    "verbatim_id": 362398914,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n4*************************************5\nDOB: 1********6\nSSN: 4*********1\nContact: 8**********3",
+    "call_id": 75021669733,
+    "call_date": "2025-05-07T21:56:10.000Z",
+    "attributes": {
+      "userid": "09737683-718a-4efc-8f10-349ead519688",
+      "employee_id": "78213",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 558417651,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 2**********9 or email me at e******************t.",
+    "call_id": 13264545202,
+    "call_date": "2024-10-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "3ac97fd9-d7b6-4cda-8cbc-08f9154cf650",
+      "employee_id": "41869",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 463068628,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s S**************r, I think I live at 7***********************************************9.",
+    "call_id": 83059540044,
+    "call_date": "2024-12-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "19300a7f-3f21-46df-9c9a-d2121e466cef",
+      "employee_id": "75249",
+      "state": "ak"
+    }
+  },
+  {
+    "verbatim_id": 310999574,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********2 and SSN 3*********2 must be on file for F********n.",
+    "call_id": 19562456220,
+    "call_date": "2025-02-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "b8010e04-6cdb-413a-b5fd-33c9286554ce",
+      "employee_id": "42020",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 687144069,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] A**********y... SSN... 7*********3... can't hear?",
+    "call_id": 37356720365,
+    "call_date": "2025-05-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "68e341cb-b4c3-46a6-a96b-1ed0e704024b",
+      "employee_id": "14441",
+      "state": "ma"
+    }
+  },
+  {
+    "verbatim_id": 509748154,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... f*****************g... but maybe wrong... [noise]... try again?",
+    "call_id": 45852968024,
+    "call_date": "2025-01-02T21:56:10.000Z",
+    "attributes": {
+      "userid": "be2b68de-760a-4b23-ae77-94b223993c1a",
+      "employee_id": "82190",
+      "state": "co"
+    }
+  },
+  {
+    "verbatim_id": 513457558,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to D***********n via d*******************t or +***********************8 ASAP!",
+    "call_id": 16024003366,
+    "call_date": "2025-08-07T21:56:10.000Z",
+    "attributes": {
+      "userid": "20246381-ce51-41ac-94f3-6a07e68ff20a",
+      "employee_id": "98093",
+      "state": "mn"
+    }
+  },
+  {
+    "verbatim_id": 723834393,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, G***********n, was born on 1********0 and resides at 2**********************************************************0.",
+    "call_id": 83053549889,
+    "call_date": "2024-11-25T21:56:10.000Z",
+    "attributes": {
+      "userid": "1fb2753f-7dde-4387-9157-02377a20edf0",
+      "employee_id": "57574",
+      "state": "or"
+    }
+  },
+  {
+    "verbatim_id": 128830782,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 2***************6, or maybe try my email — i*****************g.",
+    "call_id": 85446717469,
+    "call_date": "2024-10-29T21:56:10.000Z",
+    "attributes": {
+      "userid": "d6936a60-d656-498a-a9b5-93d723dc06cf",
+      "employee_id": "97709",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 686467892,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is J*********a and I live at 7********************t***************************8.",
+    "call_id": 52967175873,
+    "call_date": "2025-06-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "f4fceab5-05e7-4147-a311-1ff731b580ad",
+      "employee_id": "24932",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 443655206,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is d****************t, but you can also call 2********1 if S************y isn't online.",
+    "call_id": 58511910454,
+    "call_date": "2024-11-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "84fe6733-5e5a-4267-a49f-1110ffb27f49",
+      "employee_id": "95409",
+      "state": "mp"
+    }
+  },
+  {
+    "verbatim_id": 855757490,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0*******************0 or email me at m*****************t.",
+    "call_id": 51241142671,
+    "call_date": "2025-06-30T21:56:10.000Z",
+    "attributes": {
+      "userid": "79615111-5dae-4fe3-94cb-0541224a377a",
+      "employee_id": "63800",
+      "state": "nv"
+    }
+  },
+  {
+    "verbatim_id": 516196149,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] B*********s... SSN... 4*********9... can't hear?",
+    "call_id": 75570531121,
+    "call_date": "2025-07-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "7caaaa43-2284-4e74-a4ba-3122cd09c9ff",
+      "employee_id": "47813",
+      "state": "nv"
+    }
+  },
+  {
+    "verbatim_id": 763453355,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. T**********a (s******B) moved from \"0**************************************************8\"—DOB=1********1, SSN=0*********0.",
+    "call_id": 66417527661,
+    "call_date": "2025-05-30T21:56:10.000Z",
+    "attributes": {
+      "userid": "c5821275-3c12-4cf6-aa58-862cc65d1722",
+      "employee_id": "80848",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 310394881,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n9*************************************************9\nDOB: 1********9\nSSN: 4*********2\nContact: 8***************6",
+    "call_id": 73929242414,
+    "call_date": "2025-06-16T21:56:10.000Z",
+    "attributes": {
+      "userid": "2c778fc2-a909-4464-9923-e90f2af29659",
+      "employee_id": "52532",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 260867609,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, B*************z, was born on 1********1 and resides at 1****************************************9.",
+    "call_id": 79187062183,
+    "call_date": "2025-05-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "1c8dff35-72f1-45a5-b6f0-3ed02bd9b54e",
+      "employee_id": "94566",
+      "state": "md"
+    }
+  },
+  {
+    "verbatim_id": 153584750,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] M***********n... SSN... 2*********1... can't hear?",
+    "call_id": 93099036042,
+    "call_date": "2025-06-07T21:56:10.000Z",
+    "attributes": {
+      "userid": "00f46eb3-abe7-4526-9da0-11747bf14206",
+      "employee_id": "56344",
+      "state": "hi"
+    }
+  },
+  {
+    "verbatim_id": 238522262,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: K*********g</div><div>Phone:+**************0</div><div>Email:e*****************t</div>",
+    "call_id": 76148621648,
+    "call_date": "2025-06-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "1466bdd9-1838-4956-a552-8f69a4389c9c",
+      "employee_id": "13104",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 585289726,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 2****************4, or maybe try my email — y****************t.",
+    "call_id": 27010901728,
+    "call_date": "2025-02-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "f928a5ea-ba9d-45ad-8661-f518f56c993f",
+      "employee_id": "55497",
+      "state": "nh"
+    }
+  },
+  {
+    "verbatim_id": 698813714,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: L********h</div><div>Phone:+**********************2</div><div>Email:j*************************m</div>",
+    "call_id": 91905662207,
+    "call_date": "2024-10-15T21:56:10.000Z",
+    "attributes": {
+      "userid": "bd100a5c-82a1-4c04-a7d2-0fc9d89a95b7",
+      "employee_id": "66063",
+      "state": "ca"
+    }
+  },
+  {
+    "verbatim_id": 100083213,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********8 and SSN 1*********4 must be on file for G***********s.",
+    "call_id": 57604321394,
+    "call_date": "2025-06-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "f2671607-782f-4921-8708-d3711a61c8ed",
+      "employee_id": "86103",
+      "state": "ca"
+    }
+  },
+  {
+    "verbatim_id": 706973851,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is C**********n and I live at 6********************************************9.",
+    "call_id": 58430033461,
+    "call_date": "2025-05-05T21:56:10.000Z",
+    "attributes": {
+      "userid": "67d9ba77-c946-48f4-9f09-b00882b927b1",
+      "employee_id": "34218",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 983974395,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] T********s... SSN... 0*********9... can't hear?",
+    "call_id": 14209645163,
+    "call_date": "2024-12-28T21:56:10.000Z",
+    "attributes": {
+      "userid": "1232171d-3f74-4216-a061-e3dfde3f25f0",
+      "employee_id": "84597",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 229059016,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 3****************************************************0; Owner: M************s; DOB: 1********4; SSN: 6*********7; Email: e********************m.",
+    "call_id": 87649438011,
+    "call_date": "2025-07-08T21:56:10.000Z",
+    "attributes": {
+      "userid": "5dc17632-404f-4755-a189-3e67664b0023",
+      "employee_id": "73800",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 472078869,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] J**************o... SSN... 2*********1... can't hear?",
+    "call_id": 78285018209,
+    "call_date": "2025-04-15T21:56:10.000Z",
+    "attributes": {
+      "userid": "5ad05769-8c76-4cd0-9425-1e9244a3a030",
+      "employee_id": "93883",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 553768144,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: S**************., ord. S*********n; Email List: [a******************m, alt:a**********************m].",
+    "call_id": 49060400705,
+    "call_date": "2024-09-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "bbfc4d69-18b9-409b-bbcb-67f259c57aab",
+      "employee_id": "70796",
+      "state": "mt"
+    }
+  },
+  {
+    "verbatim_id": 957048170,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is H***********n and I live at 4***************************************5.",
+    "call_id": 20091153942,
+    "call_date": "2024-09-25T21:56:10.000Z",
+    "attributes": {
+      "userid": "85051a9e-12ba-4178-9c2d-cd17c0062202",
+      "employee_id": "22901",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 786045590,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: J*****************., ord. J************r; Email List: [m***********************t, alt:m***************************t].",
+    "call_id": 38900829180,
+    "call_date": "2025-07-29T21:56:10.000Z",
+    "attributes": {
+      "userid": "04db27bf-1865-4ecf-b6cf-4f5c7ec4d683",
+      "employee_id": "12949",
+      "state": "ca"
+    }
+  },
+  {
+    "verbatim_id": 199545009,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 5********************************************1; Owner: J**********a; DOB: 1********1; SSN: 7*********1; Email: b***********************t.",
+    "call_id": 34481975219,
+    "call_date": "2025-02-28T21:56:10.000Z",
+    "attributes": {
+      "userid": "94126203-de14-4f0d-ad51-88cf5ecac71f",
+      "employee_id": "83362",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 544341938,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to L**********n on 1********4, I emailed j*****************m and noted SSN 1*********5.",
+    "call_id": 27659232875,
+    "call_date": "2025-04-16T21:56:10.000Z",
+    "attributes": {
+      "userid": "15684f60-3493-4ea8-97c5-03f4e8a8943b",
+      "employee_id": "86558",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 977774209,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is g**************************m, but you can also call (***************0 if J*************s isn't online.",
+    "call_id": 40588056535,
+    "call_date": "2025-09-08T21:56:10.000Z",
+    "attributes": {
+      "userid": "99b2830e-9fd6-4c19-b460-f0e36a5318ba",
+      "employee_id": "34641",
+      "state": "as"
+    }
+  },
+  {
+    "verbatim_id": 311408251,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s +*************8, or maybe try my email — s******************m.",
+    "call_id": 77246689948,
+    "call_date": "2025-03-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "1664fa98-aab3-4171-91fa-27d9fc864f4d",
+      "employee_id": "30604",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 643903027,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. S***********n MD (s******B) moved from \"2***********************************************0\"—DOB=1********1, SSN=4*********6.",
+    "call_id": 22775822328,
+    "call_date": "2024-10-23T21:56:10.000Z",
+    "attributes": {
+      "userid": "6c0ce03d-5251-4641-aadc-434aa179b894",
+      "employee_id": "16368",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 206322103,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 3*********9, Name: K************n, DOB: 1********7",
+    "call_id": 58665690848,
+    "call_date": "2025-01-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "62a0a7f2-1186-43fa-a987-239bf19b2443",
+      "employee_id": "20202",
+      "state": "ky"
+    }
+  },
+  {
+    "verbatim_id": 682716393,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. T***********r (s******B) moved from \"P******************************1\"—DOB=1********6, SSN=1*********6.",
+    "call_id": 60611702016,
+    "call_date": "2025-01-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "00140b98-57d4-4898-a270-8b4953ad5ef7",
+      "employee_id": "71895",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 680760788,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is N*************n and I live at 4****************************************6.",
+    "call_id": 67802264346,
+    "call_date": "2025-01-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "3b0a5638-da95-4943-9470-f199b8d15a92",
+      "employee_id": "90936",
+      "state": "va"
+    }
+  },
+  {
+    "verbatim_id": 492723943,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: T*********z</div><div>Phone:+*****************9</div><div>Email:a****************t</div>",
+    "call_id": 90132996732,
+    "call_date": "2024-11-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "c1cb190b-f95d-4244-8857-caef1e754f8b",
+      "employee_id": "55742",
+      "state": "ut"
+    }
+  },
+  {
+    "verbatim_id": 241237234,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... b***********************t... but maybe wrong... [noise]... try again?",
+    "call_id": 89025516850,
+    "call_date": "2025-04-19T21:56:10.000Z",
+    "attributes": {
+      "userid": "a9b936fa-0e18-4187-bd25-def6fba48126",
+      "employee_id": "72642",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 506675970,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... s*****************t... but maybe wrong... [noise]... try again?",
+    "call_id": 47652883849,
+    "call_date": "2025-04-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "48db5dd7-96d0-498b-8bda-5c129d58fac4",
+      "employee_id": "45333",
+      "state": "or"
+    }
+  },
+  {
+    "verbatim_id": 164703917,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to H************n on 1********9, I emailed t*********************t and noted SSN 6*********0.",
+    "call_id": 17164194067,
+    "call_date": "2025-07-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "03879562-f7aa-463e-a84c-afd0c0f155c3",
+      "employee_id": "29869",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 458117019,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: D****************., ord. D***********y; Email List: [b*********************t, alt:b*************************t].",
+    "call_id": 38212159508,
+    "call_date": "2025-03-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "eb913d5c-881e-4b4e-904d-088e4ee3fe9e",
+      "employee_id": "64834",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 586461022,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. H**********n (s******B) moved from \"9*********************************************1\"—DOB=1********3, SSN=1*********0.",
+    "call_id": 72384028514,
+    "call_date": "2024-12-02T21:56:10.000Z",
+    "attributes": {
+      "userid": "dfe79265-5a39-4dd9-b128-ae491544d5b9",
+      "employee_id": "28038",
+      "state": "ca"
+    }
+  },
+  {
+    "verbatim_id": 379235424,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 9************************************************4; Owner: K*********n; DOB: 1********2; SSN: 8*********0; Email: s******************m.",
+    "call_id": 91606403985,
+    "call_date": "2025-05-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "45785f8c-625c-468d-89f6-2344ff394de3",
+      "employee_id": "11813",
+      "state": "ok"
+    }
+  },
+  {
+    "verbatim_id": 147071359,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n2********************************************4\nDOB: 1********9\nSSN: 2*********4\nContact: 3***************1",
+    "call_id": 92617446346,
+    "call_date": "2025-02-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "78e670af-b02c-477f-9a0a-aa3df5f0584a",
+      "employee_id": "35628",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 250085292,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 2********************************************************0 or dial +*************8, attention S*********g, please.",
+    "call_id": 66567998189,
+    "call_date": "2025-03-29T21:56:10.000Z",
+    "attributes": {
+      "userid": "b3a4ac93-42f6-43ef-90fd-e67c7adde974",
+      "employee_id": "89098",
+      "state": "nm"
+    }
+  },
+  {
+    "verbatim_id": 420087402,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] J*********y... SSN... 0*********7... can't hear?",
+    "call_id": 76880604999,
+    "call_date": "2025-02-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "230b905d-dcb3-4e35-a381-b48dba353c75",
+      "employee_id": "13857",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 462103072,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********7 and SSN 3*********2 must be on file for T************s.",
+    "call_id": 15538988222,
+    "call_date": "2025-08-17T21:56:10.000Z",
+    "attributes": {
+      "userid": "ff604a7c-c8f8-4eb4-bb9e-871e5769d4ae",
+      "employee_id": "77109",
+      "state": "vi"
+    }
+  },
+  {
+    "verbatim_id": 899609468,
+    "type": "client",
+    "language": "english",
+    "sentence": "Dr. M***********s (s******B) moved from \"5************************************4\"—DOB=1********2, SSN=7*********7.",
+    "call_id": 75141398272,
+    "call_date": "2025-05-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "020a48ae-226a-4392-9b4a-ea73bbd2f3b4",
+      "employee_id": "43125",
+      "state": "nh"
+    }
+  },
+  {
+    "verbatim_id": 757170732,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********5 and SSN 7*********2 must be on file for T****a Hester.",
+    "call_id": 38853979014,
+    "call_date": "2024-10-11T21:56:10.000Z",
+    "attributes": {
+      "userid": "1c3d2505-c37b-44bb-b258-765ed4700e4e",
+      "employee_id": "80947",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 243726268,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, T**********g, was born on 1********5 and resides at 2****************************************6.",
+    "call_id": 53727626595,
+    "call_date": "2024-10-06T21:56:10.000Z",
+    "attributes": {
+      "userid": "68bf5a81-8f9d-478d-9eb7-758565c93c49",
+      "employee_id": "49666",
+      "state": "co"
+    }
+  },
+  {
+    "verbatim_id": 429275305,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s S**********y, I think I live at 1******************e*******************************5.",
+    "call_id": 88480346605,
+    "call_date": "2025-02-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "27ed3c6f-cf8b-4233-996e-b77060807a4f",
+      "employee_id": "15489",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 419234626,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: D**********s</div><div>Phone:+***********7</div><div>Email:m*******************g</div>",
+    "call_id": 16014797522,
+    "call_date": "2025-05-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "07c82fc3-02d9-4b9c-b35c-89351ec3d81f",
+      "employee_id": "88713",
+      "state": "id"
+    }
+  },
+  {
+    "verbatim_id": 574446112,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to Mr. T**********s via m**********************t or +***************6 ASAP!",
+    "call_id": 46458387999,
+    "call_date": "2025-03-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "adb65c2b-c39d-4244-ad3a-6d90448e6d29",
+      "employee_id": "70341",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 386246676,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s T*************r, I think I live at 9*************************************************8.",
+    "call_id": 34728502663,
+    "call_date": "2025-06-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "dcd0e700-f84c-4474-8d1c-d1730427d2cd",
+      "employee_id": "52144",
+      "state": "ut"
+    }
+  },
+  {
+    "verbatim_id": 747304021,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is s***********************m, but you can also call 5********8 if L**********n isn't online.",
+    "call_id": 95704424406,
+    "call_date": "2025-06-24T21:56:10.000Z",
+    "attributes": {
+      "userid": "8962fc88-6a90-40a3-b0bc-919c3ab3c22b",
+      "employee_id": "88206",
+      "state": "ut"
+    }
+  },
+  {
+    "verbatim_id": 108616331,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n1***********************************************3\nDOB: 1********9\nSSN: 1*********7\nContact: 0**************7",
+    "call_id": 30148295748,
+    "call_date": "2024-12-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "6e36efed-d125-4f99-980b-ab1ffe973e09",
+      "employee_id": "53442",
+      "state": "ok"
+    }
+  },
+  {
+    "verbatim_id": 187196301,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 7********************************************9; Owner: L**********r; DOB: 2********6; SSN: 5*********0; Email: c***********************t.",
+    "call_id": 65567329099,
+    "call_date": "2024-11-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "023e7894-fc15-47d1-874f-cb70d98b64cb",
+      "employee_id": "23028",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 972913607,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n4***************************************************3\nDOB: 1********5\nSSN: 4*********0\nContact: 8****************3",
+    "call_id": 64148135303,
+    "call_date": "2024-10-03T21:56:10.000Z",
+    "attributes": {
+      "userid": "09bd9f8a-72b9-4f45-be70-cf9eb14ec6f4",
+      "employee_id": "33471",
+      "state": "wi"
+    }
+  },
+  {
+    "verbatim_id": 128229877,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is t*******************m, but you can also call (***********9 if C*************z isn't online.",
+    "call_id": 92447875799,
+    "call_date": "2025-09-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "804b6084-23b4-46c0-896e-4f3dc0e5b900",
+      "employee_id": "85511",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 137254149,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s J***********l, I think I live at 1**************************************************2.",
+    "call_id": 73966391479,
+    "call_date": "2025-03-13T21:56:10.000Z",
+    "attributes": {
+      "userid": "b17a0ea5-7275-4d2a-b228-a973b18bdb87",
+      "employee_id": "42767",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 618426485,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 2***************1, or maybe try my email — s********************g.",
+    "call_id": 74456160969,
+    "call_date": "2024-11-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "3f44988e-e523-4266-9954-5dfdcd5106ef",
+      "employee_id": "61963",
+      "state": "pa"
+    }
+  },
+  {
+    "verbatim_id": 980127577,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: K*****************., ord. K************r; Email List: [h************************g, alt:h****************************g].",
+    "call_id": 65140097562,
+    "call_date": "2025-07-19T21:56:10.000Z",
+    "attributes": {
+      "userid": "a0855335-c4db-4798-b80c-83bdc11f3235",
+      "employee_id": "44788",
+      "state": "pa"
+    }
+  },
+  {
+    "verbatim_id": 186033898,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 3**************************************2; Owner: C************t; DOB: 1********6; SSN: 4*********4; Email: r******************t.",
+    "call_id": 33720256368,
+    "call_date": "2025-03-19T21:56:10.000Z",
+    "attributes": {
+      "userid": "846030d2-f31f-4b4c-85e2-9beb8b3228de",
+      "employee_id": "77666",
+      "state": "co"
+    }
+  },
+  {
+    "verbatim_id": 360922732,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is A************r and I live at 7****************************************6.",
+    "call_id": 33530251611,
+    "call_date": "2025-04-20T21:56:10.000Z",
+    "attributes": {
+      "userid": "1dae5f04-4e9b-4cc1-90e2-1671e59b0a20",
+      "employee_id": "49364",
+      "state": "id"
+    }
+  },
+  {
+    "verbatim_id": 677996723,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to V************y via r**********************g or +******************9 ASAP!",
+    "call_id": 94016041229,
+    "call_date": "2025-05-30T21:56:10.000Z",
+    "attributes": {
+      "userid": "7edeb3d7-32ad-4b78-b53d-d395f18d714b",
+      "employee_id": "25259",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 341975310,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to B*******y via d******************g or +**************3 ASAP!",
+    "call_id": 90561234047,
+    "call_date": "2025-08-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "4e3df4bd-8eaa-468b-952a-47144074f90c",
+      "employee_id": "59793",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 150344332,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: B*********h</div><div>Phone:+*******************9</div><div>Email:s***************t</div>",
+    "call_id": 90976847792,
+    "call_date": "2025-03-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "6d3742ce-37cc-4fb3-8b34-4bebb8500e45",
+      "employee_id": "46347",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 844404686,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0******************0 or email me at m***********************m.",
+    "call_id": 38334120064,
+    "call_date": "2024-12-09T21:56:10.000Z",
+    "attributes": {
+      "userid": "d0855082-811a-4f1d-98d1-c895d6031b8e",
+      "employee_id": "63662",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 665006488,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, N*****************S, was born on 1********4 and resides at 8***********************************************4.",
+    "call_id": 81922439987,
+    "call_date": "2024-09-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "e344006a-e877-43db-affc-7c8ea1772bd6",
+      "employee_id": "22934",
+      "state": "dc"
+    }
+  },
+  {
+    "verbatim_id": 787164608,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: T*****************., ord. T************n; Email List: [c***********************t, alt:c***************************t].",
+    "call_id": 23103400391,
+    "call_date": "2025-02-04T21:56:10.000Z",
+    "attributes": {
+      "userid": "06a6fafa-65c0-498c-b306-fb03520baa23",
+      "employee_id": "33482",
+      "state": "mt"
+    }
+  },
+  {
+    "verbatim_id": 867047884,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 6**********0 or email me at d**********************m.",
+    "call_id": 84491094514,
+    "call_date": "2025-04-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "61f01855-ac09-4869-bd21-65c9134eb8a8",
+      "employee_id": "47514",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 893671049,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s D*********e, I think I live at 6**************e***************************************9.",
+    "call_id": 95356250461,
+    "call_date": "2024-10-25T21:56:10.000Z",
+    "attributes": {
+      "userid": "8f88d688-af61-4418-8d8b-0e157aa79845",
+      "employee_id": "99760",
+      "state": "la"
+    }
+  },
+  {
+    "verbatim_id": 588807554,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is d******************g, but you can also call 5****************8 if Dr. S*************t isn't online.",
+    "call_id": 54585149556,
+    "call_date": "2025-08-26T21:56:10.000Z",
+    "attributes": {
+      "userid": "9e1523b9-614b-42ba-98d7-c612d483f296",
+      "employee_id": "17641",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 827185666,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (***********5 or email me at h**********************m.",
+    "call_id": 22806294531,
+    "call_date": "2025-08-15T21:56:10.000Z",
+    "attributes": {
+      "userid": "9d3ea1cc-812c-4486-9f22-509ce309cb85",
+      "employee_id": "14695",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 791765543,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n9*****************************************7\nDOB: 1********4\nSSN: 5*********0\nContact: 8***************2",
+    "call_id": 19433065577,
+    "call_date": "2025-01-12T21:56:10.000Z",
+    "attributes": {
+      "userid": "dec905a8-4e6b-45a5-b995-2de1a852f06e",
+      "employee_id": "98892",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 855847961,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to J************l on 1********8, I emailed a************************g and noted SSN 7*********3.",
+    "call_id": 74444059429,
+    "call_date": "2025-08-10T21:56:10.000Z",
+    "attributes": {
+      "userid": "34a06e65-9fe9-4776-a696-e6034ce63c65",
+      "employee_id": "36981",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 128974067,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 6**************9 or email me at r***********************m.",
+    "call_id": 44495934760,
+    "call_date": "2025-04-08T21:56:10.000Z",
+    "attributes": {
+      "userid": "501b4dd9-7d84-44c4-8157-9da09e0f599e",
+      "employee_id": "50646",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 390857374,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n6**********************************************6\nDOB: 1********1\nSSN: 5*********7\nContact: +*************9",
+    "call_id": 14362696376,
+    "call_date": "2025-06-05T21:56:10.000Z",
+    "attributes": {
+      "userid": "481f319b-9c5f-4b45-b174-c2c1783fdf2a",
+      "employee_id": "53748",
+      "state": "wy"
+    }
+  },
+  {
+    "verbatim_id": 233054662,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to K**************n via b*******************g or +*********************5 ASAP!",
+    "call_id": 59133867734,
+    "call_date": "2025-03-27T21:56:10.000Z",
+    "attributes": {
+      "userid": "41819566-52e9-4d19-a552-c7578ceb62c7",
+      "employee_id": "44697",
+      "state": "la"
+    }
+  },
+  {
+    "verbatim_id": 910693087,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: D*********z</div><div>Phone:+***********0</div><div>Email:j****************g</div>",
+    "call_id": 40227152176,
+    "call_date": "2025-04-05T21:56:10.000Z",
+    "attributes": {
+      "userid": "8516a720-f597-4612-9b42-5a218655f487",
+      "employee_id": "21185",
+      "state": "id"
+    }
+  },
+  {
+    "verbatim_id": 241952408,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0******************0 or email me at k********************g.",
+    "call_id": 69593622349,
+    "call_date": "2024-12-22T21:56:10.000Z",
+    "attributes": {
+      "userid": "5f83a85d-b9be-4369-a7aa-aef9e55335f8",
+      "employee_id": "32262",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 203457576,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 3**************************************5 or dial 0*******************1, attention J*********g, please.",
+    "call_id": 36623290702,
+    "call_date": "2025-03-21T21:56:10.000Z",
+    "attributes": {
+      "userid": "dcae3784-976c-40ba-b21e-bdf282ebe1ff",
+      "employee_id": "54919",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 730723245,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n4*********************************************4\nDOB: 1********3\nSSN: 8*********0\nContact: (****************4",
+    "call_id": 67766802453,
+    "call_date": "2025-05-14T21:56:10.000Z",
+    "attributes": {
+      "userid": "89754994-e050-429b-a6f4-6a8a0e93abbf",
+      "employee_id": "60172",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 921460176,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to J***********e on 2********0, I emailed r***********************m and noted SSN 4*********5.",
+    "call_id": 15970257347,
+    "call_date": "2025-02-13T21:56:11.000Z",
+    "attributes": {
+      "userid": "8be8af49-8ace-415e-8444-01c0255aa3da",
+      "employee_id": "30767",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 106331177,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to D*********e on 2********1, I emailed t***********************g and noted SSN 5*********4.",
+    "call_id": 61148803790,
+    "call_date": "2025-01-04T21:56:11.000Z",
+    "attributes": {
+      "userid": "c493ad6d-0a40-4570-8de2-943e12b6e5af",
+      "employee_id": "21464",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 471378457,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is L***********y and I live at 2****************************************************3.",
+    "call_id": 59235960455,
+    "call_date": "2025-09-07T21:56:11.000Z",
+    "attributes": {
+      "userid": "d6ac8b00-6518-45b9-9710-606683ede67a",
+      "employee_id": "35020",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 719384783,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: T********l</div><div>Phone:+*******************1</div><div>Email:d****************t</div>",
+    "call_id": 72980916779,
+    "call_date": "2025-07-25T21:56:11.000Z",
+    "attributes": {
+      "userid": "e0f59bc5-6a5d-434d-a038-6600cf678a49",
+      "employee_id": "29229",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 214042502,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] M***********n... SSN... 0*********7... can't hear?",
+    "call_id": 33862543812,
+    "call_date": "2025-04-30T21:56:11.000Z",
+    "attributes": {
+      "userid": "1a81a3e6-2d4f-4765-b3de-8eae9c10995e",
+      "employee_id": "57144",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 246549282,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... c*************************t... but maybe wrong... [noise]... try again?",
+    "call_id": 66354629087,
+    "call_date": "2025-08-09T21:56:11.000Z",
+    "attributes": {
+      "userid": "9941ba0a-1ad3-457d-81d5-02b39dae54cf",
+      "employee_id": "92065",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 634939095,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 5*********2, Name: B**********n, DOB: 1********5",
+    "call_id": 76076685956,
+    "call_date": "2025-02-21T21:56:11.000Z",
+    "attributes": {
+      "userid": "33d0b689-2678-4d25-80b2-9154735c5ae9",
+      "employee_id": "62400",
+      "state": "pr"
+    }
+  },
+  {
+    "verbatim_id": 290626836,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 7**********3 or email me at s***********************m.",
+    "call_id": 97199478171,
+    "call_date": "2025-02-01T21:56:11.000Z",
+    "attributes": {
+      "userid": "ad403503-82d3-405c-aec5-cc6cc4eba7fd",
+      "employee_id": "62883",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 231217994,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********2 and SSN 6*********9 must be on file for S************k.",
+    "call_id": 51766842370,
+    "call_date": "2025-05-29T21:56:11.000Z",
+    "attributes": {
+      "userid": "19096ec4-06b8-4303-bf24-ac99acf425d8",
+      "employee_id": "32402",
+      "state": "mt"
+    }
+  },
+  {
+    "verbatim_id": 556789255,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0*******************8 or email me at m*****************t.",
+    "call_id": 87301298779,
+    "call_date": "2025-03-26T21:56:11.000Z",
+    "attributes": {
+      "userid": "ae88e1c1-f941-4997-876d-c5471a4d4b4c",
+      "employee_id": "68101",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 737152332,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, G************s, was born on 1********2 and resides at 0***************************************5.",
+    "call_id": 55325866022,
+    "call_date": "2025-01-07T21:56:11.000Z",
+    "attributes": {
+      "userid": "abbd7f53-bbdf-40ef-be5a-fb6cedbd4d5c",
+      "employee_id": "72503",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 538127564,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********0 and SSN 4*********4 must be on file for R**********n.",
+    "call_id": 10946828295,
+    "call_date": "2025-05-30T21:56:11.000Z",
+    "attributes": {
+      "userid": "167dbb0e-d49d-4b68-8185-62e316e4d21e",
+      "employee_id": "34082",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 940112651,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is J********n and I live at 8***************y******************************2.",
+    "call_id": 56958927061,
+    "call_date": "2025-01-05T21:56:11.000Z",
+    "attributes": {
+      "userid": "f37e5017-64a7-41de-aef5-0601ea5b5fed",
+      "employee_id": "19196",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 451080068,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, A************n, was born on 1********2 and resides at 0**************************************0.",
+    "call_id": 40537756786,
+    "call_date": "2025-03-22T21:56:11.000Z",
+    "attributes": {
+      "userid": "8f11cfe8-e1d3-4701-b5c3-f6c526c4f13e",
+      "employee_id": "15421",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 843426217,
+    "type": "client",
+    "language": "english",
+    "sentence": "Mailing Address:\n7*******************************************************6\nDOB: 2********5\nSSN: 5*********0\nContact: 0********************6",
+    "call_id": 21692828133,
+    "call_date": "2025-07-06T21:56:11.000Z",
+    "attributes": {
+      "userid": "578a2793-e33f-4949-92d5-10fc7c14eaf5",
+      "employee_id": "23111",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 485113262,
+    "type": "client",
+    "language": "english",
+    "sentence": "Client: C*******************., ord. C**************n; Email List: [j******************m, alt:j**********************m].",
+    "call_id": 99385164114,
+    "call_date": "2025-02-23T21:56:11.000Z",
+    "attributes": {
+      "userid": "cb4dc742-96ef-46f6-94f4-706ab5cdf513",
+      "employee_id": "36498",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 865280796,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, R**********s, was born on 1********8 and resides at U***********************1.",
+    "call_id": 98252029356,
+    "call_date": "2025-01-17T21:56:11.000Z",
+    "attributes": {
+      "userid": "caa8520c-7d46-483a-8293-24cc02c9168b",
+      "employee_id": "98856",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 512623749,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 2****************************************************8 or dial (***********4, attention K***************n, please.",
+    "call_id": 65396799472,
+    "call_date": "2025-06-13T21:56:11.000Z",
+    "attributes": {
+      "userid": "694aec15-fbab-4746-92b3-94693e4c1ae7",
+      "employee_id": "14799",
+      "state": "tx"
+    }
+  },
+  {
+    "verbatim_id": 267538521,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 2********0 or email me at d******************m.",
+    "call_id": 96564191438,
+    "call_date": "2025-02-11T21:56:11.000Z",
+    "attributes": {
+      "userid": "758a93ac-b625-4806-a641-8ebfbc599757",
+      "employee_id": "84312",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 451924293,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is m**********************t, but you can also call (***************8 if T***********p isn't online.",
+    "call_id": 57237906208,
+    "call_date": "2025-04-21T21:56:11.000Z",
+    "attributes": {
+      "userid": "093ac628-244e-4933-b793-fa549dc0dea4",
+      "employee_id": "50188",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 230587551,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1********2 and SSN 2*********5 must be on file for J****************z.",
+    "call_id": 28675967592,
+    "call_date": "2025-04-12T21:56:11.000Z",
+    "attributes": {
+      "userid": "33cdf291-ed04-4d08-a9e3-994a1db01248",
+      "employee_id": "70513",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 772868016,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is m**********************m, but you can also call 5********6 if C**************t isn't online.",
+    "call_id": 44200586635,
+    "call_date": "2025-05-03T21:56:11.000Z",
+    "attributes": {
+      "userid": "38e8314e-7e28-4168-a2d4-f8de37f42537",
+      "employee_id": "27516",
+      "state": "ca"
+    }
+  },
+  {
+    "verbatim_id": 108325666,
+    "type": "client",
+    "language": "english",
+    "sentence": "<div>Name: J***********n</div><div>Phone:+*******************7</div><div>Email:j********************t</div>",
+    "call_id": 28367219916,
+    "call_date": "2025-01-17T21:56:11.000Z",
+    "attributes": {
+      "userid": "613f7a13-4e9b-4b9c-bab6-65022b73fa92",
+      "employee_id": "96084",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 637105394,
+    "type": "client",
+    "language": "english",
+    "sentence": "Reach out to C***************z via a*******************t or +*******************6 ASAP!",
+    "call_id": 18091349960,
+    "call_date": "2024-10-07T21:56:11.000Z",
+    "attributes": {
+      "userid": "4dfa4dfc-5504-4679-a9cf-4e359197b923",
+      "employee_id": "95012",
+      "state": "nm"
+    }
+  },
+  {
+    "verbatim_id": 591119670,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at +*******************3 or email me at w*************************m.",
+    "call_id": 12314307778,
+    "call_date": "2025-06-17T21:56:11.000Z",
+    "attributes": {
+      "userid": "5a5111b2-9f5b-45d9-97a5-c45c7c476d94",
+      "employee_id": "96460",
+      "state": "fl"
+    }
+  },
+  {
+    "verbatim_id": 288536860,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... m***********************m... but maybe wrong... [noise]... try again?",
+    "call_id": 12163156635,
+    "call_date": "2025-07-08T21:56:11.000Z",
+    "attributes": {
+      "userid": "7c73b06f-ddb9-4874-9008-e66ce684e276",
+      "employee_id": "20428",
+      "state": "nv"
+    }
+  },
+  {
+    "verbatim_id": 249441100,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (***********2, or maybe try my email — q****************g.",
+    "call_id": 68981191697,
+    "call_date": "2025-03-10T21:56:11.000Z",
+    "attributes": {
+      "userid": "e3690346-a885-4ae5-9498-dc6d341fa793",
+      "employee_id": "59908",
+      "state": "as"
+    }
+  }
+]
