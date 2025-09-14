@@ -6,7 +6,7 @@ import csv
 import re
 import boto3
 from datetime import datetime
-from presidio_analyzer import AnalyzerEngine
+#from presidio_analyzer import AnalyzerEngine
 
 # -------------------------------------------------------------------
 # 1. AWS Comprehend client (credentials via env vars or IAM role)
@@ -19,7 +19,7 @@ comprehend = boto3.client(
 # -------------------------------------------------------------------
 # 2. Presidio Analyzer for fallback on NER (especially NAME & ADDRESS)
 # -------------------------------------------------------------------
-analyzer = AnalyzerEngine()
+#analyzer = AnalyzerEngine()
 
 # -------------------------------------------------------------------
 # 3. PII Configuration
@@ -163,30 +163,30 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.6):
                     "Source":       "comprehend"
                 })
 
-        # 6b. Fallback Name & Address via Presidio (no confidence cutoff)
-        pres_results = analyzer.analyze(
-            text=clean_txt,
-            entities=["PERSON","GPE","LOC","ORG"],
-            language="en"
-        )
-        for r in pres_results:
-            ptype = r.entity_type
-            # Map PRESIDIO labels to our PII types
-            if ptype in ("PERSON",):
-                t = "NAME"
-            elif ptype in ("GPE","LOC","ORG"):
-                t = "ADDRESS"
-            else:
-                continue
-            raw = sent[r.start : r.end]
-            entities.append({
-                "Type":         t,
-                "Text":         raw,
-                "Confidence":   round(r.score, 3),
-                "BeginOffset":  r.start,
-                "EndOffset":    r.end,
-                "Source":       "presidio"
-            })
+        # # 6b. Fallback Name & Address via Presidio (no confidence cutoff)
+        # pres_results = analyzer.analyze(
+        #     text=clean_txt,
+        #     entities=["PERSON","GPE","LOC","ORG"],
+        #     language="en"
+        # )
+        # for r in pres_results:
+        #     ptype = r.entity_type
+        #     # Map PRESIDIO labels to our PII types
+        #     if ptype in ("PERSON",):
+        #         t = "NAME"
+        #     elif ptype in ("GPE","LOC","ORG"):
+        #         t = "ADDRESS"
+        #     else:
+        #         continue
+        #     raw = sent[r.start : r.end]
+        #     entities.append({
+        #         "Type":         t,
+        #         "Text":         raw,
+        #         "Confidence":   round(r.score, 3),
+        #         "BeginOffset":  r.start,
+        #         "EndOffset":    r.end,
+        #         "Source":       "presidio"
+        #     })
 
         # 6c. Fallback DOB if missing
         if not any(e["Type"] == "DATE_OF_BIRTH" for e in entities):
