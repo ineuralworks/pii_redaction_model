@@ -30,7 +30,7 @@ from metrics import (
 # -------------------------------------------------------------------
 st.set_page_config(page_title="📁 PII Redaction By Sam Okoye", layout="wide")
 MIN_CONFIDENCE = 0.6
-MAX_FILE_MB = 5
+MAX_FILE_MB    = 5
 
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 REPO_OWNER   = "samokoye"
@@ -51,11 +51,36 @@ def log_error_to_file(error_msg: str):
         print(f"Failed to write to {LOG_FILE}")
 
 def commit_to_github(path: str, content: bytes, message: str):
-    """Create a file in GitHub at `path` with `content`. Raises on HTTP errors."""
+    """
+    Create or update a file in GitHub at `path` with `content`.
+    If the file exists, fetch its `sha` and include it in the PUT payload.
+    """
     url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{path}"
-    b64 = base64.b64encode(content).decode("utf-8")
-    payload = {"message": message, "content": b64, "branch": BRANCH}
     headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+
+    # First, see if the file already exists (to grab its sha)
+    try:
+        resp = requests.get(url, headers=headers)
+        resp.raise_for_status()
+        existing_sha = resp.json().get("sha")
+    except requests.exceptions.HTTPError as e:
+        # 404 means file not found → this will create a new one
+        existing_sha = None
+    except Exception as e:
+        log_error_to_file(f"Error checking existence of {path}: {e}")
+        existing_sha = None
+
+    # Build payload
+    b64_content = base64.b64encode(content).decode("utf-8")
+    payload = {
+        "message": message,
+        "content": b64_content,
+        "branch": BRANCH,
+    }
+    if existing_sha:
+        payload["sha"] = existing_sha
+
+    # Create or update
     resp = requests.put(url, json=payload, headers=headers)
     resp.raise_for_status()
 
@@ -68,6 +93,7 @@ def commit_async(path: str, content: bytes, message: str):
             log_error_to_file(f"Commit failed for {path}: {e}")
     threading.Thread(target=_worker, daemon=True).start()
 
+
 # -------------------------------------------------------------------
 # UI: Title & Mode selector
 # -------------------------------------------------------------------
@@ -75,6 +101,7 @@ st.title("📞 PII Redaction")
 st.markdown("Upload a JSON/TXT or enter a sentence, and see live PII redaction.")
 
 mode = st.radio("Select Input Mode", ["Upload File", "Single Sentence"])
+
 
 # -------------------------------------------------------------------
 # Function to render audit DataFrame
@@ -98,7 +125,8 @@ def render_audit(audit_csv: str, show_preview: bool):
 
     if show_preview:
         with st.expander("📋 Audit Log Preview", expanded=False):
-            st.dataframe(df.head(10))
+            # use st.table to avoid column overlap/jumble
+            st.table(df.head(10))
 
     st.subheader("📄 Download Audit CSV")
     st.download_button(
@@ -107,6 +135,7 @@ def render_audit(audit_csv: str, show_preview: bool):
         file_name="audit.csv",
         mime="text/csv",
     )
+
 
 # -------------------------------------------------------------------
 # Mode: Upload File
@@ -122,14 +151,14 @@ if mode == "Upload File":
         if size_mb > MAX_FILE_MB:
             st.error(f"File size {size_mb:.2f} MB exceeds {MAX_FILE_MB} MB limit.")
         else:
-            # Read raw bytes and commit input
+            # Read raw bytes (for GitHub commit and metrics)
             raw_bytes = uploaded_file.read()
             ts        = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
             date      = datetime.utcnow().strftime("%m%d%Y")
             input_path = f"inputs/{date}/{ts}_{uploaded_file.name}"
             commit_async(input_path, raw_bytes, f"Input upload @ {ts}")
 
-            # Reset and run redaction with timing
+            # Rewind and run redaction
             uploaded_file.seek(0)
             start_ts = time.time()
             with st.spinner("Redacting PII..."):
@@ -148,8 +177,8 @@ if mode == "Upload File":
                 f"Redacted output @ {ts}",
             )
 
-            # Parse audit and record metrics (incl. accuracy if ground_truth)
-            df_audit    = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
+            # Parse audit and record metrics
+            df_audit     = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
             record_count = len(json.loads(redacted_json))
             record_file_metrics(
                 file_name       = uploaded_file.name,
@@ -162,13 +191,14 @@ if mode == "Upload File":
                 audit_csv       = audit_csv,
             )
 
-            # Render results
+            # Render redacted JSON
             st.subheader("🔒 Redacted JSON Output")
             st.code(redacted_json, language="json")
+
+            # Render audit and download buttons
             render_audit(audit_csv, show_preview)
-            # -------------------------------------------------------------------
-            # Download Ground-Truth Report (if this was a ground_truth file)
-            # -------------------------------------------------------------------
+
+            # Download ground-truth report, if available
             gt_csv = get_ground_truth_report(uploaded_file.name)
             if gt_csv:
                 st.subheader("📥 Ground-Truth Report")
@@ -178,6 +208,7 @@ if mode == "Upload File":
                     file_name=f"ground_truth_report_{uploaded_file.name}.csv",
                     mime="text/csv",
                 )
+
 
 # -------------------------------------------------------------------
 # Mode: Single Sentence
@@ -207,7 +238,6 @@ else:
                 )
             end_ts = time.time()
 
-            # Commit masked sentence
             out_path = f"outputs/{date}/{ts}_sentence_redacted.txt"
             commit_async(
                 out_path,
@@ -215,7 +245,6 @@ else:
                 f"Sentence redacted @ {ts}"
             )
 
-            # Record text metrics
             df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
             record_text_metrics(
                 start_ts     = start_ts,
@@ -224,10 +253,10 @@ else:
                 audit_gen_ts = end_ts
             )
 
-            # Render results
             st.subheader("🔒 Masked Sentence")
             st.write(masked_sentence)
             render_audit(audit_csv, show_preview_txt)
+
 
 # -------------------------------------------------------------------
 # Metrics Dashboard
@@ -258,4 +287,3 @@ if accuracy_summary:
     st.json(accuracy_summary)
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
-
