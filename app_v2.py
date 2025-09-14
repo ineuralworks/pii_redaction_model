@@ -250,9 +250,9 @@ else:
             )
 
             start_ts = time.time()
-            with st.spinner("Detecting & masking PII at {MIN_CONFIDENCE:.2f} confidence…"):
-                masked_sentence, audit_csv = process_text(
-                    sentence, MIN_CONFIDENCE
+            with st.spinner(f"Redacting PII at {MIN_CONFIDENCE:.2f} confidence…"):
+                redacted_json, audit_csv = process_file(
+                    uploaded_file, MIN_CONFIDENCE
                 )
             end_ts = time.time()
 
