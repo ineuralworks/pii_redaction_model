@@ -102,25 +102,62 @@ def _compute_accuracy(
     df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
 
     TP = FP = FN = 0
+
     for rec in data:
-        vid = rec["verbatim_id"]
-
-        # canonicalize ground-truth types
-        gt = set((
-            _canonical(e["type"]),
-            e["value"]
-        ) for e in rec["ground_truth"])
-
-        # canonicalize prediction types
+        vid   = rec["verbatim_id"]
+        # build lists of (type, value)
+        gt_list = [
+            (_canonical(e["type"]), e["value"])
+            for e in rec["ground_truth"]
+        ]
         preds = df_audit[df_audit["verbatim_id"] == vid]
-        pr = set(zip(
-            preds["pii_type"].apply(_canonical),
-            preds["original"]
-        ))
+        pr_list = [
+            (_canonical(p["pii_type"]), p["original"])
+            for _, p in preds.iterrows()
+        ]
 
-        TP += len(gt & pr)
-        FP += len(pr - gt)
-        FN += len(gt - pr)
+        matched_gt = set()
+        matched_pr = set()
+
+        # match ground-truth ↔ predictions
+        for i, (gtype, gval) in enumerate(gt_list):
+            for j, (ptype, pval) in enumerate(pr_list):
+                if ptype != gtype:
+                    continue
+                if ptype == "NAME":
+                    # containment check instead of exact
+                    if gval in pval or pval in gval:
+                        matched_gt.add(i)
+                        matched_pr.add(j)
+                        break
+                else:
+                    if pval == gval:
+                        matched_gt.add(i)
+                        matched_pr.add(j)
+                        break
+
+        TP += len(matched_gt)
+        FP += len(pr_list) - len(matched_pr)
+        FN += len(gt_list) - len(matched_gt)
+    # for rec in data:
+    #     vid = rec["verbatim_id"]
+
+    #     # canonicalize ground-truth types
+    #     gt = set((
+    #         _canonical(e["type"]),
+    #         e["value"]
+    #     ) for e in rec["ground_truth"])
+
+    #     # canonicalize prediction types
+    #     preds = df_audit[df_audit["verbatim_id"] == vid]
+    #     pr = set(zip(
+    #         preds["pii_type"].apply(_canonical),
+    #         preds["original"]
+    #     ))
+
+    #     TP += len(gt & pr)
+    #     FP += len(pr - gt)
+    #     FN += len(gt - pr)
 
     precision = TP / (TP + FP) if (TP + FP) else 0.0
     recall    = TP / (TP + FN) if (TP + FN) else 0.0
