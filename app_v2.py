@@ -22,6 +22,7 @@ from metrics import (
     summarize_text_metrics,
     get_accuracy_df,
     summarize_accuracy,
+    get_ground_truth_report,
 )
 
 # -------------------------------------------------------------------
@@ -245,3 +246,17 @@ if accuracy_summary:
     st.json(accuracy_summary)
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
+
+# -------------------------------------------------------------------
+# Download Ground-Truth Report (if this was a ground_truth file)
+# -------------------------------------------------------------------
+gt_csv = get_ground_truth_report(uploaded_file.name)
+if gt_csv:
+    st.subheader("📥 Ground-Truth Report")
+    st.download_button(
+        label="Download Ground-Truth CSV",
+        data=gt_csv,
+        file_name=f"ground_truth_report_{uploaded_file.name}.csv",
+        mime="text/csv",
+    )
+
