@@ -36,7 +36,7 @@ st.set_page_config(page_title="📁 PII Redaction By Sam Okoye", layout="wide")
 # -------------------------------------------------------------------
 st.sidebar.markdown("## ⚙️ Settings")
 MIN_CONFIDENCE = st.sidebar.slider(
-    "Set minimum confidence to redact PII",
+    "Set minimum confidence to redact PII. default is 0.5",
     min_value=0.0,
     max_value=1.0,
     value=0.5,
@@ -111,7 +111,7 @@ def commit_async(path: str, content: bytes, message: str):
 # -------------------------------------------------------------------
 # UI: Title & Mode selector
 # -------------------------------------------------------------------
-st.title("📞 PII Redaction")
+st.title("📞 PII Redaction Model")
 st.markdown("Upload a JSON/TXT or enter a sentence, and see live PII redaction.")
 
 mode = st.radio("Select Input Mode", ["Upload File", "Single Sentence"])
@@ -206,8 +206,34 @@ if mode == "Upload File":
             )
 
             # Render redacted JSON
-            st.subheader("🔒 Redacted JSON Output")
-            st.code(redacted_json, language="json")
+            # st.subheader("🔒 Redacted JSON Output")
+            # st.code(redacted_json, language="json")
+            # ── Redacted JSON Preview & Full Output ──
+            # 1) Truncated preview in an expander
+            st.subheader("🔒 Redacted JSON Output Preview")
+            with st.expander("Show preview", expanded=False):
+                lines   = redacted_json.splitlines()
+                preview = "\n".join(lines[:20])
+                if len(lines) > 20:
+                    preview += "\n… (truncated)"
+                st.code(preview, language="json")
+            
+            # 2) Download full JSON
+            out_name = f"{os.path.splitext(uploaded_file.name)[0]}_redacted{os.path.splitext(uploaded_file.name)[1]}"
+            st.download_button(
+                label="⬇️ Download Full JSON",
+                data=redacted_json.encode("utf-8"),
+                file_name=out_name,
+                mime="application/json",
+            )
+            
+            # 3) Open full JSON in new tab (data URI)
+            b64 = base64.b64encode(redacted_json.encode("utf-8")).decode("utf-8")
+            href = (
+                f'<a href="data:application/json;base64,{b64}" '
+                f'target="_blank">🗔 Open full JSON in new tab</a>'
+            )
+            st.markdown(href, unsafe_allow_html=True)
 
             # Render audit and download buttons
             render_audit(audit_csv, show_preview)
