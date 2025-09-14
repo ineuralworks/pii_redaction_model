@@ -248,7 +248,7 @@ def generate_business_summary(file_name: str) -> Optional[str]:
     density   = latest_file["pii_density"]
     prec_pct  = latest_acc["precision"] * 100
     rec_pct   = latest_acc["recall"]    * 100
-    f1_pct    = latest_acc["f1_score"]  * 100
+    f1_pct    = latest_acc["f1"]        * 100
 
     lines = [
         "# 📝 Automatic Redaction Summary",
