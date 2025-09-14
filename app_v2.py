@@ -331,4 +331,3 @@ if accuracy_summary:
     st.json(accuracy_summary)
     st.markdown("Detailed Accuracy Records:")
     st.dataframe(get_accuracy_df())
-
