@@ -1,0 +1,1302 @@
+[
+  {
+    "verbatim_id": 139380719,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Jordan Williams, was born on 1962-08-19 and resides at 5957 Davila Expressway Apt. 783, Terranceville, IL 29130.",
+    "call_id": 58792670161,
+    "call_date": "2025-04-13T00:06:54.000Z",
+    "attributes": {
+      "userid": "94233811-b788-459b-8397-28bee77fc129",
+      "employee_id": "83342",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 913166211,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it's Bryan Lopez, I think I live at 42 Maple Drive, um, zip 30318.",
+    "call_id": 98626717635,
+    "call_date": "2025-04-06T00:06:54.000Z",
+    "attributes": {
+      "userid": "d0758651-e943-434b-a30e-9df9c73547ff",
+      "employee_id": "14186",
+      "state": "sd"
+    }
+  },
+  {
+    "verbatim_id": 563140451,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Robert Davis, DOB: 1991-07-12, SSN: 809-15-7309",
+    "call_id": 77382696613,
+    "call_date": "2025-06-12T00:06:54.000Z",
+    "attributes": {
+      "userid": "6e229bc0-a082-456d-afb9-48673cf185e6",
+      "employee_id": "10603",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 769456961,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 553-32-2697, Name: Tiffany Holland, DOB: 03/18/1944",
+    "call_id": 46855215463,
+    "call_date": "2025-08-11T00:06:54.000Z",
+    "attributes": {
+      "userid": "d7010ba1-f7b2-4603-b0df-8e2d440422e0",
+      "employee_id": "36544",
+      "state": "pr"
+    }
+  },
+  {
+    "verbatim_id": 735072650,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name's Beverly Stone, and I live at... uh, 17 Elm Street, also Elmwood, Georgia, 30144.",
+    "call_id": 60290211774,
+    "call_date": "2025-06-09T00:06:54.000Z",
+    "attributes": {
+      "userid": "7f53f88e-d48b-43e0-b8b0-e1b71c6d5905",
+      "employee_id": "21235",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 812585356,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 31527 Colleen Plains, Mendozafort, NJ 30131... zip... [garbled]... 1462-something.",
+    "call_id": 92749166504,
+    "call_date": "2025-08-17T00:06:54.000Z",
+    "attributes": {
+      "userid": "fb68d2a6-2195-4c90-96fe-27e2690a18fb",
+      "employee_id": "90583",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 840141638,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 918-462-6085x953 or email me at amandawilliams@example.org.",
+    "call_id": 18610506807,
+    "call_date": "2025-07-22T00:06:54.000Z",
+    "attributes": {
+      "userid": "d01da71a-4c86-469b-9c36-3ba28be86dcc",
+      "employee_id": "28707",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 388625208,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it's Adriana Roach, I think I live at 42 Maple Drive, um, zip 30318.",
+    "call_id": 93085147133,
+    "call_date": "2025-01-30T00:06:54.000Z",
+    "attributes": {
+      "userid": "6492ffea-3f93-4b2f-8551-97e2fadce890",
+      "employee_id": "49308",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 811363228,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 555-02-1848, Name: Cheryl Schwartz, DOB: 03/04/1957",
+    "call_id": 85570362439,
+    "call_date": "2024-12-15T00:06:54.000Z",
+    "attributes": {
+      "userid": "1acb7ca6-a385-4c16-baf6-3e6e26707a74",
+      "employee_id": "94267",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 797567766,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... christian36@example.com... but maybe wrong... [noise]... try again?",
+    "call_id": 26560480827,
+    "call_date": "2025-05-24T00:06:54.000Z",
+    "attributes": {
+      "userid": "c2fbd6c6-2433-4a8c-aba4-daeabcc56a64",
+      "employee_id": "15908",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 539650100,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1972-08-22, I think? And SSN is... uh, 324-01-0297 maybe.",
+    "call_id": 65824561270,
+    "call_date": "2024-09-29T00:06:54.000Z",
+    "attributes": {
+      "userid": "b62c2208-e692-4f11-945c-0177a11a84d7",
+      "employee_id": "60888",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 284140324,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 598-63-7004, Name: Daniel Delgado, DOB: 06/27/1972",
+    "call_id": 37436377058,
+    "call_date": "2024-10-08T00:06:54.000Z",
+    "attributes": {
+      "userid": "0aadf8a5-6e86-4042-939f-9c084517e20a",
+      "employee_id": "66969",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 911363454,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1991-02-02... born in... [garbled]... nineteen eighty...",
+    "call_id": 79371688953,
+    "call_date": "2024-11-11T00:06:54.000Z",
+    "attributes": {
+      "userid": "14ba8ebc-2337-4d9f-90c5-76881287a688",
+      "employee_id": "70384",
+      "state": "az"
+    }
+  },
+  {
+    "verbatim_id": 211408538,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Bonnie Schneider, DOB: 2021-12-06, SSN: 290-79-9938",
+    "call_id": 11772486412,
+    "call_date": "2025-05-14T00:06:54.000Z",
+    "attributes": {
+      "userid": "232ac7b6-1a13-4441-905c-55c515346757",
+      "employee_id": "59434",
+      "state": "ak"
+    }
+  },
+  {
+    "verbatim_id": 756889468,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it's +1-549-994-1737x09148, or maybe try my email — howardbarbara@example.com, I guess.",
+    "call_id": 13729416276,
+    "call_date": "2025-02-21T00:06:54.000Z",
+    "attributes": {
+      "userid": "e2016ba1-32d4-4431-9ad7-537a9d5cb9ec",
+      "employee_id": "93244",
+      "state": "ak"
+    }
+  },
+  {
+    "verbatim_id": 351667504,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Donald Thomas... SSN... 837-38-1493... can't hear?",
+    "call_id": 35564231539,
+    "call_date": "2025-06-17T00:06:55.000Z",
+    "attributes": {
+      "userid": "c95045e0-a3dd-4731-8d36-4d6977ec5026",
+      "employee_id": "58569",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 373311064,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1910-01-13... born in... [garbled]... nineteen eighty...",
+    "call_id": 16944209094,
+    "call_date": "2024-10-27T00:06:55.000Z",
+    "attributes": {
+      "userid": "71a1778c-f0db-4847-9b38-f7c6fb8fd1df",
+      "employee_id": "30685",
+      "state": "ky"
+    }
+  },
+  {
+    "verbatim_id": 468684961,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... powellmichele@example.com... but maybe wrong... [noise]... try again?",
+    "call_id": 30329960530,
+    "call_date": "2025-05-27T00:06:55.000Z",
+    "attributes": {
+      "userid": "d09e8aeb-02ad-474a-b8f8-67e0928d1d5b",
+      "employee_id": "65991",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 986598838,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Alexander Medina, DOB: 1924-01-11, SSN: 338-99-5367",
+    "call_id": 87963327439,
+    "call_date": "2024-11-01T00:06:55.000Z",
+    "attributes": {
+      "userid": "ad8ae8d5-c5cf-4fb6-9453-7416f4cbb7c7",
+      "employee_id": "33341",
+      "state": "pa"
+    }
+  },
+  {
+    "verbatim_id": 804763443,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Michael Boyd, DOB: 1930-04-08, SSN: 074-42-3927",
+    "call_id": 89349957267,
+    "call_date": "2025-05-30T00:06:55.000Z",
+    "attributes": {
+      "userid": "8fecfa85-d710-4cde-bee8-74485e848190",
+      "employee_id": "17364",
+      "state": "ok"
+    }
+  },
+  {
+    "verbatim_id": 245106657,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Bradley Garcia, was born on 2016-01-07 and resides at 3939 Jacob Corners, South Williambury, AS 28607.",
+    "call_id": 79006983507,
+    "call_date": "2024-10-16T00:06:55.000Z",
+    "attributes": {
+      "userid": "f586b5ab-a2fa-4ceb-9d53-87f7dcee2574",
+      "employee_id": "14405",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 886029469,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1910-11-13, I think? And SSN is... uh, 203-45-2202 maybe.",
+    "call_id": 72034610834,
+    "call_date": "2025-05-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "5b8b762f-26b6-403f-8bb7-359648af2f24",
+      "employee_id": "39551",
+      "state": "pr"
+    }
+  },
+  {
+    "verbatim_id": 535553815,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Megan Jackson, was born on 1990-06-03 and resides at 969 Hamilton Center, East Brenda, MI 44184.",
+    "call_id": 13567260282,
+    "call_date": "2025-01-14T00:06:55.000Z",
+    "attributes": {
+      "userid": "db5ed763-b9e6-4e23-ab25-2bfd24b8ea74",
+      "employee_id": "25108",
+      "state": "ky"
+    }
+  },
+  {
+    "verbatim_id": 281325976,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Ryan Holt... SSN... 869-24-7052... can't hear?",
+    "call_id": 13049780989,
+    "call_date": "2025-03-29T00:06:55.000Z",
+    "attributes": {
+      "userid": "3a4628df-a248-4c70-964a-71c4cc354809",
+      "employee_id": "39187",
+      "state": "ct"
+    }
+  },
+  {
+    "verbatim_id": 544877374,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... christine86@example.com... but maybe wrong... [noise]... try again?",
+    "call_id": 97302175099,
+    "call_date": "2025-03-19T00:06:55.000Z",
+    "attributes": {
+      "userid": "376a442b-36c1-494a-842a-bcb9ad53f942",
+      "employee_id": "54667",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 525067802,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Veronica Rodriguez... SSN... 803-10-8503... can't hear?",
+    "call_id": 94949896570,
+    "call_date": "2025-04-07T00:06:55.000Z",
+    "attributes": {
+      "userid": "7f4cd9c5-0ece-4485-8e1e-32473f2d8d54",
+      "employee_id": "87984",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 595317025,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1926-11-01, I think? And SSN is... uh, 283-50-9488 maybe.",
+    "call_id": 22411246398,
+    "call_date": "2025-07-14T00:06:55.000Z",
+    "attributes": {
+      "userid": "21396ab1-280d-45c4-9f03-05792cb65065",
+      "employee_id": "18387",
+      "state": "mn"
+    }
+  },
+  {
+    "verbatim_id": 178140468,
+    "type": "client",
+    "language": "english",
+    "sentence": "Phone... seven-seven... [dropout]... call me back?",
+    "call_id": 13015882678,
+    "call_date": "2025-01-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "7eb570c9-58f8-4422-b151-4dfea3eb698b",
+      "employee_id": "12963",
+      "state": "mi"
+    }
+  },
+  {
+    "verbatim_id": 826682130,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Michelle Lewis, was born on 2012-09-22 and resides at 709 Matthew Lodge Suite 183, Lake Ronald, OK 29494.",
+    "call_id": 81993129361,
+    "call_date": "2024-10-01T00:06:55.000Z",
+    "attributes": {
+      "userid": "20b4bc0e-2964-41bf-ba2e-e78b72179eea",
+      "employee_id": "34120",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 127898289,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Brady Rivera... SSN... 691-84-7054... can't hear?",
+    "call_id": 24545647557,
+    "call_date": "2025-01-01T00:06:55.000Z",
+    "attributes": {
+      "userid": "35684146-a2e4-4f2b-ae77-de62641d1c73",
+      "employee_id": "37247",
+      "state": "mo"
+    }
+  },
+  {
+    "verbatim_id": 994743520,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1914-07-25... born in... [garbled]... nineteen eighty...",
+    "call_id": 95117277172,
+    "call_date": "2024-09-18T00:06:55.000Z",
+    "attributes": {
+      "userid": "e14408b5-df26-4645-b7b3-b79ad372253f",
+      "employee_id": "75440",
+      "state": "wv"
+    }
+  },
+  {
+    "verbatim_id": 450853506,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1932-10-21... born in... [garbled]... nineteen eighty...",
+    "call_id": 14969667711,
+    "call_date": "2025-08-15T00:06:55.000Z",
+    "attributes": {
+      "userid": "b843869e-4142-4b20-af9b-a8f84dd39956",
+      "employee_id": "35671",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 799475793,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it's 001-830-635-3407x223, or maybe try my email — rogerstodd@example.net, I guess.",
+    "call_id": 31910356855,
+    "call_date": "2025-07-16T00:06:55.000Z",
+    "attributes": {
+      "userid": "6ccaff14-9105-4612-a844-4c9042a16843",
+      "employee_id": "43151",
+      "state": "ga"
+    }
+  },
+  {
+    "verbatim_id": 981437780,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it's 001-993-512-5039, or maybe try my email — qacosta@example.org, I guess.",
+    "call_id": 18125849757,
+    "call_date": "2025-01-04T00:06:55.000Z",
+    "attributes": {
+      "userid": "2a2c12a7-f94e-4dcc-a88e-0a9e9de8e27c",
+      "employee_id": "12010",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 377884350,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Jasmine Taylor, DOB: 1970-07-21, SSN: 820-67-1783",
+    "call_id": 19072883216,
+    "call_date": "2024-09-17T00:06:55.000Z",
+    "attributes": {
+      "userid": "42e2dba6-c24a-4c2f-bc91-0da3d7673104",
+      "employee_id": "30405",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 261876309,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1957-12-03, I think? And SSN is... uh, 685-71-2920 maybe.",
+    "call_id": 28659412043,
+    "call_date": "2025-01-22T00:06:55.000Z",
+    "attributes": {
+      "userid": "d19ffad0-376d-4007-9cfc-7e834a7d9211",
+      "employee_id": "99468",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 898642826,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... arroyomelanie@example.com... but maybe wrong... [noise]... try again?",
+    "call_id": 79438084620,
+    "call_date": "2024-09-21T00:06:55.000Z",
+    "attributes": {
+      "userid": "46b35ca2-5a60-4344-83b0-75c02f44f015",
+      "employee_id": "96443",
+      "state": "sd"
+    }
+  },
+  {
+    "verbatim_id": 715252995,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is Lauren Barnes and I live at 6704 Sara Vista Suite 429, Gentrymouth, NV 24605.",
+    "call_id": 76023620822,
+    "call_date": "2025-04-12T00:06:55.000Z",
+    "attributes": {
+      "userid": "6ec7eff4-c261-4d47-9c4e-0b9f8c0b11a4",
+      "employee_id": "26859",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 933154126,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, it's 10 Test Lane, um, also Test, New York, 14625.",
+    "call_id": 93882395157,
+    "call_date": "2024-12-09T00:06:55.000Z",
+    "attributes": {
+      "userid": "7a40bf3f-7e11-4bc8-96be-d4d78ce0b2b3",
+      "employee_id": "97107",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 161746233,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Mark Fernandez... SSN... 234-63-1431... can't hear?",
+    "call_id": 76908249432,
+    "call_date": "2025-07-10T00:06:55.000Z",
+    "attributes": {
+      "userid": "092beae3-8d29-4295-b204-113a64127389",
+      "employee_id": "33329",
+      "state": "va"
+    }
+  },
+  {
+    "verbatim_id": 509981530,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name's Angelica Wilson, and I live at... uh, 17 Elm Street, also Elmwood, Georgia, 30144.",
+    "call_id": 50514372844,
+    "call_date": "2024-10-31T00:06:55.000Z",
+    "attributes": {
+      "userid": "a9a9d9fa-7096-43e6-867a-b8166aa0f7aa",
+      "employee_id": "23123",
+      "state": "de"
+    }
+  },
+  {
+    "verbatim_id": 620335609,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name's Diane Reyes, and I live at... uh, 17 Elm Street, also Elmwood, Georgia, 30144.",
+    "call_id": 10774667111,
+    "call_date": "2024-09-13T00:06:55.000Z",
+    "attributes": {
+      "userid": "e64afb47-f0c4-4ec9-b133-748e0f15370c",
+      "employee_id": "46225",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 508483425,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, it's 10 Test Lane, um, also Test, New York, 14625.",
+    "call_id": 56404233883,
+    "call_date": "2024-12-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "6fd80943-b80f-4e0a-9cb2-c653d754e001",
+      "employee_id": "82295",
+      "state": "ak"
+    }
+  },
+  {
+    "verbatim_id": 206188289,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 590 Young Radial, West Jeanne, SD 45363... zip... [garbled]... 1462-something.",
+    "call_id": 99364975479,
+    "call_date": "2024-11-05T00:06:55.000Z",
+    "attributes": {
+      "userid": "b7a13cfa-4674-43e7-b2a5-c14e95feba04",
+      "employee_id": "77154",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 782842296,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it's Jacqueline Brown, I think I live at 42 Maple Drive, um, zip 30318.",
+    "call_id": 42181042141,
+    "call_date": "2024-12-09T00:06:55.000Z",
+    "attributes": {
+      "userid": "5cc518f2-f053-43de-9f7e-991f366534d9",
+      "employee_id": "42203",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 232794648,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Brenda Young, was born on 2004-05-04 and resides at 354 Angela Point Apt. 097, Christopherhaven, WY 45563.",
+    "call_id": 59020063745,
+    "call_date": "2025-03-03T00:06:55.000Z",
+    "attributes": {
+      "userid": "32e8cfce-3d6f-4992-a9b0-12722aa034d8",
+      "employee_id": "24780",
+      "state": "wy"
+    }
+  },
+  {
+    "verbatim_id": 951701846,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... samantha33@example.net... but maybe wrong... [noise]... try again?",
+    "call_id": 80654160842,
+    "call_date": "2025-03-18T00:06:55.000Z",
+    "attributes": {
+      "userid": "a1f36925-9574-4ab7-bab4-b242f5e7b949",
+      "employee_id": "42246",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 118118351,
+    "type": "client",
+    "language": "english",
+    "sentence": "Phone... seven-seven... [dropout]... call me back?",
+    "call_id": 99040421121,
+    "call_date": "2025-08-28T00:06:55.000Z",
+    "attributes": {
+      "userid": "99bdd67a-d8bc-4625-8ef6-10464e9b47d8",
+      "employee_id": "19708",
+      "state": "nj"
+    }
+  },
+  {
+    "verbatim_id": 278380855,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... galvanapril@example.net... but maybe wrong... [noise]... try again?",
+    "call_id": 26280359469,
+    "call_date": "2024-12-24T00:06:55.000Z",
+    "attributes": {
+      "userid": "82e7115f-a9e2-48bc-8704-9a04168c51b1",
+      "employee_id": "82768",
+      "state": "vi"
+    }
+  },
+  {
+    "verbatim_id": 756482988,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 2022-03-21, I think? And SSN is... uh, 268-27-9167 maybe.",
+    "call_id": 99915463493,
+    "call_date": "2025-08-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "0d03cb7d-ee3d-448c-b8c4-718215b8cf24",
+      "employee_id": "94955",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 898217897,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (228)808-3250 or email me at anthonyvelazquez@example.net.",
+    "call_id": 65606157794,
+    "call_date": "2025-08-24T00:06:55.000Z",
+    "attributes": {
+      "userid": "40537c67-249e-484a-a03a-60a6169d371b",
+      "employee_id": "94778",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 558898979,
+    "type": "client",
+    "language": "english",
+    "sentence": "Phone... seven-seven... [dropout]... call me back?",
+    "call_id": 60608273689,
+    "call_date": "2025-08-19T00:06:55.000Z",
+    "attributes": {
+      "userid": "946738eb-39df-4c75-a291-334ab4a99674",
+      "employee_id": "88919",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 565509213,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 29241 Melissa Walks Suite 465, North Erin, TX 84631... zip... [garbled]... 1462-something.",
+    "call_id": 41622662593,
+    "call_date": "2024-10-07T00:06:55.000Z",
+    "attributes": {
+      "userid": "e047df18-62a4-405d-995f-b01590ed8392",
+      "employee_id": "41080",
+      "state": "ks"
+    }
+  },
+  {
+    "verbatim_id": 742923109,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Kathleen Roberts... SSN... 119-78-6900... can't hear?",
+    "call_id": 87545842562,
+    "call_date": "2024-12-03T00:06:55.000Z",
+    "attributes": {
+      "userid": "a9345e41-74c0-4e1a-8aba-824a93a6d26f",
+      "employee_id": "53413",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 928637223,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 138 Franco Way, South Jeffreyborough, WY 72363... zip... [garbled]... 1462-something.",
+    "call_id": 32452967177,
+    "call_date": "2025-04-05T00:06:55.000Z",
+    "attributes": {
+      "userid": "723d7e5c-cb94-4804-ae59-3485f857c94c",
+      "employee_id": "95815",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 659479288,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 920 Crystal Corner, Williamsville, UT 78250... zip... [garbled]... 1462-something.",
+    "call_id": 70798070773,
+    "call_date": "2025-03-19T00:06:55.000Z",
+    "attributes": {
+      "userid": "7746dc8d-7300-4d84-841f-1b9c4a99a37d",
+      "employee_id": "26682",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 504192064,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it's Christian Garcia, I think I live at 42 Maple Drive, um, zip 30318.",
+    "call_id": 21116605848,
+    "call_date": "2025-01-09T00:06:55.000Z",
+    "attributes": {
+      "userid": "2973c23b-2ee7-4572-823b-f635aa1a170b",
+      "employee_id": "34375",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 847445011,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1937-02-18... born in... [garbled]... nineteen eighty...",
+    "call_id": 17168397055,
+    "call_date": "2024-11-15T00:06:55.000Z",
+    "attributes": {
+      "userid": "b525a889-a359-4e12-a5a0-0ffa988adfe7",
+      "employee_id": "86553",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 471813381,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it's James Deleon, I think I live at 42 Maple Drive, um, zip 30318.",
+    "call_id": 86031988711,
+    "call_date": "2024-11-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "1201e205-4fe8-41e6-9536-223beeb5539f",
+      "employee_id": "24963",
+      "state": "oh"
+    }
+  },
+  {
+    "verbatim_id": 277868320,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name's Ronald Williams, and I live at... uh, 17 Elm Street, also Elmwood, Georgia, 30144.",
+    "call_id": 38884565998,
+    "call_date": "2025-04-01T00:06:55.000Z",
+    "attributes": {
+      "userid": "1be6d235-f5b3-4759-b9c2-cca5cae80b9b",
+      "employee_id": "91893",
+      "state": "ri"
+    }
+  },
+  {
+    "verbatim_id": 118276622,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 001-535-261-8852 or email me at jerryvang@example.com.",
+    "call_id": 96997874217,
+    "call_date": "2025-06-25T00:06:55.000Z",
+    "attributes": {
+      "userid": "f71db2a1-fb0b-43a7-a99d-131444cec3cc",
+      "employee_id": "44625",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 656548374,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, it's 10 Test Lane, um, also Test, New York, 14625.",
+    "call_id": 40155896414,
+    "call_date": "2025-05-05T00:06:55.000Z",
+    "attributes": {
+      "userid": "f3365c0d-2fe2-46b4-8ba1-43dc740bf6f8",
+      "employee_id": "17790",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 143494768,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... jenniferlamb@example.org... but maybe wrong... [noise]... try again?",
+    "call_id": 78715927978,
+    "call_date": "2025-05-23T00:06:55.000Z",
+    "attributes": {
+      "userid": "ca68512a-3f7b-4288-9d37-13987176b139",
+      "employee_id": "23800",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 459098738,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Donald Jones, DOB: 1917-07-01, SSN: 380-99-8373",
+    "call_id": 47753776373,
+    "call_date": "2024-11-10T00:06:55.000Z",
+    "attributes": {
+      "userid": "b99bd685-c536-4111-b945-46739949204c",
+      "employee_id": "53036",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 425075089,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at +1-583-746-7778 or email me at reynoldstom@example.com.",
+    "call_id": 39464014394,
+    "call_date": "2024-12-14T00:06:55.000Z",
+    "attributes": {
+      "userid": "f779714d-bbce-4a8b-ad9c-829747aff41a",
+      "employee_id": "38385",
+      "state": "la"
+    }
+  },
+  {
+    "verbatim_id": 659346036,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 014-87-5786, Name: Angel Skinner, DOB: 08/21/1966",
+    "call_id": 96734210912,
+    "call_date": "2025-03-07T00:06:55.000Z",
+    "attributes": {
+      "userid": "ecce54e6-81c9-4fb4-a5e9-c3aae3e7fcb4",
+      "employee_id": "59928",
+      "state": "me"
+    }
+  },
+  {
+    "verbatim_id": 750608132,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, it's 10 Test Lane, um, also Test, New York, 14625.",
+    "call_id": 50609076643,
+    "call_date": "2024-11-13T00:06:55.000Z",
+    "attributes": {
+      "userid": "ec97f0ad-de57-4743-b767-9c8e7a31377c",
+      "employee_id": "25429",
+      "state": "nc"
+    }
+  },
+  {
+    "verbatim_id": 720624003,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1946-06-23... born in... [garbled]... nineteen eighty...",
+    "call_id": 14017735828,
+    "call_date": "2024-09-15T00:06:55.000Z",
+    "attributes": {
+      "userid": "285b27d8-6ae8-482c-9a0e-7d46b680e882",
+      "employee_id": "33229",
+      "state": "ak"
+    }
+  },
+  {
+    "verbatim_id": 440499812,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Christopher Dunn, was born on 2007-03-24 and resides at 57704 Cox Point, Dawnport, NC 97562.",
+    "call_id": 47182277441,
+    "call_date": "2024-12-24T00:06:55.000Z",
+    "attributes": {
+      "userid": "318eadf0-d466-459f-a953-6dda944a1ea2",
+      "employee_id": "48446",
+      "state": "wi"
+    }
+  },
+  {
+    "verbatim_id": 101616681,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Jeffrey Shelton, was born on  1986-09-07 and resides at 1358 Rebecca Turnpike Suite 771, South Amy, VA 42262.",
+    "call_id": 49741603633,
+    "call_date": "2024-09-23T00:06:55.000Z",
+    "attributes": {
+      "userid": "33601a8d-8d04-4c5f-8bf6-bbff0691f59c",
+      "employee_id": "78615",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 958859242,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Melissa Vasquez... SSN... 319-78-9912... can't hear?",
+    "call_id": 84289113051,
+    "call_date": "2025-05-09T00:06:55.000Z",
+    "attributes": {
+      "userid": "2389a1ea-330d-4823-9dd2-948b5cb59fba",
+      "employee_id": "96179",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 654968611,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Ashley Holt... SSN... 393-03-9362... can't hear?",
+    "call_id": 89974047898,
+    "call_date": "2024-11-10T00:06:55.000Z",
+    "attributes": {
+      "userid": "0349b622-893f-4529-84a3-fb9dc3904218",
+      "employee_id": "25798",
+      "state": "mp"
+    }
+  },
+  {
+    "verbatim_id": 755679533,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... jenniferarnold@example.org... but maybe wrong... [noise]... try again?",
+    "call_id": 69735322924,
+    "call_date": "2024-12-11T00:06:55.000Z",
+    "attributes": {
+      "userid": "96c7fc45-0307-4b81-80cc-7fbcea931438",
+      "employee_id": "45292",
+      "state": "la"
+    }
+  },
+  {
+    "verbatim_id": 743852577,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1972-05-24... born in... [garbled]... nineteen eighty...",
+    "call_id": 76023281184,
+    "call_date": "2024-11-19T00:06:55.000Z",
+    "attributes": {
+      "userid": "f715fd98-a435-4a12-b4e3-dda5f9f34121",
+      "employee_id": "34134",
+      "state": "in"
+    }
+  },
+  {
+    "verbatim_id": 265711267,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Rachel Johnson, DOB: 2016-07-23, SSN: 274-71-6917",
+    "call_id": 60208251298,
+    "call_date": "2024-11-11T00:06:55.000Z",
+    "attributes": {
+      "userid": "75504afe-fb68-4628-ad85-ffd520c38e04",
+      "employee_id": "40396",
+      "state": "ok"
+    }
+  },
+  {
+    "verbatim_id": 476662036,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 2013-08-25... born in... [garbled]... nineteen eighty...",
+    "call_id": 71704448967,
+    "call_date": "2025-08-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "6a9e7f60-1120-49b7-b249-2598261f5050",
+      "employee_id": "37127",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 267497631,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 67486 Juarez Trace, Gordonville, AZ 90698... zip... [garbled]... 1462-something.",
+    "call_id": 30448625044,
+    "call_date": "2025-06-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "3dfb21fe-be42-4002-a547-d777290e0d2e",
+      "employee_id": "41803",
+      "state": "fm"
+    }
+  },
+  {
+    "verbatim_id": 726264930,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 920.866.9397x23011 or email me at edward69@example.net.",
+    "call_id": 64933489362,
+    "call_date": "2024-09-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "e10d1d98-ae6a-4146-ae34-c2d1bf022f7d",
+      "employee_id": "15638",
+      "state": "al"
+    }
+  },
+  {
+    "verbatim_id": 602458285,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Hunter Mcmahon... SSN... 291-02-7201... can't hear?",
+    "call_id": 25842503796,
+    "call_date": "2024-11-18T00:06:55.000Z",
+    "attributes": {
+      "userid": "710d890a-1fa0-41a4-80a0-842d62d05bf7",
+      "employee_id": "10551",
+      "state": "dc"
+    }
+  },
+  {
+    "verbatim_id": 992859337,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Andrea Jackson, was born on 2010-04-21 and resides at 24474 Teresa Ford Apt. 424, Fosterview, CA 85456.",
+    "call_id": 78985153658,
+    "call_date": "2025-02-13T00:06:55.000Z",
+    "attributes": {
+      "userid": "5487015e-61b3-41f4-b7bf-c2d99fa6c3f5",
+      "employee_id": "80787",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 605514637,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Jose Galloway... SSN... 466-74-0283... can't hear?",
+    "call_id": 70479406635,
+    "call_date": "2025-04-04T00:06:55.000Z",
+    "attributes": {
+      "userid": "af826b6b-29e7-4e30-a2ea-c895654d0a97",
+      "employee_id": "97020",
+      "state": "hi"
+    }
+  },
+  {
+    "verbatim_id": 171440983,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is Ronald Alexander DVM and I live at 023 Stone Hollow, Guerramouth, MI 86303.",
+    "call_id": 74383159786,
+    "call_date": "2025-02-28T00:06:55.000Z",
+    "attributes": {
+      "userid": "19b4900f-ba97-4a07-8995-ab5706588a56",
+      "employee_id": "87290",
+      "state": "dc"
+    }
+  },
+  {
+    "verbatim_id": 546685598,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at +1-364-580-7826x6786 or email me at joshua67@example.net.",
+    "call_id": 69614456513,
+    "call_date": "2024-12-15T00:06:55.000Z",
+    "attributes": {
+      "userid": "4c22ace9-ea5b-41fb-a81b-79ed60b907d3",
+      "employee_id": "98382",
+      "state": "nd"
+    }
+  },
+  {
+    "verbatim_id": 317881732,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, it's 10 Test Lane, um, also Test, New York, 14625.",
+    "call_id": 70127098060,
+    "call_date": "2024-10-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "f2f6e535-898c-41dd-9201-c41357092e37",
+      "employee_id": "60761",
+      "state": "il"
+    }
+  },
+  {
+    "verbatim_id": 174340557,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1972-06-17, I think? And SSN is... uh, 207-30-2870 maybe.",
+    "call_id": 91535086823,
+    "call_date": "2025-05-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "f62290ca-38a1-4baa-a0cc-64223db7a909",
+      "employee_id": "85889",
+      "state": "nm"
+    }
+  },
+  {
+    "verbatim_id": 716201004,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name's Dawn Hale, and I live at... uh, 17 Elm Street, also Elmwood, Georgia, 30144.",
+    "call_id": 95764134430,
+    "call_date": "2024-10-23T00:06:55.000Z",
+    "attributes": {
+      "userid": "f81333e6-2b66-48fc-9fa9-81692b902a23",
+      "employee_id": "24996",
+      "state": "wi"
+    }
+  },
+  {
+    "verbatim_id": 177901730,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1986-08-10, I think? And SSN is... uh, 151-27-5544 maybe.",
+    "call_id": 37537264777,
+    "call_date": "2024-10-27T00:06:55.000Z",
+    "attributes": {
+      "userid": "0bd6be74-32c9-49e9-9cf5-6168c49f183b",
+      "employee_id": "57946",
+      "state": "sd"
+    }
+  },
+  {
+    "verbatim_id": 551783184,
+    "type": "client",
+    "language": "english",
+    "sentence": "Patient name: Brandy Valencia, DOB: 2020-07-01, SSN: 829-46-3215",
+    "call_id": 16617089670,
+    "call_date": "2024-12-18T00:06:55.000Z",
+    "attributes": {
+      "userid": "787e7a10-c2bf-4a6c-8318-47e528e4ac52",
+      "employee_id": "10710",
+      "state": "ms"
+    }
+  },
+  {
+    "verbatim_id": 808789383,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 1978-07-01... born in... [garbled]... nineteen eighty...",
+    "call_id": 79113135262,
+    "call_date": "2025-02-18T00:06:55.000Z",
+    "attributes": {
+      "userid": "3ec0aaad-fe87-49a1-a865-6fd9b0e10884",
+      "employee_id": "37898",
+      "state": "pw"
+    }
+  },
+  {
+    "verbatim_id": 344300794,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, 54497 Roman Center Apt. 465, Webbfurt, PR 03514... zip... [garbled]... 1462-something.",
+    "call_id": 20850362972,
+    "call_date": "2025-02-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "92ddea8f-04d0-46d3-9daa-fc3cffdcecd9",
+      "employee_id": "97569",
+      "state": "wa"
+    }
+  },
+  {
+    "verbatim_id": 708619762,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it's 001-500-396-5628, or maybe try my email — elizabeth12@example.com, I guess.",
+    "call_id": 54972983514,
+    "call_date": "2025-03-08T00:06:55.000Z",
+    "attributes": {
+      "userid": "36e9a6e5-2230-4014-916e-0c17b45456de",
+      "employee_id": "86920",
+      "state": "wy"
+    }
+  },
+  {
+    "verbatim_id": 562217135,
+    "type": "client",
+    "language": "english",
+    "sentence": "Yeah, I said 2001-11-21... born in... [garbled]... nineteen eighty...",
+    "call_id": 84073295825,
+    "call_date": "2025-07-30T00:06:55.000Z",
+    "attributes": {
+      "userid": "46275be4-95b9-4cba-b864-94250dec88aa",
+      "employee_id": "99579",
+      "state": "ne"
+    }
+  },
+  {
+    "verbatim_id": 695944889,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1971-01-27, I think? And SSN is... uh, 242-16-1146 maybe.",
+    "call_id": 68718737870,
+    "call_date": "2025-07-30T00:06:55.000Z",
+    "attributes": {
+      "userid": "5d30afc7-e2f1-4c3f-bad4-ff005ffd1c3e",
+      "employee_id": "29269",
+      "state": "vi"
+    }
+  },
+  {
+    "verbatim_id": 605003403,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] Theresa Jones... SSN... 469-96-8521... can't hear?",
+    "call_id": 77323274666,
+    "call_date": "2025-01-16T00:06:55.000Z",
+    "attributes": {
+      "userid": "981ae3d6-2e40-41d0-a41c-f29cb0b54a12",
+      "employee_id": "95420",
+      "state": "id"
+    }
+  },
+  {
+    "verbatim_id": 264025607,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 1936-02-06, I think? And SSN is... uh, 071-26-9795 maybe.",
+    "call_id": 44886113310,
+    "call_date": "2025-04-13T00:06:55.000Z",
+    "attributes": {
+      "userid": "b8018d00-3a85-469e-b765-9570fd474b8a",
+      "employee_id": "83039",
+      "state": "ny"
+    }
+  },
+  {
+    "verbatim_id": 756045584,
+    "type": "client",
+    "language": "english",
+    "sentence": "Phone... seven-seven... [dropout]... call me back?",
+    "call_id": 92293498947,
+    "call_date": "2025-04-26T00:06:55.000Z",
+    "attributes": {
+      "userid": "ad1963c3-3bcf-4ccf-9c12-ea54b12449a1",
+      "employee_id": "73179",
+      "state": "mh"
+    }
+  },
+  {
+    "verbatim_id": 884597752,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... stephen23@example.net... but maybe wrong... [noise]... try again?",
+    "call_id": 80842226530,
+    "call_date": "2025-04-28T00:06:55.000Z",
+    "attributes": {
+      "userid": "56c589c9-1917-4412-970d-5987a1cc77ee",
+      "employee_id": "51201",
+      "state": "gu"
+    }
+  },
+  {
+    "verbatim_id": 368309299,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 5205119273 or email me at hayesvictoria@example.net.",
+    "call_id": 29112588059,
+    "call_date": "2025-06-11T00:06:55.000Z",
+    "attributes": {
+      "userid": "4880f58d-0a63-495b-9665-e92021a53ba9",
+      "employee_id": "18080",
+      "state": "vt"
+    }
+  },
+  {
+    "verbatim_id": 834535865,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 001-27-6291, Name: Gary Patterson, DOB: 02/02/1938",
+    "call_id": 90595100292,
+    "call_date": "2025-09-04T00:06:55.000Z",
+    "attributes": {
+      "userid": "3a2314ac-cb81-4644-93a8-f5268d3b92ee",
+      "employee_id": "13813",
+      "state": "co"
+    }
+  },
+  {
+    "verbatim_id": 618786236,
+    "type": "client",
+    "language": "english",
+    "sentence": "Born on... um, 2024-11-23, I think? And SSN is... uh, 851-46-0040 maybe.",
+    "call_id": 74720681675,
+    "call_date": "2024-11-23T00:06:55.000Z",
+    "attributes": {
+      "userid": "42281f6a-f230-4da6-89da-6602de2c8055",
+      "employee_id": "95007",
+      "state": "va"
+    }
+  }
+]
