@@ -1,0 +1,3062 @@
+[
+  {
+    "verbatim_id": 822726888,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 5**-**-***7, Name: V***** ********n, DOB: 1***-**-*8",
+    "call_id": 59163834796,
+    "call_date": "2024-10-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "091d735f-d1f9-4c13-af21-fad5dc51633c",
+      "employee_id": "62528",
+      "state": "mh"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "565-01-1157",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Victor Zimmerman",
+        "start": 24,
+        "end": 40
+      },
+      {
+        "type": "DOB",
+        "value": "1970-06-18",
+        "start": 47,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "verbatim_id": 484901525,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... c********@*******.**m... but maybe wrong... [noise]... try again?",
+    "call_id": 74477534722,
+    "call_date": "2025-05-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "e4dbb557-0075-4e5c-8d36-dbea2c7cf597",
+      "employee_id": "58914",
+      "state": "hi"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "colecindy@example.com",
+        "start": 9,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "verbatim_id": 331160942,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, A***** *****t, was born on 1***-**-*0 and resides at 4** ****** ***** ***** ***, *** ******, ** ****0.",
+    "call_id": 41925009520,
+    "call_date": "2025-04-21T06:58:03.000Z",
+    "attributes": {
+      "userid": "dd671bc1-e36a-4c00-bc2b-96c47f4bd216",
+      "employee_id": "21357",
+      "state": "sd"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Ashley Abbott",
+        "start": 14,
+        "end": 27
+      },
+      {
+        "type": "DOB",
+        "value": "1987-12-20",
+        "start": 41,
+        "end": 51
+      },
+      {
+        "type": "ADDRESS",
+        "value": "452 Nathan Fords Suite 696, New Lauren, KY 56700",
+        "start": 67,
+        "end": 115
+      }
+    ]
+  },
+  {
+    "verbatim_id": 838439998,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is D***** *******n and I live at 1*** ****** **** ***** ***, ***** ****, ** ****6.",
+    "call_id": 81335810349,
+    "call_date": "2025-04-10T06:58:03.000Z",
+    "attributes": {
+      "userid": "7594b9e6-2812-4307-85a0-b86152003816",
+      "employee_id": "16415",
+      "state": "sd"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Dustin Anderson",
+        "start": 11,
+        "end": 26
+      },
+      {
+        "type": "ADDRESS",
+        "value": "1467 Jackie Loaf Suite 272, South John, HI 22996",
+        "start": 41,
+        "end": 89
+      }
+    ]
+  },
+  {
+    "verbatim_id": 482931826,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is i*******@*******.**g, but you can also call 6**.***.*******8 if A**** *****n isn't online.",
+    "call_id": 88140681386,
+    "call_date": "2025-01-14T06:58:03.000Z",
+    "attributes": {
+      "userid": "2ecf1ea6-d182-4d6e-bbb3-14e1da8cfa73",
+      "employee_id": "48746",
+      "state": "gu"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "icochran@example.org",
+        "start": 21,
+        "end": 41
+      },
+      {
+        "type": "PHONE",
+        "value": "637.872.5738x038",
+        "start": 65,
+        "end": 81
+      },
+      {
+        "type": "NAME",
+        "value": "Allen Barton",
+        "start": 85,
+        "end": 97
+      }
+    ]
+  },
+  {
+    "verbatim_id": 483059179,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: U*** **** *** ****, *** ** ****4; Owner: S***** *******n; DOB: 2***-**-*8; SSN: 2**-**-***8; Email: e***********@*******.**t.",
+    "call_id": 56853296734,
+    "call_date": "2024-12-20T06:58:03.000Z",
+    "attributes": {
+      "userid": "84c0ce7b-7204-4714-a8eb-4141df982655",
+      "employee_id": "93836",
+      "state": "la"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "Unit 6943 Box 6175, DPO AE 41214",
+        "start": 11,
+        "end": 43
+      },
+      {
+        "type": "NAME",
+        "value": "Sharon Morrison",
+        "start": 52,
+        "end": 67
+      },
+      {
+        "type": "DOB",
+        "value": "2013-07-18",
+        "start": 74,
+        "end": 84
+      },
+      {
+        "type": "SSN",
+        "value": "243-04-4798",
+        "start": 91,
+        "end": 102
+      },
+      {
+        "type": "EMAIL",
+        "value": "ellisbrandon@example.net",
+        "start": 111,
+        "end": 135
+      }
+    ]
+  },
+  {
+    "verbatim_id": 460482155,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (7**)***-***5, or maybe try my email — r******@*******.**m.",
+    "call_id": 63906309292,
+    "call_date": "2025-04-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "e3dbfada-94d3-4e6e-96ac-6067427d8a87",
+      "employee_id": "53846",
+      "state": "fl"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(723)322-8985",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "type": "EMAIL",
+        "value": "rgarcia@example.com",
+        "start": 51,
+        "end": 70
+      }
+    ]
+  },
+  {
+    "verbatim_id": 808168581,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... r*********@*******.**m... but maybe wrong... [noise]... try again?",
+    "call_id": 25594800705,
+    "call_date": "2025-03-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "b2e97fd7-db26-4aa2-b60e-033ac977f5df",
+      "employee_id": "46190",
+      "state": "ca"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "ronaldhill@example.com",
+        "start": 9,
+        "end": 31
+      }
+    ]
+  },
+  {
+    "verbatim_id": 276427004,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0**-***-***-********7 or email me at j************@*******.**g.",
+    "call_id": 52985520930,
+    "call_date": "2025-08-09T06:58:03.000Z",
+    "attributes": {
+      "userid": "99c2c60c-bfaa-4d4b-87c4-56af735810f3",
+      "employee_id": "64177",
+      "state": "wi"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-687-416-1032x9197",
+        "start": 18,
+        "end": 39
+      },
+      {
+        "type": "EMAIL",
+        "value": "joshuasellers@example.org",
+        "start": 55,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "verbatim_id": 219840946,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... a**********@*******.**g... but maybe wrong... [noise]... try again?",
+    "call_id": 82642740443,
+    "call_date": "2025-03-24T06:58:03.000Z",
+    "attributes": {
+      "userid": "5982c478-1312-4055-ae12-12820e12752d",
+      "employee_id": "14505",
+      "state": "wy"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "alexispatel@example.org",
+        "start": 9,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "verbatim_id": 632816911,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 7**-**-***8, Name: C****** *****o, DOB: 2***-**-*7",
+    "call_id": 69874337872,
+    "call_date": "2024-12-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "f27ef67c-7e33-4e24-87bc-a171862baaed",
+      "employee_id": "99136",
+      "state": "ny"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "725-75-6858",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Charles Romero",
+        "start": 24,
+        "end": 38
+      },
+      {
+        "type": "DOB",
+        "value": "2022-04-07",
+        "start": 45,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "verbatim_id": 825633862,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (3**)***-***6 or email me at j*****@*******.**t.",
+    "call_id": 46845463294,
+    "call_date": "2025-01-06T06:58:03.000Z",
+    "attributes": {
+      "userid": "d64c7403-ab13-449a-8e81-b75f0bd880c2",
+      "employee_id": "38445",
+      "state": "ms"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(351)518-5586",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "type": "EMAIL",
+        "value": "jill96@example.net",
+        "start": 47,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "verbatim_id": 303145250,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is M*** ******n and I live at 5** ****** *****, ***********, ** ****0.",
+    "call_id": 42537176616,
+    "call_date": "2024-10-05T06:58:03.000Z",
+    "attributes": {
+      "userid": "ced7c026-9de5-4c92-94e8-562c701ea0ea",
+      "employee_id": "82895",
+      "state": "az"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Mark Nielsen",
+        "start": 11,
+        "end": 23
+      },
+      {
+        "type": "ADDRESS",
+        "value": "548 Waller Locks, Petersshire, IA 10120",
+        "start": 38,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "verbatim_id": 684985068,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 2**.***.*******9 or email me at b***********@*******.**t.",
+    "call_id": 63061604620,
+    "call_date": "2025-04-18T06:58:03.000Z",
+    "attributes": {
+      "userid": "5f374580-0a5d-4b5d-8a12-489b97b3e7fc",
+      "employee_id": "64056",
+      "state": "nd"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "243.898.6421x949",
+        "start": 18,
+        "end": 34
+      },
+      {
+        "type": "EMAIL",
+        "value": "beltranglenn@example.net",
+        "start": 50,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "verbatim_id": 754632432,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... b******************@*******.**m... but maybe wrong... [noise]... try again?",
+    "call_id": 17219039209,
+    "call_date": "2025-02-27T06:58:03.000Z",
+    "attributes": {
+      "userid": "fcf45186-991c-408c-9585-df9dfa713e76",
+      "employee_id": "46860",
+      "state": "az"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "blankenshipjonathan@example.com",
+        "start": 9,
+        "end": 40
+      }
+    ]
+  },
+  {
+    "verbatim_id": 571498910,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] F******** *****s... SSN... 3**-**-***7... can't hear?",
+    "call_id": 18512959431,
+    "call_date": "2024-11-04T06:58:03.000Z",
+    "attributes": {
+      "userid": "4087ec37-f282-4011-81d4-d1eb8cdd02ba",
+      "employee_id": "35623",
+      "state": "ak"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Francisco Rogers",
+        "start": 20,
+        "end": 36
+      },
+      {
+        "type": "SSN",
+        "value": "313-80-9977",
+        "start": 47,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "verbatim_id": 661585964,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 0**-***-***-*********9, or maybe try my email — k************@*******.**g.",
+    "call_id": 69796412923,
+    "call_date": "2025-07-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "436482f5-3357-4aaa-a734-0585037b73ec",
+      "employee_id": "52193",
+      "state": "ne"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-232-873-2488x21489",
+        "start": 12,
+        "end": 34
+      },
+      {
+        "type": "EMAIL",
+        "value": "kellystephens@example.org",
+        "start": 60,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "verbatim_id": 394342859,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 0**-**-***6, Name: A****** *******s, DOB: 1***-**-*7",
+    "call_id": 75256441101,
+    "call_date": "2025-03-22T06:58:03.000Z",
+    "attributes": {
+      "userid": "b5f88d52-e699-4b6a-ac17-679aa0f102ae",
+      "employee_id": "17171",
+      "state": "wi"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "052-63-6886",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Anthony Gonzales",
+        "start": 24,
+        "end": 40
+      },
+      {
+        "type": "DOB",
+        "value": "1984-02-07",
+        "start": 47,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "verbatim_id": 918088968,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is K******* ********d and I live at U*** **** *** ****, *** ** ****7.",
+    "call_id": 43726599877,
+    "call_date": "2025-08-07T06:58:03.000Z",
+    "attributes": {
+      "userid": "a2d6ce9f-27ff-4fb5-a6ab-215212ac6fad",
+      "employee_id": "55783",
+      "state": "nv"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Kimberly Underwood",
+        "start": 11,
+        "end": 29
+      },
+      {
+        "type": "ADDRESS",
+        "value": "Unit 0211 Box 5509, DPO AE 04467",
+        "start": 44,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "verbatim_id": 300052392,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (3**)***-*******2, or maybe try my email — t********@*******.**m.",
+    "call_id": 82243187477,
+    "call_date": "2025-08-02T06:58:03.000Z",
+    "attributes": {
+      "userid": "74439dda-ab8e-4295-bd49-774027335083",
+      "employee_id": "74219",
+      "state": "ne"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(362)587-0114x472",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "type": "EMAIL",
+        "value": "timothy21@example.com",
+        "start": 55,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "verbatim_id": 936455809,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is L**** *******r and I live at 7** ***** *******, **********, ** ****1.",
+    "call_id": 53693489117,
+    "call_date": "2025-05-10T06:58:03.000Z",
+    "attributes": {
+      "userid": "91809152-0395-434a-ba0b-68a2a32114b7",
+      "employee_id": "16385",
+      "state": "as"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Laura Fletcher",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "type": "ADDRESS",
+        "value": "780 Scott Viaduct, Gomezmouth, VI 67191",
+        "start": 40,
+        "end": 79
+      }
+    ]
+  },
+  {
+    "verbatim_id": 369001736,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (4**)***-*********7 or email me at r***********@*******.**t.",
+    "call_id": 20971242876,
+    "call_date": "2024-09-23T06:58:03.000Z",
+    "attributes": {
+      "userid": "b156503c-daa5-45bd-9f72-4bae2d39a59a",
+      "employee_id": "72341",
+      "state": "il"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(486)947-5605x00417",
+        "start": 18,
+        "end": 37
+      },
+      {
+        "type": "EMAIL",
+        "value": "rubiochelsea@example.net",
+        "start": 53,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "verbatim_id": 427710788,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to J****** ****s on 1***-**-*8, I emailed j*******@*******.**g and noted SSN 2**-**-***0.",
+    "call_id": 59640133592,
+    "call_date": "2024-10-24T06:58:03.000Z",
+    "attributes": {
+      "userid": "f33b80aa-c17e-4a73-a427-cc3126a52125",
+      "employee_id": "37309",
+      "state": "tx"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Jasmine Woods",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "type": "DOB",
+        "value": "1920-07-18",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "type": "EMAIL",
+        "value": "justin14@example.org",
+        "start": 57,
+        "end": 77
+      },
+      {
+        "type": "SSN",
+        "value": "256-62-5110",
+        "start": 92,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "verbatim_id": 477138997,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, B****** ****y, was born on 1***-**-*2 and resides at 7** **** *** ***. ***, ***** *******, ** ****3.",
+    "call_id": 63080046541,
+    "call_date": "2025-06-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "e8c9ab9d-c356-43c3-aaa7-dc4cb372e9a4",
+      "employee_id": "52609",
+      "state": "sd"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Breanna Perry",
+        "start": 14,
+        "end": 27
+      },
+      {
+        "type": "DOB",
+        "value": "1946-06-12",
+        "start": 41,
+        "end": 51
+      },
+      {
+        "type": "ADDRESS",
+        "value": "774 Eric Dam Apt. 821, North Katelyn, VT 67043",
+        "start": 67,
+        "end": 113
+      }
+    ]
+  },
+  {
+    "verbatim_id": 148684255,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... g*****@*******.**t... but maybe wrong... [noise]... try again?",
+    "call_id": 78211089398,
+    "call_date": "2025-07-08T06:58:03.000Z",
+    "attributes": {
+      "userid": "284afe67-1ab4-4126-b6f8-2991af93ff37",
+      "employee_id": "95463",
+      "state": "mn"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "greg99@example.net",
+        "start": 9,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "verbatim_id": 928401898,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 2** ****** ********, ***** ********, ** ****9; Owner: I**** ****s; DOB: 2***-**-*6; SSN: 0**-**-***6; Email: z*******@*******.**t.",
+    "call_id": 30948634460,
+    "call_date": "2025-06-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "4715c016-839f-4a4a-a9f3-79c06bd233fc",
+      "employee_id": "85281",
+      "state": "ma"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "246 Waller Mountain, South Brittany, MO 60959",
+        "start": 11,
+        "end": 56
+      },
+      {
+        "type": "NAME",
+        "value": "Isaac Jones",
+        "start": 65,
+        "end": 76
+      },
+      {
+        "type": "DOB",
+        "value": "2012-08-06",
+        "start": 83,
+        "end": 93
+      },
+      {
+        "type": "SSN",
+        "value": "046-99-4826",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "type": "EMAIL",
+        "value": "zoconnor@example.net",
+        "start": 120,
+        "end": 140
+      }
+    ]
+  },
+  {
+    "verbatim_id": 649030926,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at (6**)***-********6 or email me at h********@*******.**m.",
+    "call_id": 62390661635,
+    "call_date": "2025-05-01T06:58:03.000Z",
+    "attributes": {
+      "userid": "550ad418-6a27-458c-9d17-d5bb13436f5e",
+      "employee_id": "81582",
+      "state": "hi"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(615)335-6991x2986",
+        "start": 18,
+        "end": 36
+      },
+      {
+        "type": "EMAIL",
+        "value": "heather80@example.com",
+        "start": 52,
+        "end": 73
+      }
+    ]
+  },
+  {
+    "verbatim_id": 332811287,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 7**.***.*******4 or email me at s************@*******.**g.",
+    "call_id": 66618716382,
+    "call_date": "2025-08-24T06:58:03.000Z",
+    "attributes": {
+      "userid": "90fd4dd2-229a-4cca-9dbe-d36d423f2d1e",
+      "employee_id": "66653",
+      "state": "md"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "747.994.7083x804",
+        "start": 18,
+        "end": 34
+      },
+      {
+        "type": "EMAIL",
+        "value": "smithsamantha@example.org",
+        "start": 50,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "verbatim_id": 422186137,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 4**-***-*******3, or maybe try my email — s**********@*******.**m.",
+    "call_id": 49670547990,
+    "call_date": "2025-06-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "c6fced49-1c5b-472e-b136-8b08b8c0b327",
+      "employee_id": "93512",
+      "state": "mh"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "487-556-7694x313",
+        "start": 12,
+        "end": 28
+      },
+      {
+        "type": "EMAIL",
+        "value": "smithamanda@example.com",
+        "start": 54,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "verbatim_id": 101322814,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s N******* ****s, I think I live at 6** *** *****, **** *********, ** ****1.",
+    "call_id": 16412820574,
+    "call_date": "2025-08-28T06:58:03.000Z",
+    "attributes": {
+      "userid": "969b5191-db2e-45bd-a171-932dd4212ae1",
+      "employee_id": "25764",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Nicholas Davis",
+        "start": 15,
+        "end": 29
+      },
+      {
+        "type": "ADDRESS",
+        "value": "681 Lee Flats, East Davidberg, AK 01661",
+        "start": 49,
+        "end": 88
+      }
+    ]
+  },
+  {
+    "verbatim_id": 638863794,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to B****** ****y on 1***-**-*1, I emailed e***@*******.**t and noted SSN 6**-**-***8.",
+    "call_id": 82656876231,
+    "call_date": "2025-07-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "e99e2243-af56-43e0-9274-cd05c78e9330",
+      "employee_id": "36718",
+      "state": "sd"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Brandon Kelly",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "type": "DOB",
+        "value": "1956-07-31",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "type": "EMAIL",
+        "value": "elee@example.net",
+        "start": 57,
+        "end": 73
+      },
+      {
+        "type": "SSN",
+        "value": "617-14-5858",
+        "start": 88,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "verbatim_id": 229425927,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, D**** ****z, was born on 1***-**-*1 and resides at 2**** ***** ********* ***** ***, **** ******, ** ****3.",
+    "call_id": 96589354953,
+    "call_date": "2025-06-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "97e179a2-9c2a-4515-8429-3cd02adc187a",
+      "employee_id": "83724",
+      "state": "tn"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "David Nunez",
+        "start": 14,
+        "end": 25
+      },
+      {
+        "type": "DOB",
+        "value": "1979-11-11",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "type": "ADDRESS",
+        "value": "22225 Tracy Crossroad Suite 897, Lake Hannah, FM 81503",
+        "start": 65,
+        "end": 119
+      }
+    ]
+  },
+  {
+    "verbatim_id": 220861245,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] W****** ****n... SSN... 8**-**-***5... can't hear?",
+    "call_id": 80780213514,
+    "call_date": "2025-04-09T06:58:03.000Z",
+    "attributes": {
+      "userid": "89b7e92e-b9bc-4047-8bfc-52d71d142a8f",
+      "employee_id": "73120",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "William Simon",
+        "start": 20,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "884-02-0635",
+        "start": 44,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "verbatim_id": 383230218,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 6**-**-***4, Name: K****** *******s, DOB: 2***-**-*0",
+    "call_id": 52236508716,
+    "call_date": "2025-05-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "23ad5525-a858-4560-939e-d32046cf5d8e",
+      "employee_id": "95181",
+      "state": "sc"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "638-94-5514",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Kathryn Cardenas",
+        "start": 24,
+        "end": 40
+      },
+      {
+        "type": "DOB",
+        "value": "2023-10-30",
+        "start": 47,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "verbatim_id": 563201227,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] D**** *****a... SSN... 0**-**-***2... can't hear?",
+    "call_id": 73407670367,
+    "call_date": "2024-10-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "4d45e230-b988-419b-a2cb-4a68233b8038",
+      "employee_id": "56087",
+      "state": "ct"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Diana Molina",
+        "start": 20,
+        "end": 32
+      },
+      {
+        "type": "SSN",
+        "value": "046-90-4532",
+        "start": 43,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "verbatim_id": 943738451,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 6**-**-***6, Name: D***** ******d, DOB: 1***-**-*7",
+    "call_id": 81571975855,
+    "call_date": "2025-05-08T06:58:03.000Z",
+    "attributes": {
+      "userid": "2a3d1bd5-359a-4057-8cbd-2e08c0af9d7f",
+      "employee_id": "83776",
+      "state": "ri"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "663-51-9366",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Daniel Maynard",
+        "start": 24,
+        "end": 38
+      },
+      {
+        "type": "DOB",
+        "value": "1971-08-27",
+        "start": 45,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "verbatim_id": 143736312,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1***-**-*0 and SSN 3**-**-***1 must be on file for K****** ****s.",
+    "call_id": 14723978869,
+    "call_date": "2025-04-19T06:58:03.000Z",
+    "attributes": {
+      "userid": "933a2b67-e8d4-4e74-9201-709fec5fbafa",
+      "employee_id": "91433",
+      "state": "ga"
+    },
+    "ground_truth": [
+      {
+        "type": "DOB",
+        "value": "1937-05-30",
+        "start": 23,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "387-55-0801",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Kenneth Jones",
+        "start": 74,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "verbatim_id": 921071797,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, C***** *****a, was born on 1***-**-*7 and resides at 6*** ******** ***** ***** ***, **** **********, ** ****7.",
+    "call_id": 41729456745,
+    "call_date": "2024-10-01T06:58:03.000Z",
+    "attributes": {
+      "userid": "1264f75c-36e8-48bc-a447-fa32c77361c2",
+      "employee_id": "72630",
+      "state": "ca"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Calvin Garcia",
+        "start": 14,
+        "end": 27
+      },
+      {
+        "type": "DOB",
+        "value": "1934-12-17",
+        "start": 41,
+        "end": 51
+      },
+      {
+        "type": "ADDRESS",
+        "value": "6085 Brittany Point Suite 999, Port Joshuafurt, NE 11337",
+        "start": 67,
+        "end": 123
+      }
+    ]
+  },
+  {
+    "verbatim_id": 865082238,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s L*** ******n, I think I live at 0** ******** ****** ***** ***, *******, ** ****4.",
+    "call_id": 31645498012,
+    "call_date": "2025-07-26T06:58:03.000Z",
+    "attributes": {
+      "userid": "7644306b-733a-4d28-84ea-35e2ba00c033",
+      "employee_id": "34895",
+      "state": "de"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Leah Jackson",
+        "start": 15,
+        "end": 27
+      },
+      {
+        "type": "ADDRESS",
+        "value": "016 Nicholas Circle Suite 488, Lamview, OH 44054",
+        "start": 47,
+        "end": 95
+      }
+    ]
+  },
+  {
+    "verbatim_id": 424087853,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is S**** ****n and I live at 5** ***** ******, *** ********, ** ****1.",
+    "call_id": 65766511774,
+    "call_date": "2025-01-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "879fdabc-4731-4f16-9589-09ea6a89567b",
+      "employee_id": "57107",
+      "state": "pa"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Sonya Allen",
+        "start": 11,
+        "end": 22
+      },
+      {
+        "type": "ADDRESS",
+        "value": "544 Brown Knolls, New Danielle, IN 92471",
+        "start": 37,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "verbatim_id": 837984481,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to L****** ****s on 1***-**-*5, I emailed e******@*******.**m and noted SSN 7**-**-***6.",
+    "call_id": 44478725734,
+    "call_date": "2025-04-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "b199d8d1-e80a-4b7d-8094-4882e70d802e",
+      "employee_id": "23923",
+      "state": "in"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Lindsey Woods",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "type": "DOB",
+        "value": "1990-10-05",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "type": "EMAIL",
+        "value": "eweaver@example.com",
+        "start": 57,
+        "end": 76
+      },
+      {
+        "type": "SSN",
+        "value": "799-93-9916",
+        "start": 91,
+        "end": 102
+      }
+    ]
+  },
+  {
+    "verbatim_id": 539045820,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1***-**-*0 and SSN 1**-**-***6 must be on file for E*** *****y.",
+    "call_id": 38567745397,
+    "call_date": "2025-02-27T06:58:03.000Z",
+    "attributes": {
+      "userid": "12f09a7f-7da0-437b-9130-c5291e06cd57",
+      "employee_id": "94419",
+      "state": "sd"
+    },
+    "ground_truth": [
+      {
+        "type": "DOB",
+        "value": "1975-02-20",
+        "start": 23,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "171-31-3976",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Eric Bailey",
+        "start": 74,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "verbatim_id": 912635965,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] T****** ***n... SSN... 8**-**-***9... can't hear?",
+    "call_id": 94592703212,
+    "call_date": "2025-07-05T06:58:03.000Z",
+    "attributes": {
+      "userid": "b0f2c9ec-a198-4989-b81e-ad8c2ebcac77",
+      "employee_id": "26441",
+      "state": "mt"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Theresa Cain",
+        "start": 20,
+        "end": 32
+      },
+      {
+        "type": "SSN",
+        "value": "875-98-3759",
+        "start": 43,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "verbatim_id": 291752127,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 1**** **** ******y, ***** ***********, ** ****1; Owner: A**** ****n; DOB: 1***-**-*1; SSN: 2**-**-***0; Email: h*********@*******.**g.",
+    "call_id": 54480756943,
+    "call_date": "2025-08-02T06:58:03.000Z",
+    "attributes": {
+      "userid": "8e910444-08f6-4577-b403-0a1b0ac2e7eb",
+      "employee_id": "99109",
+      "state": "ks"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "14087 Mary Highway, South Jessicaport, FL 22251",
+        "start": 11,
+        "end": 58
+      },
+      {
+        "type": "NAME",
+        "value": "Alexa Brown",
+        "start": 67,
+        "end": 78
+      },
+      {
+        "type": "DOB",
+        "value": "1911-09-01",
+        "start": 85,
+        "end": 95
+      },
+      {
+        "type": "SSN",
+        "value": "280-71-5810",
+        "start": 102,
+        "end": 113
+      },
+      {
+        "type": "EMAIL",
+        "value": "hornronald@example.org",
+        "start": 122,
+        "end": 144
+      }
+    ]
+  },
+  {
+    "verbatim_id": 434511222,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s C***** *****n, I think I live at 3** ******** ******* ***. ***, ************, ** ****3.",
+    "call_id": 82122789526,
+    "call_date": "2025-04-12T06:58:03.000Z",
+    "attributes": {
+      "userid": "b1abe134-b12a-43fc-87cf-ec58844b3441",
+      "employee_id": "63043",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Connor Nelson",
+        "start": 15,
+        "end": 28
+      },
+      {
+        "type": "ADDRESS",
+        "value": "370 Brittany Centers Apt. 083, Salasborough, NM 78833",
+        "start": 48,
+        "end": 101
+      }
+    ]
+  },
+  {
+    "verbatim_id": 994340045,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 4**** ***** ********, *********, ** ****3; Owner: R**** ******s; DOB: 1***-**-*7; SSN: 1**-**-***5; Email: j************@*******.**g.",
+    "call_id": 70038350095,
+    "call_date": "2025-01-04T06:58:03.000Z",
+    "attributes": {
+      "userid": "a0578df5-7b0d-4ea3-872d-1cda40b4e1d4",
+      "employee_id": "15527",
+      "state": "la"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "44395 Green Overpass, Rivasfurt, DC 93243",
+        "start": 11,
+        "end": 52
+      },
+      {
+        "type": "NAME",
+        "value": "Ricky Collins",
+        "start": 61,
+        "end": 74
+      },
+      {
+        "type": "DOB",
+        "value": "1979-09-27",
+        "start": 81,
+        "end": 91
+      },
+      {
+        "type": "SSN",
+        "value": "158-26-7985",
+        "start": 98,
+        "end": 109
+      },
+      {
+        "type": "EMAIL",
+        "value": "jordanmichael@example.org",
+        "start": 118,
+        "end": 143
+      }
+    ]
+  },
+  {
+    "verbatim_id": 198826830,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is P****** *****r and I live at U*** **** *** ****, *** ** ****9.",
+    "call_id": 32028545092,
+    "call_date": "2025-02-08T06:58:03.000Z",
+    "attributes": {
+      "userid": "456893fd-cccc-4547-bf05-ef4b2b3f106c",
+      "employee_id": "91965",
+      "state": "mt"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Patrick Taylor",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "type": "ADDRESS",
+        "value": "Unit 3404 Box 5363, DPO AA 57729",
+        "start": 40,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "verbatim_id": 219931127,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 6*** ******** ******* ***** ***, ***** *************, ** ****9 or dial 7**.***.***7, attention Mrs. R****** *****y, please.",
+    "call_id": 58744917789,
+    "call_date": "2025-04-09T06:58:03.000Z",
+    "attributes": {
+      "userid": "b0d88a10-e281-46c7-823d-d80330c67ca5",
+      "employee_id": "42792",
+      "state": "wv"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "6878 Thompson Circles Suite 187, South Christinastad, NE 35609",
+        "start": 22,
+        "end": 84
+      },
+      {
+        "type": "PHONE",
+        "value": "791.675.9507",
+        "start": 93,
+        "end": 105
+      },
+      {
+        "type": "NAME",
+        "value": "Mrs. Rebecca Bailey",
+        "start": 117,
+        "end": 136
+      }
+    ]
+  },
+  {
+    "verbatim_id": 938513106,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 0**-**-***9, Name: S******** *******s, DOB: 1***-**-*9",
+    "call_id": 72673465677,
+    "call_date": "2024-10-24T06:58:03.000Z",
+    "attributes": {
+      "userid": "dc40da14-f474-4a07-8d57-e407525e866f",
+      "employee_id": "82944",
+      "state": "sc"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "007-26-9339",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Stephanie Williams",
+        "start": 24,
+        "end": 42
+      },
+      {
+        "type": "DOB",
+        "value": "1911-08-29",
+        "start": 49,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "verbatim_id": 174280675,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1***-**-*1 and SSN 7**-**-***2 must be on file for C********** *******n.",
+    "call_id": 34428371731,
+    "call_date": "2024-09-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "23d9f27d-7c47-47dc-bdbf-3fc59091f373",
+      "employee_id": "46153",
+      "state": "mi"
+    },
+    "ground_truth": [
+      {
+        "type": "DOB",
+        "value": "1970-10-31",
+        "start": 23,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "700-26-4802",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Christopher Peterson",
+        "start": 74,
+        "end": 94
+      }
+    ]
+  },
+  {
+    "verbatim_id": 559140200,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] M****** *****y... SSN... 4**-**-***3... can't hear?",
+    "call_id": 70872758468,
+    "call_date": "2025-05-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "8ada08a3-3284-4908-9bd9-5f24e7233a66",
+      "employee_id": "90588",
+      "state": "gu"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Melanie Murphy",
+        "start": 20,
+        "end": 34
+      },
+      {
+        "type": "SSN",
+        "value": "423-67-1023",
+        "start": 45,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "verbatim_id": 442227438,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is S****** *****r and I live at 9*** ****** **** ***** ***, ***** *******, ** ****8.",
+    "call_id": 54756471845,
+    "call_date": "2025-05-01T06:58:03.000Z",
+    "attributes": {
+      "userid": "c42d32e2-8971-47d0-9126-eb4b954cecdc",
+      "employee_id": "18084",
+      "state": "me"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Stephen Taylor",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "type": "ADDRESS",
+        "value": "9331 Steven Ford Suite 575, North Troyton, CA 33318",
+        "start": 40,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "verbatim_id": 822726507,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 1** ****** ******* ***. ***, ***** ********, ** ****4 or dial 6**.***.***8, attention B******* ***d, please.",
+    "call_id": 78932184955,
+    "call_date": "2025-04-06T06:58:03.000Z",
+    "attributes": {
+      "userid": "447c7049-05f1-4b7b-be63-8f00db7908b4",
+      "employee_id": "39996",
+      "state": "gu"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "136 Joseph Gardens Apt. 885, North Patricia, IA 89134",
+        "start": 22,
+        "end": 75
+      },
+      {
+        "type": "PHONE",
+        "value": "669.779.9128",
+        "start": 84,
+        "end": 96
+      },
+      {
+        "type": "NAME",
+        "value": "Brittney Boyd",
+        "start": 108,
+        "end": 121
+      }
+    ]
+  },
+  {
+    "verbatim_id": 110957515,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 0**-***-***-*********0, or maybe try my email — c*******@*******.**g.",
+    "call_id": 27225556115,
+    "call_date": "2025-07-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "1acec5cb-7e90-427f-a634-0ef1b7e48b13",
+      "employee_id": "25822",
+      "state": "md"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-593-212-6496x65450",
+        "start": 12,
+        "end": 34
+      },
+      {
+        "type": "EMAIL",
+        "value": "carlos44@example.org",
+        "start": 60,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "verbatim_id": 517704738,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 0**-***-***-***9, or maybe try my email — i*****@*******.**t.",
+    "call_id": 42795895114,
+    "call_date": "2025-02-19T06:58:03.000Z",
+    "attributes": {
+      "userid": "11cd578e-96e8-4213-b797-a6e1eee28c6e",
+      "employee_id": "49534",
+      "state": "va"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-438-716-8499",
+        "start": 12,
+        "end": 28
+      },
+      {
+        "type": "EMAIL",
+        "value": "ijones@example.net",
+        "start": 54,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "verbatim_id": 340809239,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 1**-**-***7, Name: A***** ****s, DOB: 2***-**-*5",
+    "call_id": 58686838224,
+    "call_date": "2025-03-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "24d53c24-b75d-4ca3-8935-85222129d38d",
+      "employee_id": "81727",
+      "state": "mo"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "168-36-6287",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Alyssa Adams",
+        "start": 24,
+        "end": 36
+      },
+      {
+        "type": "DOB",
+        "value": "2012-07-15",
+        "start": 43,
+        "end": 53
+      }
+    ]
+  },
+  {
+    "verbatim_id": 197350193,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to E***** *******n on 2***-**-*0, I emailed a********@*******.**m and noted SSN 5**-**-***3.",
+    "call_id": 64691707671,
+    "call_date": "2025-04-15T06:58:03.000Z",
+    "attributes": {
+      "userid": "9984f7d4-79f0-4ca5-a8d3-d491689436a9",
+      "employee_id": "28250",
+      "state": "pa"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Elijah Anderson",
+        "start": 18,
+        "end": 33
+      },
+      {
+        "type": "DOB",
+        "value": "2001-04-10",
+        "start": 37,
+        "end": 47
+      },
+      {
+        "type": "EMAIL",
+        "value": "anthony08@example.com",
+        "start": 59,
+        "end": 80
+      },
+      {
+        "type": "SSN",
+        "value": "569-86-0073",
+        "start": 95,
+        "end": 106
+      }
+    ]
+  },
+  {
+    "verbatim_id": 998699804,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, C****** *****z, was born on 1***-**-*8 and resides at 4** ***** ******* ***. ***, *************, ** ****0.",
+    "call_id": 85683127056,
+    "call_date": "2025-08-15T06:58:03.000Z",
+    "attributes": {
+      "userid": "d3865af7-17dc-4f9b-8caf-3212e40ec1fb",
+      "employee_id": "22576",
+      "state": "pr"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Caitlyn Cortez",
+        "start": 14,
+        "end": 28
+      },
+      {
+        "type": "DOB",
+        "value": "1998-01-28",
+        "start": 42,
+        "end": 52
+      },
+      {
+        "type": "ADDRESS",
+        "value": "417 Tracy Landing Apt. 594, Catherineside, MD 66300",
+        "start": 68,
+        "end": 119
+      }
+    ]
+  },
+  {
+    "verbatim_id": 655294213,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, Mr. D**** ****n, was born on 1***-**-*2 and resides at P** ****, *** ****, *** ** ****1.",
+    "call_id": 62795232682,
+    "call_date": "2025-05-01T06:58:03.000Z",
+    "attributes": {
+      "userid": "0ddc48b9-4de6-4ee7-99bb-e54323119a1a",
+      "employee_id": "53346",
+      "state": "md"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Mr. David Green",
+        "start": 14,
+        "end": 29
+      },
+      {
+        "type": "DOB",
+        "value": "1969-03-02",
+        "start": 43,
+        "end": 53
+      },
+      {
+        "type": "ADDRESS",
+        "value": "PSC 9582, Box 3254, APO AP 27901",
+        "start": 69,
+        "end": 101
+      }
+    ]
+  },
+  {
+    "verbatim_id": 648938205,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (4**)***-*******9, or maybe try my email — t**********@*******.**t.",
+    "call_id": 40937647900,
+    "call_date": "2024-10-28T06:58:03.000Z",
+    "attributes": {
+      "userid": "37368d26-a337-4fc4-bda2-8a37cb7923b5",
+      "employee_id": "67970",
+      "state": "co"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(447)916-8192x509",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "type": "EMAIL",
+        "value": "thomaskatie@example.net",
+        "start": 55,
+        "end": 78
+      }
+    ]
+  },
+  {
+    "verbatim_id": 452957932,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is K******** ****z and I live at 8*** ****** ****, **** *************, ** ****3.",
+    "call_id": 42924983848,
+    "call_date": "2025-08-01T06:58:03.000Z",
+    "attributes": {
+      "userid": "5f86b24a-762c-4ef0-9ec4-2afda7e84777",
+      "employee_id": "12526",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Katherine Munoz",
+        "start": 11,
+        "end": 26
+      },
+      {
+        "type": "ADDRESS",
+        "value": "8160 Sydney Cove, Port Christinafurt, NY 91633",
+        "start": 41,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "verbatim_id": 243996229,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 6**.***.***5, or maybe try my email — r********@*******.**g.",
+    "call_id": 59167920247,
+    "call_date": "2025-03-28T06:58:03.000Z",
+    "attributes": {
+      "userid": "5188f482-c567-4798-b5c6-0a74a01a0208",
+      "employee_id": "91004",
+      "state": "dc"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "627.912.2465",
+        "start": 12,
+        "end": 24
+      },
+      {
+        "type": "EMAIL",
+        "value": "rebecca05@example.org",
+        "start": 50,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "verbatim_id": 138808025,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to B****** ***t on 1***-**-*8, I emailed k*********@*******.**t and noted SSN 1**-**-***9.",
+    "call_id": 95038322596,
+    "call_date": "2025-04-21T06:58:03.000Z",
+    "attributes": {
+      "userid": "d90777ac-2024-48f9-a99b-d21983de8c10",
+      "employee_id": "40431",
+      "state": "nd"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Belinda Hunt",
+        "start": 18,
+        "end": 30
+      },
+      {
+        "type": "DOB",
+        "value": "1953-01-08",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "type": "EMAIL",
+        "value": "kimberly20@example.net",
+        "start": 56,
+        "end": 78
+      },
+      {
+        "type": "SSN",
+        "value": "151-46-7629",
+        "start": 93,
+        "end": 104
+      }
+    ]
+  },
+  {
+    "verbatim_id": 718413149,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 3**** ******* *******, ***** *****, ** ****7; Owner: M****** *******a; DOB: 2***-**-*1; SSN: 7**-**-***2; Email: m********@*******.**g.",
+    "call_id": 64017787641,
+    "call_date": "2025-06-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "10c16b9f-5284-4165-948b-ed31f6da7688",
+      "employee_id": "59077",
+      "state": "ar"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "35088 Johnson Station, South Cathy, NJ 69247",
+        "start": 11,
+        "end": 55
+      },
+      {
+        "type": "NAME",
+        "value": "Michael Valencia",
+        "start": 64,
+        "end": 80
+      },
+      {
+        "type": "DOB",
+        "value": "2001-03-01",
+        "start": 87,
+        "end": 97
+      },
+      {
+        "type": "SSN",
+        "value": "795-67-3062",
+        "start": 104,
+        "end": 115
+      },
+      {
+        "type": "EMAIL",
+        "value": "monique23@example.org",
+        "start": 124,
+        "end": 145
+      }
+    ]
+  },
+  {
+    "verbatim_id": 577751730,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 9**** ***** *****, *** ********, ** ****6 or dial (9**)***-***4, attention J****** ***s, please.",
+    "call_id": 49687954624,
+    "call_date": "2025-02-27T06:58:03.000Z",
+    "attributes": {
+      "userid": "97abcf31-8b9c-4dba-98b7-592378ab4ccb",
+      "employee_id": "64147",
+      "state": "pw"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "98817 Casey Ports, New Jonathon, HI 17266",
+        "start": 22,
+        "end": 63
+      },
+      {
+        "type": "PHONE",
+        "value": "(964)555-9684",
+        "start": 72,
+        "end": 85
+      },
+      {
+        "type": "NAME",
+        "value": "Jeffery Moss",
+        "start": 97,
+        "end": 109
+      }
+    ]
+  },
+  {
+    "verbatim_id": 643234354,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is b*********@*******.**g, but you can also call (5**)***-*******5 if J***** *******n isn't online.",
+    "call_id": 89696213374,
+    "call_date": "2025-06-14T06:58:03.000Z",
+    "attributes": {
+      "userid": "27235174-d278-4e72-991a-18475ccf3c10",
+      "employee_id": "16393",
+      "state": "oh"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "burkebrian@example.org",
+        "start": 21,
+        "end": 43
+      },
+      {
+        "type": "PHONE",
+        "value": "(573)208-2134x445",
+        "start": 67,
+        "end": 84
+      },
+      {
+        "type": "NAME",
+        "value": "Johnny Sullivan",
+        "start": 88,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "verbatim_id": 718962007,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 1***-**-*8 and SSN 5**-**-***9 must be on file for B******* *****s.",
+    "call_id": 49213693773,
+    "call_date": "2025-03-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "91ad90f0-6e4b-4776-890c-5d89fa659722",
+      "employee_id": "86440",
+      "state": "mh"
+    },
+    "ground_truth": [
+      {
+        "type": "DOB",
+        "value": "1927-05-18",
+        "start": 23,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "595-56-1409",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Brittany Torres",
+        "start": 74,
+        "end": 89
+      }
+    ]
+  },
+  {
+    "verbatim_id": 161671036,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 0** ******** ******e, ***********, ** ****9 or dial 8**.***.***7, attention L**** ****n, please.",
+    "call_id": 10415024248,
+    "call_date": "2024-10-21T06:58:03.000Z",
+    "attributes": {
+      "userid": "b1bf0c01-bec9-458a-98b4-3d14120357e9",
+      "employee_id": "66478",
+      "state": "ny"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "086 Thompson Terrace, Charlesside, CA 31319",
+        "start": 22,
+        "end": 65
+      },
+      {
+        "type": "PHONE",
+        "value": "849.643.4057",
+        "start": 74,
+        "end": 86
+      },
+      {
+        "type": "NAME",
+        "value": "Laura Green",
+        "start": 98,
+        "end": 109
+      }
+    ]
+  },
+  {
+    "verbatim_id": 786356997,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is L**** *******s and I live at 7*** ******** *****, ***********, ** ****9.",
+    "call_id": 43387634394,
+    "call_date": "2025-04-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "547f3c48-8017-4750-96eb-ad4f25289693",
+      "employee_id": "75385",
+      "state": "mi"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Linda Williams",
+        "start": 11,
+        "end": 25
+      },
+      {
+        "type": "ADDRESS",
+        "value": "7210 Robinson Knoll, Jessicaport, MD 82629",
+        "start": 40,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "verbatim_id": 544332582,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... p********@*******.**t... but maybe wrong... [noise]... try again?",
+    "call_id": 33074456011,
+    "call_date": "2024-11-12T06:58:03.000Z",
+    "attributes": {
+      "userid": "a59c1281-6006-4060-9d5e-4fe5bb1e6719",
+      "employee_id": "82007",
+      "state": "mh"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "patrick79@example.net",
+        "start": 9,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "verbatim_id": 936763665,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, C******** ****r, was born on 1***-**-*9 *** ******* ** **** ***** ***d ***** ***, **** *********, ** ****0.",
+    "call_id": 12266481824,
+    "call_date": "2025-01-14T06:58:03.000Z",
+    "attributes": {
+      "userid": "d1536724-ad93-4c51-bc47-e3f30ada697f",
+      "employee_id": "91703",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Christina Baker",
+        "start": 14,
+        "end": 29
+      },
+      {
+        "type": "DOB",
+        "value": "1943-01-29",
+        "start": 43,
+        "end": 53
+      },
+      {
+        "type": "ADDRESS",
+        "value": "4789 Smith Road Suite 961, Lake Elizabeth, MO 15070",
+        "start": 69,
+        "end": 120
+      }
+    ]
+  },
+  {
+    "verbatim_id": 707369679,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, J******* ***k, was born on 2***-**-*3 and resides at 5**** ***** ****, ***** **************, ** ****2.",
+    "call_id": 87180961306,
+    "call_date": "2025-01-21T06:58:03.000Z",
+    "attributes": {
+      "userid": "a2fc20e1-905d-429c-942a-bfec72fe5fdc",
+      "employee_id": "64269",
+      "state": "gu"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Jennifer York",
+        "start": 14,
+        "end": 27
+      },
+      {
+        "type": "DOB",
+        "value": "2009-05-13",
+        "start": 41,
+        "end": 51
+      },
+      {
+        "type": "ADDRESS",
+        "value": "59997 Brown Burg, North Michaelchester, GU 45462",
+        "start": 67,
+        "end": 115
+      }
+    ]
+  },
+  {
+    "verbatim_id": 470178147,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 1*** ******* ****, **********, ** ****5; Owner: S***** *********n; DOB: 1***-**-*4; SSN: 5**-**-***6; Email: j*********@*******.**t.",
+    "call_id": 94141191189,
+    "call_date": "2025-08-27T06:58:03.000Z",
+    "attributes": {
+      "userid": "96470dce-af92-4161-b6b9-9a80774059cc",
+      "employee_id": "81366",
+      "state": "pw"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "1058 Frances Glen, Priceshire, FM 08985",
+        "start": 11,
+        "end": 50
+      },
+      {
+        "type": "NAME",
+        "value": "Stacie Richardson",
+        "start": 59,
+        "end": 76
+      },
+      {
+        "type": "DOB",
+        "value": "1930-10-24",
+        "start": 83,
+        "end": 93
+      },
+      {
+        "type": "SSN",
+        "value": "555-48-7946",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "type": "EMAIL",
+        "value": "julielewis@example.net",
+        "start": 120,
+        "end": 142
+      }
+    ]
+  },
+  {
+    "verbatim_id": 134887182,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 5**.***.********1, or maybe try my email — k********@*******.**t.",
+    "call_id": 78975636374,
+    "call_date": "2024-09-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "07443fda-b1de-4b9b-8e32-6093e0bcefa1",
+      "employee_id": "56021",
+      "state": "fm"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "511.897.2461x4101",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "type": "EMAIL",
+        "value": "kgallegos@example.net",
+        "start": 55,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "verbatim_id": 667208838,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s F**** *****r, I think I live at 6*** **** ******, **** ****, ** ****7.",
+    "call_id": 76913237704,
+    "call_date": "2024-12-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "5a108d43-d4ba-4c0f-8edf-0c9ffd3f6b56",
+      "employee_id": "40117",
+      "state": "nh"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Faith Werner",
+        "start": 15,
+        "end": 27
+      },
+      {
+        "type": "ADDRESS",
+        "value": "6293 Lynn Summit, Lake Paul, NJ 92657",
+        "start": 47,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "verbatim_id": 678506206,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 0**-***-***-***3, or maybe try my email — m*******@*******.**m.",
+    "call_id": 27473384974,
+    "call_date": "2024-12-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "b833ee4b-8075-43eb-a21d-f2d37cea4b3d",
+      "employee_id": "27045",
+      "state": "dc"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-273-540-8923",
+        "start": 12,
+        "end": 28
+      },
+      {
+        "type": "EMAIL",
+        "value": "martha62@example.com",
+        "start": 54,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "verbatim_id": 438986547,
+    "type": "client",
+    "language": "english",
+    "sentence": "The patient's birthday 2***-**-*1 and SSN 5**-**-***0 must be on file for C********** ******n.",
+    "call_id": 58741966659,
+    "call_date": "2025-05-07T06:58:03.000Z",
+    "attributes": {
+      "userid": "49349296-ad12-4f83-b488-f0b1994abe94",
+      "employee_id": "84895",
+      "state": "pa"
+    },
+    "ground_truth": [
+      {
+        "type": "DOB",
+        "value": "2008-05-11",
+        "start": 23,
+        "end": 33
+      },
+      {
+        "type": "SSN",
+        "value": "514-16-8510",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Christopher Johnson",
+        "start": 74,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "verbatim_id": 751613377,
+    "type": "client",
+    "language": "english",
+    "sentence": "Name is... [static] G****** *******n... SSN... 1**-**-***7... can't hear?",
+    "call_id": 44120294060,
+    "call_date": "2025-06-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "9ad3e930-5086-4aa0-bb2f-035012cd177f",
+      "employee_id": "34899",
+      "state": "oh"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Gabriel Morrison",
+        "start": 20,
+        "end": 36
+      },
+      {
+        "type": "SSN",
+        "value": "146-38-5007",
+        "start": 47,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "verbatim_id": 587804141,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 9**.***.***5, or maybe try my email — n*********@*******.**g.",
+    "call_id": 97297778514,
+    "call_date": "2025-01-14T06:58:03.000Z",
+    "attributes": {
+      "userid": "83217590-30a8-4578-a5bb-c8644373be0a",
+      "employee_id": "20615",
+      "state": "vt"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "925.700.6325",
+        "start": 12,
+        "end": 24
+      },
+      {
+        "type": "EMAIL",
+        "value": "nicholas94@example.org",
+        "start": 50,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "verbatim_id": 718971709,
+    "type": "client",
+    "language": "english",
+    "sentence": "The claimant, M****** ********y, was born on 1***-**-*6 and resides at 6** ***** ***** ***** ***, ********, ** ****1.",
+    "call_id": 77541801971,
+    "call_date": "2024-11-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "7b827a50-5148-49ff-a07b-cdf6cc46b71c",
+      "employee_id": "83783",
+      "state": "ma"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Miranda Daugherty",
+        "start": 14,
+        "end": 31
+      },
+      {
+        "type": "DOB",
+        "value": "1992-01-26",
+        "start": 45,
+        "end": 55
+      },
+      {
+        "type": "ADDRESS",
+        "value": "604 James Manor Suite 773, Pagefurt, LA 12901",
+        "start": 71,
+        "end": 116
+      }
+    ]
+  },
+  {
+    "verbatim_id": 300601575,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to A**** ******n on 1***-**-*6, I emailed s************@*******.**t and noted SSN 5**-**-***5.",
+    "call_id": 58170999059,
+    "call_date": "2025-04-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "3c63ae1d-7c69-47ac-a0bf-d83208abf0c8",
+      "employee_id": "38917",
+      "state": "ma"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "April Johnson",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "type": "DOB",
+        "value": "1973-12-16",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "type": "EMAIL",
+        "value": "stewartjoshua@example.net",
+        "start": 57,
+        "end": 82
+      },
+      {
+        "type": "SSN",
+        "value": "562-23-6515",
+        "start": 97,
+        "end": 108
+      }
+    ]
+  },
+  {
+    "verbatim_id": 579435959,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is C******** **e and I live at 5**** ******** *********, **** *******, ** ****6.",
+    "call_id": 81085189343,
+    "call_date": "2024-11-30T06:58:03.000Z",
+    "attributes": {
+      "userid": "bdcca378-51d4-4ca9-9cff-d0431436f6b7",
+      "employee_id": "84531",
+      "state": "mh"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Christian Lee",
+        "start": 11,
+        "end": 24
+      },
+      {
+        "type": "ADDRESS",
+        "value": "51625 Marshall Underpass, East Michael, FM 06816",
+        "start": 39,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "verbatim_id": 208950485,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (2**)***-*******1, or maybe try my email — s******@*******.**t.",
+    "call_id": 91174651313,
+    "call_date": "2024-11-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "c1e9deac-51ba-4eff-8b11-338bef19f6d3",
+      "employee_id": "84690",
+      "state": "de"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(214)935-6617x461",
+        "start": 12,
+        "end": 29
+      },
+      {
+        "type": "EMAIL",
+        "value": "sarah96@example.net",
+        "start": 55,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "verbatim_id": 834423506,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s (9**)***-***1, or maybe try my email — j******@*******.**t.",
+    "call_id": 44418252033,
+    "call_date": "2024-10-25T06:58:03.000Z",
+    "attributes": {
+      "userid": "d206128d-a9da-4332-9ab3-614b015161a7",
+      "employee_id": "20652",
+      "state": "hi"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "(967)565-0841",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "type": "EMAIL",
+        "value": "joyoung@example.net",
+        "start": 51,
+        "end": 70
+      }
+    ]
+  },
+  {
+    "verbatim_id": 602178202,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 7**-**-***6, Name: J*** ****s, DOB: 1***-**-*0",
+    "call_id": 61669666735,
+    "call_date": "2025-01-09T06:58:03.000Z",
+    "attributes": {
+      "userid": "f2223862-4caf-44e4-bee5-9f5e3b340ca1",
+      "employee_id": "53394",
+      "state": "as"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "770-91-3286",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "John Reyes",
+        "start": 24,
+        "end": 34
+      },
+      {
+        "type": "DOB",
+        "value": "1943-09-10",
+        "start": 41,
+        "end": 51
+      }
+    ]
+  },
+  {
+    "verbatim_id": 539338084,
+    "type": "client",
+    "language": "english",
+    "sentence": "Our support email is t***********@*******.**t, but you can also call (9**)***-********5 if J**** ******l isn't online.",
+    "call_id": 28246755667,
+    "call_date": "2024-11-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "615a3613-d898-42aa-84c7-609b09944c5a",
+      "employee_id": "54335",
+      "state": "tn"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "thomasnelson@example.net",
+        "start": 21,
+        "end": 45
+      },
+      {
+        "type": "PHONE",
+        "value": "(987)820-1620x7915",
+        "start": 69,
+        "end": 87
+      },
+      {
+        "type": "NAME",
+        "value": "Jerry Carroll",
+        "start": 91,
+        "end": 104
+      }
+    ]
+  },
+  {
+    "verbatim_id": 126216809,
+    "type": "client",
+    "language": "english",
+    "sentence": "Residence: 7*** ***** *****, **************, ** ****3; Owner: K******* *****s; DOB: 2***-**-*4; SSN: 6**-**-***5; Email: c*****@*******.**m.",
+    "call_id": 62550056232,
+    "call_date": "2025-06-19T06:58:03.000Z",
+    "attributes": {
+      "userid": "d6d03413-651b-4eea-a347-a5100989f013",
+      "employee_id": "33008",
+      "state": "mp"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "7760 Black Roads, Beasleyborough, ND 93343",
+        "start": 11,
+        "end": 53
+      },
+      {
+        "type": "NAME",
+        "value": "Kimberly Thomas",
+        "start": 62,
+        "end": 77
+      },
+      {
+        "type": "DOB",
+        "value": "2017-02-04",
+        "start": 84,
+        "end": 94
+      },
+      {
+        "type": "SSN",
+        "value": "674-63-7715",
+        "start": 101,
+        "end": 112
+      },
+      {
+        "type": "EMAIL",
+        "value": "cmason@example.com",
+        "start": 121,
+        "end": 139
+      }
+    ]
+  },
+  {
+    "verbatim_id": 923617810,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 7**-***-***1, or maybe try my email — w************@*******.**t.",
+    "call_id": 13904211060,
+    "call_date": "2025-04-05T06:58:03.000Z",
+    "attributes": {
+      "userid": "7ba13557-6242-48ad-810b-137013321cc4",
+      "employee_id": "42180",
+      "state": "ne"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "791-454-2181",
+        "start": 12,
+        "end": 24
+      },
+      {
+        "type": "EMAIL",
+        "value": "watsonbrandon@example.net",
+        "start": 50,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "verbatim_id": 372426793,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at 5**** ***** *****, **** ***********, ** ****6 or dial +1-***-***-*********0, attention C****** *******a, please.",
+    "call_id": 89022310050,
+    "call_date": "2025-08-05T06:58:03.000Z",
+    "attributes": {
+      "userid": "4eb5366a-d9d7-4152-880b-6cc08feb2a9d",
+      "employee_id": "86283",
+      "state": "fl"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "58991 Small Lodge, West Angelashire, NY 87646",
+        "start": 22,
+        "end": 67
+      },
+      {
+        "type": "PHONE",
+        "value": "+1-995-293-4213x53700",
+        "start": 76,
+        "end": 97
+      },
+      {
+        "type": "NAME",
+        "value": "Charles Valencia",
+        "start": 109,
+        "end": 125
+      }
+    ]
+  },
+  {
+    "verbatim_id": 207133184,
+    "type": "client",
+    "language": "english",
+    "sentence": "Please call me at 0**-***-***-***5 or email me at a******@*******.**t.",
+    "call_id": 35265775830,
+    "call_date": "2025-05-09T06:58:03.000Z",
+    "attributes": {
+      "userid": "aa648e58-ec3d-4ea2-b1c1-286c50989f1d",
+      "employee_id": "28382",
+      "state": "dc"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "001-817-932-6505",
+        "start": 18,
+        "end": 34
+      },
+      {
+        "type": "EMAIL",
+        "value": "april30@example.net",
+        "start": 50,
+        "end": 69
+      }
+    ]
+  },
+  {
+    "verbatim_id": 679635878,
+    "type": "client",
+    "language": "english",
+    "sentence": "SSN: 0**-**-***9, Name: J******* ********s, DOB: 2***-**-*6",
+    "call_id": 16289155335,
+    "call_date": "2025-02-21T06:58:03.000Z",
+    "attributes": {
+      "userid": "bdf75171-e53c-4d54-b153-bd66b39332ce",
+      "employee_id": "54685",
+      "state": "id"
+    },
+    "ground_truth": [
+      {
+        "type": "SSN",
+        "value": "090-48-6539",
+        "start": 5,
+        "end": 16
+      },
+      {
+        "type": "NAME",
+        "value": "Jennifer Contreras",
+        "start": 24,
+        "end": 42
+      },
+      {
+        "type": "DOB",
+        "value": "2007-03-06",
+        "start": 49,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "verbatim_id": 712296350,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s K******* ****s, I think I live at 5*** ****** ****, **********, ** ****8.",
+    "call_id": 89437012570,
+    "call_date": "2024-12-29T06:58:03.000Z",
+    "attributes": {
+      "userid": "a020d1ee-b83c-4bcc-ba72-bb35bc0f3505",
+      "employee_id": "68327",
+      "state": "la"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Kimberly Salas",
+        "start": 15,
+        "end": 29
+      },
+      {
+        "type": "ADDRESS",
+        "value": "5575 Monica Cape, Jasonshire, IN 52528",
+        "start": 49,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "verbatim_id": 904843810,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s M******* ******r, I think I live at 0*** **** ****, **** *****, ** ****9.",
+    "call_id": 24874518348,
+    "call_date": "2025-07-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "902814b7-3662-4d59-8969-a4504d7ae295",
+      "employee_id": "67439",
+      "state": "nv"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Michelle Aguilar",
+        "start": 15,
+        "end": 31
+      },
+      {
+        "type": "ADDRESS",
+        "value": "0480 Chan Port, West Jesse, VA 49629",
+        "start": 51,
+        "end": 87
+      }
+    ]
+  },
+  {
+    "verbatim_id": 491817236,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s N***** ******t, I think I live at 7** ****** ******* ***. ***, *************, ** ****7.",
+    "call_id": 41902875866,
+    "call_date": "2025-06-11T06:58:03.000Z",
+    "attributes": {
+      "userid": "f918fc5a-af34-4abd-933c-a3db452433a5",
+      "employee_id": "43720",
+      "state": "ia"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Nicole Schmidt",
+        "start": 15,
+        "end": 29
+      },
+      {
+        "type": "ADDRESS",
+        "value": "762 Graham Landing Apt. 482, Andrewchester, PW 76717",
+        "start": 49,
+        "end": 101
+      }
+    ]
+  },
+  {
+    "verbatim_id": 579005085,
+    "type": "client",
+    "language": "english",
+    "sentence": "My name is H***** *****a and I live at 7*** **** ****** ***** ***, **** **********, ** ****2.",
+    "call_id": 13693039762,
+    "call_date": "2025-01-10T06:58:03.000Z",
+    "attributes": {
+      "userid": "da035cc1-b5e9-4bb9-89f4-09da0546bcaf",
+      "employee_id": "49409",
+      "state": "gu"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Hailey Guerra",
+        "start": 11,
+        "end": 24
+      },
+      {
+        "type": "ADDRESS",
+        "value": "7246 John Bridge Suite 513, Lake Jacqueline, NC 12592",
+        "start": 39,
+        "end": 92
+      }
+    ]
+  },
+  {
+    "verbatim_id": 520903508,
+    "type": "client",
+    "language": "english",
+    "sentence": "Contact our office at U*** **** *** ****, *** ** ****9 or dial 6**.***.***5, attention M**** *****n, please.",
+    "call_id": 42070333220,
+    "call_date": "2025-07-13T06:58:03.000Z",
+    "attributes": {
+      "userid": "33fb234c-83c7-4e35-9506-57ebc4813625",
+      "employee_id": "36465",
+      "state": "nd"
+    },
+    "ground_truth": [
+      {
+        "type": "ADDRESS",
+        "value": "Unit 2272 Box 3839, DPO AA 97609",
+        "start": 22,
+        "end": 54
+      },
+      {
+        "type": "PHONE",
+        "value": "664.945.3445",
+        "start": 63,
+        "end": 75
+      },
+      {
+        "type": "NAME",
+        "value": "Megan Nelson",
+        "start": 87,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "verbatim_id": 199153562,
+    "type": "client",
+    "language": "english",
+    "sentence": "Email... j**********@*******.**t... but maybe wrong... [noise]... try again?",
+    "call_id": 22319848633,
+    "call_date": "2025-08-03T06:58:03.000Z",
+    "attributes": {
+      "userid": "163104d8-dc91-4507-b685-68cafa2c2366",
+      "employee_id": "75935",
+      "state": "fm"
+    },
+    "ground_truth": [
+      {
+        "type": "EMAIL",
+        "value": "jennyflores@example.net",
+        "start": 9,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "verbatim_id": 525394287,
+    "type": "client",
+    "language": "english",
+    "sentence": "Right, it’s 3**.***.***2, or maybe try my email — t*********@*******.**m.",
+    "call_id": 30513992683,
+    "call_date": "2025-07-08T06:58:03.000Z",
+    "attributes": {
+      "userid": "edb47e74-9021-4730-8678-6932014d0fc9",
+      "employee_id": "69427",
+      "state": "vi"
+    },
+    "ground_truth": [
+      {
+        "type": "PHONE",
+        "value": "365.550.4682",
+        "start": 12,
+        "end": 24
+      },
+      {
+        "type": "EMAIL",
+        "value": "tinabowers@example.com",
+        "start": 50,
+        "end": 72
+      }
+    ]
+  },
+  {
+    "verbatim_id": 555939674,
+    "type": "client",
+    "language": "english",
+    "sentence": "Uh, yeah, it’s J**** ******s, I think I live at 2*** ****** ******, *************, ** ****6.",
+    "call_id": 16235096451,
+    "call_date": "2025-04-14T06:58:03.000Z",
+    "attributes": {
+      "userid": "8e4272b9-6d86-48bd-bddf-1b87ea7f072c",
+      "employee_id": "62682",
+      "state": "mi"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Julia Simmons",
+        "start": 15,
+        "end": 28
+      },
+      {
+        "type": "ADDRESS",
+        "value": "2673 Thomas Forest, Martinborough, DE 66166",
+        "start": 48,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "verbatim_id": 174525575,
+    "type": "client",
+    "language": "english",
+    "sentence": "After speaking to P*** ****r on 1***-**-*4, I emailed m*************@*******.**m and noted SSN 4**-**-***0.",
+    "call_id": 41791389658,
+    "call_date": "2025-01-04T06:58:03.000Z",
+    "attributes": {
+      "userid": "b960e630-9ce3-47e5-b05c-418112df1452",
+      "employee_id": "34934",
+      "state": "vt"
+    },
+    "ground_truth": [
+      {
+        "type": "NAME",
+        "value": "Paul Greer",
+        "start": 18,
+        "end": 28
+      },
+      {
+        "type": "DOB",
+        "value": "1947-01-14",
+        "start": 32,
+        "end": 42
+      },
+      {
+        "type": "EMAIL",
+        "value": "monicacampbell@example.com",
+        "start": 54,
+        "end": 80
+      },
+      {
+        "type": "SSN",
+        "value": "473-67-1130",
+        "start": 95,
+        "end": 106
+      }
+    ]
+  }
+]
