@@ -92,10 +92,34 @@ def normalize_type(ent_type: str) -> str:
 def remove_fillers(text: str) -> str:
     return FILLER_PATTERN.sub(lambda m: " " * len(m.group()), text)
 
+# def format_preserving_mask(value: str) -> str:
+#     if len(value) <= 2:
+#         return MASK_CHAR * len(value)
+#     return value[0] + MASK_CHAR * (len(value) - 2) + value[-1]
+
 def format_preserving_mask(value: str) -> str:
-    if len(value) <= 2:
-        return MASK_CHAR * len(value)
-    return value[0] + MASK_CHAR * (len(value) - 2) + value[-1]
+    """
+    Masks all but the first and last alphanumeric characters in a string.
+    Non-alphanumeric characters (separators, punctuation) are preserved.
+    Mask char is always '*'.
+    """
+    if not value:
+        return value
+
+    # Collect indices of alphanumeric chars
+    alnum_indices = [i for i, ch in enumerate(value) if ch.isalnum()]
+
+    if len(alnum_indices) <= 2:
+        # If too short, mask all alphanumerics
+        return "".join("*" if c.isalnum() else c for c in value)
+
+    # Otherwise mask all but first + last alphanumeric
+    masked_chars = list(value)
+    for idx in alnum_indices[1:-1]:
+        masked_chars[idx] = "*"
+
+    return "".join(masked_chars)
+
 
 def accept_entity(ent: dict) -> bool:
     t, text = ent["Type"], ent["Text"]
