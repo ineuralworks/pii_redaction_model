@@ -10,6 +10,9 @@ import requests
 import pandas as pd
 import streamlit as st
 from urllib.parse import quote
+import subprocess
+import logging
+from pathlib import Path
 
 from redactor import process_file, process_text
 
@@ -28,6 +31,30 @@ from metrics import (
     _init_session_metrics,
 )
 
+# -------------------------------------------------------------------
+# Centralized logging config (shared with other modules)
+# -------------------------------------------------------------------
+LOG_FILE = Path("logs/app.log")
+LOG_FILE.parent.mkdir(exist_ok=True)
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [%(module)s] %(message)s",
+)
+
+# -------------------------------------------------------------------
+# Background refresh of safe words
+# -------------------------------------------------------------------
+def refresh_safe_words_async():
+    """Run refresh_safe_words.py in a separate process."""
+    try:
+        logging.info("Starting background safe words refresh...")
+        subprocess.Popen(["python", "refresh_safe_words.py"])
+    except Exception as e:
+        logging.error(f"Failed to start safe words refresh: {e}", exc_info=True)
+
+# Kick off refresh in background at app start
+threading.Thread(target=refresh_safe_words_async, daemon=True).start()
 # -------------------------------------------------------------------
 # Config
 # -------------------------------------------------------------------
