@@ -1,0 +1,97 @@
+# -----------------------------
+# Runtime-generated artifacts
+# -----------------------------
+data/
+logs/
+
+
+# -----------------------------
+# Streamlit cache & config
+# -----------------------------
+.streamlit/
+.streamlit/secrets.toml
+
+# -----------------------------
+# Python cache & build files
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+build/
+dist/
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+venv/
+.env/
+.venv/
+env/
+
+# -----------------------------
+# OS-specific junk
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Temporary / backup files
+# -----------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# -----------------------------
+# Jupyter notebooks checkpoints
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# AWS & cloud credentials
+# -----------------------------
+.aws/
+*.pem
+*.ppk
+
+# -----------------------------
+# Environment variables / secrets
+# -----------------------------
+.env.local
+.env.production
+.env.development
+.env.test
+
+# -----------------------------
+# Local test / scratch files
+# -----------------------------
+scratch/
+tests/__pycache__/
+test_outputs/
+
+# -----------------------------
+# IDE / editor settings
+# -----------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -----------------------------
+# Python packaging / profiling
+# -----------------------------
+.eggs/
+*.prof
+*.coverage
+.coverage.*
+htmlcov/
+
+# -----------------------------
+# Mac/Linux temp artifacts
+# -----------------------------
+*.orig
+*.rej
+
