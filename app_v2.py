@@ -5,7 +5,7 @@ import base64
 import threading
 from datetime import datetime
 from io import StringIO
-
+import sys
 import requests
 import pandas as pd
 import streamlit as st
@@ -49,7 +49,8 @@ def refresh_safe_words_async():
     """Run refresh_safe_words.py in a separate process."""
     try:
         logging.info("Starting background safe words refresh...")
-        subprocess.Popen(["python", "refresh_safe_words.py"])
+        #subprocess.Popen(["python", "refresh_safe_words.py"])
+        subprocess.Popen([sys.executable, str(Path(__file__).parent / "refresh_safe_words.py")])
     except Exception as e:
         logging.error(f"Failed to start safe words refresh: {e}", exc_info=True)
 
