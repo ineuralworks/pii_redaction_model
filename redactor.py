@@ -6,6 +6,20 @@ import csv
 import re
 import boto3
 from datetime import datetime
+import logging
+from pathlib import Path
+# --- Centralized Logging + SAFE_WORDS Loader for Name Fallback ---
+
+LOG_FILE = Path("logs/app.log")
+LOG_FILE.parent.mkdir(exist_ok=True)
+
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [%(module)s] %(message)s",
+)
+
+DATA_DIR = Path("data")
 
 # -------------------------------------------------------------------
 # 1. AWS Comprehend client (credentials via env vars or IAM role)
@@ -171,6 +185,49 @@ def extract_regex_entities(text: str) -> list:
             })
     return ents
 
+
+def load_wordlist(file_path: Path):
+    """Load a text file with one term per line into a set."""
+    try:
+        return {line.strip() for line in file_path.read_text(encoding="utf-8").splitlines() if line.strip()}
+    except FileNotFoundError:
+        logging.warning(f"Safe words file not found: {file_path}")
+        return set()
+
+def build_safe_words():
+    """Build the SAFE_WORDS set from static and generated lists."""
+    safe_words = {
+        # Minimal static fallback set
+        "Street", "St", "Avenue", "Ave", "Road", "Rd", "Boulevard", "Blvd",
+        "Lane", "Ln", "Drive", "Dr", "Court", "Ct", "Square", "Sq",
+        "January", "February", "March", "April", "May", "June", "July", "August",
+        "September", "October", "November", "December",
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    }
+    # Merge in generated files if available
+    safe_words.update(load_wordlist(DATA_DIR / "world_cities.txt"))
+    safe_words.update(load_wordlist(DATA_DIR / "us_states.txt"))
+    logging.info(f"SAFE_WORDS loaded with {len(safe_words):,} entries.")
+    return safe_words
+
+SAFE_WORDS = build_safe_words()
+
+# Regex: Two consecutive capitalized words
+NAME_FALLBACK_PATTERN = re.compile(r"\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b")
+
+def redact_names_fallback(text: str) -> str:
+    """
+    Conservative name redaction fallback for when AWS Comprehend is unavailable.
+    Matches two consecutive capitalized words, skips if either is in SAFE_WORDS.
+    """
+    def replace_if_not_safe(match):
+        first, last = match.groups()
+        if first in SAFE_WORDS or last in SAFE_WORDS:
+            return match.group(0)  # leave unchanged
+        return format_preserving_mask(match.group(0)) #"[REDACTED_NAME]"
+    return NAME_FALLBACK_PATTERN.sub(replace_if_not_safe, text)
+
+
 # -------------------------------------------------------------------
 # 6. Core Masking Logic with Fallbacks
 # -------------------------------------------------------------------
@@ -192,6 +249,9 @@ def mask_pii_with_comprehend(records: list, min_confidence: float = 0.5):
             aws_entities = resp.get("Entities", [])
         except Exception:
             aws_entities = []
+            # Apply conservative name fallback if Comprehend fails
+            sent = redact_names_fallback(sent)
+            logging.info("Applied regex-based name fallback due to Comprehend failure.")
 
         entities = []
         for e in aws_entities:
