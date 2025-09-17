@@ -5,14 +5,26 @@ from io import StringIO
 from typing import List, Dict, Optional
 import re
 import pandas as pd
+import streamlit as st
 
 # -------------------------------------------------------------------
 # In-memory stores for demo session
 # -------------------------------------------------------------------
-_file_metrics: List[Dict]         = []
-_text_metrics: List[Dict]         = []
-_accuracy_results: List[Dict]     = []
-_ground_truth_reports: Dict[str, str] = {}
+#_file_metrics: List[Dict]         = []
+#_text_metrics: List[Dict]         = []
+#_accuracy_results: List[Dict]     = []
+#_ground_truth_reports: Dict[str, str] = {}
+
+def _init_session_metrics():
+    """Ensure per-session metric stores exist."""
+    if "file_metrics" not in st.session_state:
+        st.session_state.file_metrics = []
+    if "text_metrics" not in st.session_state:
+        st.session_state.text_metrics = []
+    if "accuracy_results" not in st.session_state:
+        st.session_state.accuracy_results = []
+    if "ground_truth_reports" not in st.session_state:
+        st.session_state.ground_truth_reports = {}
 
 # -------------------------------------------------------------------
 # Canonical PII type mapping (all aliases → one canonical)
@@ -50,17 +62,27 @@ def record_file_metrics(
     raw_file_bytes: Optional[bytes] = None,
     audit_csv: Optional[str] = None,
 ) -> None:
+    _init_session_metrics()
     latency = end_ts - start_ts
     audit_latency = (audit_gen_ts - start_ts) if audit_gen_ts else None
     pii_density = pii_count / record_count if record_count else 0.0
 
-    _file_metrics.append({
-        "timestamp":      datetime.utcnow().isoformat(),
-        "file_name":      file_name,
-        "records":        record_count,
-        "pii_count":      pii_count,
-        "pii_density":    pii_density,
-        "latency_sec":    latency,
+    # _file_metrics.append({
+    #     "timestamp":      datetime.utcnow().isoformat(),
+    #     "file_name":      file_name,
+    #     "records":        record_count,
+    #     "pii_count":      pii_count,
+    #     "pii_density":    pii_density,
+    #     "latency_sec":    latency,
+    #     "audit_time_sec": audit_latency
+    # })
+    st.session_state.file_metrics.append({
+        "timestamp": datetime.utcnow().isoformat(),
+        "file_name": file_name,
+        "records": record_count,
+        "pii_count": pii_count,
+        "pii_density": pii_density,
+        "latency_sec": latency,
         "audit_time_sec": audit_latency
     })
 
@@ -68,7 +90,8 @@ def record_file_metrics(
     if file_name.startswith("ground_truth") and raw_file_bytes and audit_csv:
         _compute_accuracy(file_name, raw_file_bytes, audit_csv)
         report_csv = _generate_ground_truth_report(raw_file_bytes, audit_csv)
-        _ground_truth_reports[file_name] = report_csv
+        #_ground_truth_reports[file_name] = report_csv
+        st.session_state.ground_truth_reports[file_name] = report_csv
 
 def record_text_metrics(
     start_ts: float,
@@ -76,13 +99,20 @@ def record_text_metrics(
     pii_count: int,
     audit_gen_ts: Optional[float] = None,
 ) -> None:
+    _init_session_metrics()
     latency = end_ts - start_ts
     audit_latency = (audit_gen_ts - start_ts) if audit_gen_ts else None
 
-    _text_metrics.append({
-        "timestamp":      datetime.utcnow().isoformat(),
-        "pii_count":      pii_count,
-        "latency_sec":    latency,
+    # _text_metrics.append({
+    #     "timestamp":      datetime.utcnow().isoformat(),
+    #     "pii_count":      pii_count,
+    #     "latency_sec":    latency,
+    #     "audit_time_sec": audit_latency
+    # })
+    st.session_state.text_metrics.append({
+        "timestamp": datetime.utcnow().isoformat(),
+        "pii_count": pii_count,
+        "latency_sec": latency,
         "audit_time_sec": audit_latency
     })
 
@@ -101,6 +131,7 @@ def _compute_accuracy(
     Loads the ground_truth.json payload, compares audit_csv predictions
     to the injected spans, then records TP/FP/FN, precision, recall, F1.
     """
+    _init_session_metrics()
     data = json.loads(raw_json_bytes.decode("utf-8"))
     df_audit = pd.read_csv(StringIO(audit_csv)) if audit_csv.strip() else pd.DataFrame()
 
@@ -150,15 +181,25 @@ def _compute_accuracy(
     recall    = TP / (TP + FN) if (TP + FN) else 0.0
     f1        = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
 
-    _accuracy_results.append({
+    # _accuracy_results.append({
+    #     "timestamp": datetime.utcnow().isoformat(),
+    #     "file_name": file_name,
+    #     "TP":         TP,
+    #     "FP":         FP,
+    #     "FN":         FN,
+    #     "precision":  precision,
+    #     "recall":     recall,
+    #     "f1":         f1
+    # })
+    st.session_state.accuracy_results.append({
         "timestamp": datetime.utcnow().isoformat(),
         "file_name": file_name,
-        "TP":         TP,
-        "FP":         FP,
-        "FN":         FN,
-        "precision":  precision,
-        "recall":     recall,
-        "f1":         f1
+        "TP": TP,
+        "FP": FP,
+        "FN": FN,
+        "precision": precision,
+        "recall": recall,
+        "f1": f1
     })
 
 # -------------------------------------------------------------------
@@ -232,17 +273,33 @@ def _generate_ground_truth_report(
 # -------------------------------------------------------------------
 # Retrieval functions
 # -------------------------------------------------------------------
+# def get_file_metrics_df() -> pd.DataFrame:
+#     return pd.DataFrame(_file_metrics)
+
+# def get_text_metrics_df() -> pd.DataFrame:
+#     return pd.DataFrame(_text_metrics)
+
+# def get_accuracy_df() -> pd.DataFrame:
+#     return pd.DataFrame(_accuracy_results)
+
+# def get_ground_truth_report(file_name: str) -> Optional[str]:
+#     return _ground_truth_reports.get(file_name)
+
 def get_file_metrics_df() -> pd.DataFrame:
-    return pd.DataFrame(_file_metrics)
+    _init_session_metrics()
+    return pd.DataFrame(st.session_state.file_metrics)
 
 def get_text_metrics_df() -> pd.DataFrame:
-    return pd.DataFrame(_text_metrics)
+    _init_session_metrics()
+    return pd.DataFrame(st.session_state.text_metrics)
 
 def get_accuracy_df() -> pd.DataFrame:
-    return pd.DataFrame(_accuracy_results)
+    _init_session_metrics()
+    return pd.DataFrame(st.session_state.accuracy_results)
 
 def get_ground_truth_report(file_name: str) -> Optional[str]:
-    return _ground_truth_reports.get(file_name)
+    _init_session_metrics()
+    return st.session_state.ground_truth_reports.get(file_name)
 
 # -------------------------------------------------------------------
 # Summary functions
