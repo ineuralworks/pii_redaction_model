@@ -3,7 +3,10 @@
 # -----------------------------
 data/
 logs/
-
+#-------------------------------------
+# GitHub Codespaces dev container config
+.devcontainer/
+#-----------------------------------
 
 # -----------------------------
 # Streamlit cache & config
