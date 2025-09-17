@@ -1,15 +1,21 @@
-# refresh_safe_words.py
+"""
+Refreshes safe words datasets for name-fallback PII redaction.
+Downloads world cities and builds US states list.
+Designed to run in the background so it doesn't block user requests.
+"""
+
 import logging
 import requests
 from pathlib import Path
 
-# Configure logging
-LOG_FILE = Path("logs/safe_words_refresh.log")
+# --- Centralized logging config ---
+LOG_FILE = Path("logs/app.log")
 LOG_FILE.parent.mkdir(exist_ok=True)
+
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
+    format="%(asctime)s [%(levelname)s] [%(module)s] %(message)s",
 )
 
 DATA_DIR = Path("data")
