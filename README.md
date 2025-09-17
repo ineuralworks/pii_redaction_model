@@ -41,7 +41,8 @@ The solution is designed for **both technical and non‑technical audiences**:
   - IAM & KMS (security)
 
 ### Compact Architecture Diagram:
-```User Upload (JSON/TXT or Single Sentence)
+```text
+User Upload (JSON/TXT or Single Sentence)
     -->
 Secure Storage (S3 Raw Zone)
     -->
@@ -85,8 +86,9 @@ Our support email is icochran@example.org, but you can also call 637.872.5738x03
 
 ### **File Upload Mode**
 1. Upload a `.json` or `.txt` file containing call metadata.
-2. The app will detect and mask PII in each sentence.
-3. Download sanitized output and audit logs.
+2. If you want the app to compute accuracy metrics and generate a ground truth report, your uploaded file name must start with `ground_truth` (e.g., `ground_truth_test.json`). Files without this prefix will still be processed for redaction, but accuracy metrics and ground truth reports will be skipped.
+3. The app will detect and mask PII in each sentence.
+4. Download sanitized output and audit logs.
 
 ---
 
