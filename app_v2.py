@@ -25,12 +25,29 @@ from metrics import (
     summarize_accuracy,
     get_ground_truth_report,
     generate_business_summary,
+    _init_session_metrics,
 )
 
 # -------------------------------------------------------------------
 # Config
 # -------------------------------------------------------------------
 st.set_page_config(page_title="📁 PII Redaction By Sam Okoye", layout="wide")
+# -------------------------------------------------------------------
+# Session metrics init & timeout
+# -------------------------------------------------------------------
+_init_session_metrics()
+SESSION_TIMEOUT = 120  # seconds(2 mins max)
+
+if "last_activity" not in st.session_state:
+    st.session_state.last_activity = time.time()
+else:
+    if time.time() - st.session_state.last_activity > SESSION_TIMEOUT:
+        st.session_state.file_metrics.clear()
+        st.session_state.text_metrics.clear()
+        st.session_state.accuracy_results.clear()
+        st.session_state.ground_truth_reports.clear()
+
+st.session_state.last_activity = time.time()
 #MIN_CONFIDENCE = 0.6
 # -------------------------------------------------------------------
 # Settings Sidebar: Confidence Threshold
